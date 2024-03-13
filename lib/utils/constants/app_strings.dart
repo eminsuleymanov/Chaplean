@@ -1,6 +1,7 @@
 class AppStrings {
   // App Name
   static const String appName = 'Chaplean';
+  static const String appNames = 'kgdshdk';
 
   // Landing Page
   static const String login = 'Login';

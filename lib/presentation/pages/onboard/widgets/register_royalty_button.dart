@@ -1,0 +1,19 @@
+import '../../../widgets/global_button.dart';
+import '../../../../utils/constants/app_strings.dart';
+import 'package:flutter/material.dart';
+
+import '../../../../utils/constants/app_colors.dart';
+import '../../../../utils/constants/app_text_styles.dart';
+
+class RegisterRoyaltyButton extends StatelessWidget {
+  const RegisterRoyaltyButton({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return GlobalButton(
+        onTap: () {},
+        title: AppStrings.register,
+        color: AppColors.royalty,
+        style: AppTextStyles.etheralWhite16);
+  }
+}

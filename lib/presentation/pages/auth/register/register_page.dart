@@ -1,0 +1,47 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import '../login/widgets/buttons/custom_back_button.dart';
+import '../login/widgets/inputs/auth_view.dart';
+import 'widgets/buttons_texts/privacy_policy_text.dart';
+import 'widgets/buttons_texts/register_button.dart';
+import 'widgets/buttons_texts/register_title_text.dart';
+import 'widgets/buttons_texts/regsister_confirm_passford_input.dart';
+import 'widgets/buttons_texts/request_account_text.dart';
+import 'widgets/inputs/register_email_inpit.dart';
+import 'widgets/inputs/register_password_input.dart';
+import 'widgets/inputs/register_username_input.dart';
+
+class RegisterPage extends StatefulWidget {
+  const RegisterPage({super.key});
+
+  @override
+  State<RegisterPage> createState() => _RegisterPageState();
+}
+
+class _RegisterPageState extends State<RegisterPage> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        body: AuthView(children: [
+      const CustomBackButton(),
+      20.verticalSpace,
+      const RegisterTitleText(),
+      34.verticalSpace,
+      const RegisterUsernameInput(),
+      16.verticalSpace,
+      const RegisterEmailInput(),
+      16.verticalSpace,
+      const RegisterPasswordInput(),
+      16.verticalSpace,
+      const RegisterConfirmPassword(),
+      16.verticalSpace,
+      const PrivacyPolicyText(),
+      60.verticalSpace,
+      const RegisterButton(),
+      8.verticalSpace,
+      const RequestAccountText(),
+    
+    ]));
+  }
+}

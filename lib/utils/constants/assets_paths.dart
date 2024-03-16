@@ -4,7 +4,8 @@ class AssetsPaths {
   static const String chapleantext = 'assets/images/svg/chaplean.svg';
   static const String backArrow = 'assets/images/svg/back.svg';
   static const String visibility = 'assets/images/svg/visibility.svg';
-  static const String successChaplean = 'assets/images/svg/success_chaplean.svg';
+  static const String successChaplean =
+      'assets/images/svg/success_chaplean.svg';
   static const String searchBtn = 'assets/images/svg/search_btn.svg';
   static const String horizontalDots = 'assets/images/svg/horizontal_dots.svg';
   static const String girl = 'assets/images/svg/girl.svg';
@@ -22,10 +23,18 @@ class AssetsPaths {
   static const String libraryIcon = 'assets/images/svg/library-icon.svg';
   static const String chatIcon = 'assets/images/svg/chat-icon.svg';
   static const String profileIcon = 'assets/images/svg/profile-icon.svg';
-  static const String notificationIcon = 'assets/images/svg/notification-icon.svg';
+  static const String notificationIcon =
+      'assets/images/svg/notification-icon.svg';
   static const String musicListIcon = 'assets/images/svg/music-list-icon.svg';
-  static const String profileIconFilled = 'assets/images/svg/profile-icon-filled.svg';
+  static const String profileIconFilled =
+      'assets/images/svg/profile-icon-filled.svg';
   static const String shareMusic = 'assets/images/svg/share-music.svg';
-    static const String disc = 'assets/images/png/disc.png';
+  static const String disc = 'assets/images/png/disc.png';
 
+  //app png paths
+  static const String musicImage_1 = 'assets/images/png/music_image_1.png';
+  static const String musicImage_2 = 'assets/images/png/music_image_2.png';
+  static const String musicImage_3 = 'assets/images/png/music_image_3.png';
+  static const String musicImage_4 = 'assets/images/png/music_image_4.png';
+  static const String musicImage_5 = 'assets/images/png/music_image_5.png';
 }

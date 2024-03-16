@@ -79,4 +79,10 @@ class AppStrings {
 
   //Library Page
   static const String search = "search";
+
+  //Liked Content Music Page
+  static const String liked = 'Liked';
+  static const String music = 'Music';
+  static const String playlist = 'Playlist';
+  static const String podcast = 'Podcast';
 }

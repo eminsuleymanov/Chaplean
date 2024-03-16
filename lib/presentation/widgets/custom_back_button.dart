@@ -1,15 +1,16 @@
-
-import '../../../../onboard/onboard_second_page.dart';
-import '../../../../../../utils/constants/assets_paths.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:svg_flutter/svg.dart';
 
-import '../../../../../../utils/constants/app_colors.dart';
+import '../../core/routes/generator.dart';
+import '../../utils/constants/app_colors.dart';
+import '../../utils/constants/assets_paths.dart';
 
 class CustomBackButton extends StatelessWidget {
-  const CustomBackButton({Key? key}) : super(key: key);
+  const CustomBackButton({Key? key, required this.page}) : super(key: key);
 
+  final Widget page;
+  
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -23,11 +24,7 @@ class CustomBackButton extends StatelessWidget {
         padding: EdgeInsets.only(right: 2.sp, top: 2.sp),
         icon: SvgPicture.asset(AssetsPaths.backArrow),
         onPressed: () {
-           Navigator.pushReplacement(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => const OnboardSecondPage(),));
-
+          Navigate.replace(context, page);
         },
       ),
     );

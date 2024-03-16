@@ -2,6 +2,7 @@ import 'package:chaplean/data/models/list_tile_model.dart';
 import 'package:chaplean/presentation/pages/liked/custom_list_tile.dart';
 import 'package:chaplean/presentation/pages/liked/custom_tab.dart';
 import 'package:chaplean/presentation/pages/liked/music_list_view.dart';
+import 'package:chaplean/presentation/pages/onboard/onboard_second_page.dart';
 import 'package:chaplean/presentation/widgets/custom_nav_bar.dart';
 import 'package:chaplean/utils/constants/app_paddings.dart';
 import 'package:flutter/material.dart';
@@ -9,7 +10,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../utils/constants/app_colors.dart';
 import '../../../utils/constants/app_strings.dart';
-import '../auth/login/widgets/buttons/custom_back_button.dart';
+import '../../widgets/custom_back_button.dart';
 
 class LikedMusicPage extends StatefulWidget {
   const LikedMusicPage({super.key});
@@ -48,7 +49,7 @@ class _LikedMusicPageState extends State<LikedMusicPage>
               padding: AppPaddings.all12,
               child: Row(
                 children: [
-                  const CustomBackButton(),
+                  const CustomBackButton(page: OnboardSecondPage(),),
                   128.horizontalSpace,
                   const Text(
                     AppStrings.liked,

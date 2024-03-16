@@ -1,6 +1,7 @@
 
 
 import 'package:chaplean/presentation/pages/liked/liked_music_page.dart';
+import 'package:chaplean/presentation/pages/search/search_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
             backgroundColor: AppColors.primaryColor,
           ),
         ),
-        body: const LikedMusicPage(),
+        body: const SearchPage(),
       ),
     );
   }

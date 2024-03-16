@@ -1,8 +1,6 @@
 class AppStrings {
   // App Name
   static const String appName = 'Chaplean';
-  static const String appNames = 'kgdshdk';
-    static const String appNamess = 'kgdshdk';
   static const String acdca = 'egveswg';
 
 

@@ -15,12 +15,13 @@ class GlobalInput extends StatelessWidget {
     this.color,
     this.onChanged,
     this.maxLine = 1,
-    this.suffixIcon,
+    this.suffixIcon, this.prefixIcon,
   });
 
   final dynamic controller;
   final String hintText;
   final bool isSecure;
+  final Widget? prefixIcon;
   final Widget? suffixIcon;
   final Color? color;
   final String? Function(String?)? validate;
@@ -37,7 +38,7 @@ class GlobalInput extends StatelessWidget {
       maxLines: maxLine,
       style: AppTextStyles.etheralWhite16,
       decoration: InputDecoration(
-        contentPadding: AppPaddings.all16,
+        contentPadding: AppPaddings.all4,
         hintStyle: AppTextStyles.smalStyle16,
         fillColor: AppColors.royalty,
         focusColor: AppColors.etherealWhite,
@@ -56,6 +57,7 @@ class GlobalInput extends StatelessWidget {
           borderRadius: BorderRadius.circular(8.0),
         ),
         suffixIcon: suffixIcon,
+        prefixIcon: prefixIcon
       ),
     );
   }

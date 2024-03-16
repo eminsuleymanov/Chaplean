@@ -1,3 +1,4 @@
+import 'package:chaplean/presentation/pages/onboard/onboard_second_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -13,7 +14,7 @@ import 'widgets/inputs/login_input_username.dart';
 import 'widgets/inputs/login_password_input.dart';
 import 'widgets/buttons/login_title_text.dart';
 
-import 'widgets/buttons/custom_back_button.dart';
+import '../../../widgets/custom_back_button.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -23,7 +24,7 @@ class LoginPage extends StatelessWidget {
     return Scaffold(
       body: AuthView(
         children: [
-          const CustomBackButton(),
+          const CustomBackButton(page: OnboardSecondPage()),
           20.verticalSpace,
           const LoginTitleText(),
           120.verticalSpace,

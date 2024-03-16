@@ -1,3 +1,6 @@
+import 'package:chaplean/core/routes/generator.dart';
+import 'package:chaplean/presentation/pages/search/search_page.dart';
+
 import '../../../../utils/constants/app_colors.dart';
 import '../../../../utils/constants/assets_paths.dart';
 import 'package:flutter/material.dart';
@@ -15,7 +18,9 @@ class HomeAppbar extends StatelessWidget implements PreferredSizeWidget {
       actions: [
         IconButton(
           icon: SvgPicture.asset(AssetsPaths.searchBtn),
-          onPressed: () {},
+          onPressed: () {
+            Navigate.to(context, const SearchPage());
+          },
         ),
       ],
     );
@@ -24,4 +29,3 @@ class HomeAppbar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Size get preferredSize => const Size.fromHeight(kToolbarHeight);
 }
-

@@ -29,6 +29,10 @@ class AssetsPaths {
   static const String profileIconFilled =
       'assets/images/svg/profile-icon-filled.svg';
   static const String shareMusic = 'assets/images/svg/share-music.svg';
+  static const String settings_2 = 'assets/images/svg/settings_2.svg';
+  static const String defaultProfilePicture =
+      'assets/images/svg/default_profile_picture.svg';
+
   static const String disc = 'assets/images/png/disc.png';
 
   //app png paths
@@ -37,4 +41,21 @@ class AssetsPaths {
   static const String musicImage_3 = 'assets/images/png/music_image_3.png';
   static const String musicImage_4 = 'assets/images/png/music_image_4.png';
   static const String musicImage_5 = 'assets/images/png/music_image_5.png';
+  static const String playlistImage_1 =
+      'assets/images/png/playlist_image_1.png';
+  static const String playlistImage_2 =
+      'assets/images/png/playlist_image_2.png';
+  static const String playlistImage_3 =
+      'assets/images/png/playlist_image_3.png';
+  static const String playlistImage_4 =
+      'assets/images/png/playlist_image_4.png';
+  static const String playlistImage_5 =
+      'assets/images/png/playlist_image_5.png';
+  static const String podcastImage_1 = 'assets/images/png/podcast_image_1.png';
+  static const String podcastImage_2 = 'assets/images/png/podcast_image_2.png';
+  static const String podcastImage_3 = 'assets/images/png/podcast_image_3.png';
+  static const String podcastImage_4 = 'assets/images/png/podcast_image_4.png';
+  static const String podcastImage_5 = 'assets/images/png/podcast_image_5.png';
+  static const String defaultProfileImage =
+      'assets/images/png/default_profile_image.png';
 }

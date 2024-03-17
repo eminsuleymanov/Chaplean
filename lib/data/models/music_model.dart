@@ -1,59 +1,59 @@
 import 'package:chaplean/utils/constants/assets_paths.dart';
 
-class ListTileModel {
+class MusicModel {
   String image;
   String title;
   String subtitle;
 
-  ListTileModel({
+  MusicModel({
     required this.image,
     required this.title,
     required this.subtitle,
   });
 }
 
-List<ListTileModel> musicListTile = [
-  ListTileModel(
+List<MusicModel> musicListModel = [
+  MusicModel(
     image: AssetsPaths.musicImage_1,
     title: 'Diamonds',
     subtitle: 'Rihanna',
   ),
-  ListTileModel(
+  MusicModel(
     image: AssetsPaths.musicImage_2,
     title: 'Bad Guy',
     subtitle: 'Billie Eilish',
   ),
-  ListTileModel(
+  MusicModel(
     image: AssetsPaths.musicImage_3,
     title: 'Money',
     subtitle: 'Lisa',
   ),
-  ListTileModel(
+  MusicModel(
     image: AssetsPaths.musicImage_4,
     title: 'Have Mercy',
     subtitle: 'Chloe',
   ),
-  ListTileModel(
+  MusicModel(
     image: AssetsPaths.musicImage_5,
     title: 'She Nows',
     subtitle: 'J. Cole',
   ),
-  ListTileModel(
+  MusicModel(
     image: AssetsPaths.musicImage_1,
     title: 'Diamonds',
     subtitle: 'Rihanna',
   ),
-  ListTileModel(
+  MusicModel(
     image: AssetsPaths.musicImage_2,
     title: 'Bad Guy',
     subtitle: 'Billie Eilish',
   ),
-  ListTileModel(
+  MusicModel(
     image: AssetsPaths.musicImage_1,
     title: 'Diamonds',
     subtitle: 'Rihanna',
   ),
-  ListTileModel(
+  MusicModel(
     image: AssetsPaths.musicImage_1,
     title: 'Diamonds',
     subtitle: 'Rihanna',

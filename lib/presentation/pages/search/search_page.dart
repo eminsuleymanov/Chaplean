@@ -1,4 +1,4 @@
-import 'package:chaplean/presentation/pages/home/home-page.dart';
+import 'package:chaplean/presentation/pages/home/home_page.dart';
 import 'package:chaplean/presentation/widgets/global_input.dart';
 import 'package:chaplean/utils/constants/app_strings.dart';
 import 'package:flutter/material.dart';

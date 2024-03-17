@@ -1,5 +1,7 @@
+import 'package:chaplean/data/models/feed_model.dart';
+
 import 'hastags_text_boxes.dart';
-import 'music-name.dart';
+import 'music_names.dart';
 import 'music_slader.dart';
 import 'singer_name.dart';
 import '../../../../../utils/constants/app_paddings.dart';
@@ -8,7 +10,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class MusicDetailItems extends StatelessWidget {
   const MusicDetailItems({
-    super.key,
+    super.key, FeedModel? musicdetail,
   });
 
   @override

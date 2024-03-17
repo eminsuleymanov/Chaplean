@@ -1,11 +1,11 @@
-import 'package:chaplean/core/routes/generator.dart';
-import 'package:chaplean/presentation/pages/search/search_page.dart';
-
-import '../../../../utils/constants/app_colors.dart';
-import '../../../../utils/constants/assets_paths.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:svg_flutter/svg.dart';
+
+import '../../../../utils/constants/app_colors.dart';
+import '../../../../utils/constants/assets_paths.dart';
+import 'package:chaplean/core/routes/generator.dart';
+import 'package:chaplean/presentation/pages/search/search_page.dart';
 
 class HomeAppbar extends StatelessWidget implements PreferredSizeWidget {
   const HomeAppbar({Key? key}) : super(key: key);
@@ -27,5 +27,5 @@ class HomeAppbar extends StatelessWidget implements PreferredSizeWidget {
   }
 
   @override
-  Size get preferredSize => const Size.fromHeight(kToolbarHeight);
+  Size get preferredSize => const Size.fromHeight(56.0);
 }

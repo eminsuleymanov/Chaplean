@@ -13,9 +13,11 @@ class AppPaddings {
 //left
 
   static const l16 = EdgeInsets.only(left: 16);
+  static const l12 = EdgeInsets.only(left: 12);
 
 //right
   static const r10 = EdgeInsets.only(right: 16);
+  static const r20 = EdgeInsets.only(right: 20);
 
 //vertical
   static const v16 = EdgeInsets.symmetric(vertical: 16);
@@ -26,8 +28,8 @@ class AppPaddings {
   static const h30 = EdgeInsets.symmetric(horizontal: 30);
   static const h24 = EdgeInsets.symmetric(horizontal: 24);
 
-  // top left right
-  static const tlr24 =  EdgeInsets.only(top: 24, left: 24, right: 24);
+  // top left right bottom
+  static const tlr24b16 =  EdgeInsets.only(top: 24, left: 24, right: 24,bottom: 16);
 
 
 }

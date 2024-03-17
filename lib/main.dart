@@ -1,12 +1,11 @@
 
 
-import 'package:chaplean/presentation/pages/liked/liked_music_page.dart';
-import 'package:chaplean/presentation/pages/search/search_page.dart';
+import 'package:chaplean/presentation/pages/profile/profile_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'app/app_theme.dart';
-import 'presentation/pages/onboard/onboard_first_page.dart';
+import 'presentation/pages/liked/liked_music_page.dart';
 import 'utils/constants/app_colors.dart';
 
 void main() {
@@ -28,12 +27,12 @@ class MyApp extends StatelessWidget {
       theme: UITheme.appTheme,
       home: Scaffold(
         appBar: PreferredSize(
-          preferredSize: const Size.fromHeight(44.0),
+          preferredSize: const Size.fromHeight(12.0),
           child: AppBar(
             backgroundColor: AppColors.primaryColor,
           ),
         ),
-        body: const SearchPage(),
+        body: const LikedMusicPage(),
       ),
     );
   }

@@ -2,7 +2,7 @@ import 'package:chaplean/utils/constants/app_borders.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../../utils/constants/app_colors.dart';
+import '../../../../utils/constants/app_colors.dart';
 
 class CustomListTile extends StatelessWidget {
   const CustomListTile(
@@ -39,17 +39,14 @@ class CustomListTile extends StatelessWidget {
             filterQuality: FilterQuality.high,
           ),
         ),
-        title: SizedBox(
-          width: 225,
-          child: Text(
-            title,
-            maxLines: 1,
-            overflow: TextOverflow.ellipsis,
-            style: TextStyle(
-              fontSize: 13.sp,
-              fontWeight: FontWeight.w500,
-              color: AppColors.white,
-            ),
+        title: Text(
+          title,
+          maxLines: 1,
+          overflow: TextOverflow.ellipsis,
+          style: TextStyle(
+            fontSize: 13.sp,
+            fontWeight: FontWeight.w500,
+            color: AppColors.white,
           ),
         ),
         subtitle: Text(

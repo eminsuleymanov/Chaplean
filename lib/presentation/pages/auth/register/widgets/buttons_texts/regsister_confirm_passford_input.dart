@@ -9,6 +9,6 @@ class RegisterConfirmPassword extends StatelessWidget {
   Widget build(BuildContext context) {
     return const GlobalInput(
         hintText: AppStrings.newPassword,
-        suffixIcon: const Icon(Icons.remove_red_eye_outlined));
+        suffixIcon:  Icon(Icons.remove_red_eye_outlined));
   }
 }

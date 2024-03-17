@@ -1,14 +1,17 @@
-
-
-import 'package:chaplean/presentation/pages/profile/profile_page.dart';
+import 'package:chaplean/presentation/pages/search/search_page.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'app/app_theme.dart';
-import 'presentation/pages/liked/liked_music_page.dart';
-import 'utils/constants/app_colors.dart';
 
 void main() {
+  SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
+    statusBarColor: Colors.transparent,
+    statusBarIconBrightness: Brightness.light,
+    statusBarBrightness: Brightness.dark,
+  ));
+
   runApp(
     ScreenUtilInit(
       designSize: const Size(390, 844),
@@ -25,14 +28,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: UITheme.appTheme,
-      home: Scaffold(
-        appBar: PreferredSize(
-          preferredSize: const Size.fromHeight(12.0),
-          child: AppBar(
-            backgroundColor: AppColors.primaryColor,
-          ),
-        ),
-        body: const LikedMusicPage(),
+      home: const Scaffold(
+        body: SearchPage(),
       ),
     );
   }

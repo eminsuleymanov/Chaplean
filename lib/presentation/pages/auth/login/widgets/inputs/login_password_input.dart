@@ -7,7 +7,7 @@ class LoginPasswordInput extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GlobalInput(
+    return const GlobalInput(
         hintText: AppStrings.enterPassword,
         suffixIcon: Icon(Icons.remove_red_eye_sharp));
   }

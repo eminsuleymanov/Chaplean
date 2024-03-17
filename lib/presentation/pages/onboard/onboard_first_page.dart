@@ -19,7 +19,7 @@ class OnboardFirstPage extends StatelessWidget {
           Center(
             child: Center(child: AppLogoText()),
           ),
-          // Spacer(),  // Bu satırı veya içinde Expanded veya Flexible olan bir widget'ı kaldır
+          // Spacer(),
           OnboardDescription(),
         ],
       ),

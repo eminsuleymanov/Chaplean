@@ -1,7 +1,8 @@
-import 'package:chaplean/presentation/pages/onboard/onboard_second_page.dart';
+import '../../onboard/onboard_second_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import '../../../../core/routes/generator.dart';
 import '../../../widgets/custom_back_button.dart';
 import '../login/widgets/inputs/auth_view.dart';
 import 'widgets/buttons_texts/privacy_policy_text.dart';
@@ -25,7 +26,7 @@ class _RegisterPageState extends State<RegisterPage> {
   Widget build(BuildContext context) {
     return Scaffold(
         body: AuthView(children: [
-      const CustomBackButton(page: OnboardSecondPage(),),
+      CustomBackButton(onPressed: () => Navigate.replace(context, const OnboardSecondPage()),),
       20.verticalSpace,
       const RegisterTitleText(),
       34.verticalSpace,

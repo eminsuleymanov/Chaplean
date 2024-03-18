@@ -1,5 +1,5 @@
-import 'package:chaplean/data/models/feed_model.dart';
-import 'package:chaplean/utils/constants/app_text_styles.dart';
+import '../../../../../data/models/feed_model.dart';
+import '../../../../../utils/constants/app_text_styles.dart';
 import 'package:flutter/material.dart';
 
 class MusicName extends StatelessWidget {

@@ -1,4 +1,4 @@
-import 'package:chaplean/utils/constants/assets_paths.dart';
+import '../../utils/constants/assets_paths.dart';
 
 class PlaylistModel {
   String image;

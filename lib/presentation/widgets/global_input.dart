@@ -57,7 +57,7 @@ class GlobalInput extends StatelessWidget {
           borderRadius: BorderRadius.circular(8.0),
         ),
         suffixIcon: suffixIcon,
-        prefixIcon: prefixIcon
+        prefixIcon: prefixIcon,
       ),
     );
   }

@@ -1,6 +1,7 @@
+import 'package:flutter/material.dart';
+
 import '../../../../../utils/constants/app_colors.dart';
 import '../../../../../utils/constants/app_text_styles.dart';
-import 'package:flutter/material.dart';
 
 class HashtagTextsBox extends StatelessWidget {
   const HashtagTextsBox({super.key, required this.text});

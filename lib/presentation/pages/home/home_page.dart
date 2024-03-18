@@ -1,7 +1,7 @@
-import 'package:chaplean/data/models/feed_model.dart';
-import 'package:chaplean/presentation/pages/home/widgets/home_appbar.dart';
-import 'package:chaplean/presentation/pages/home/widgets/home_page_details/home_music_layout.dart';
-import 'package:chaplean/presentation/widgets/custom_nav_bar.dart';
+import '../../../data/models/feed_model.dart';
+import 'widgets/home_appbar.dart';
+import 'widgets/home_page_details/home_music_layout.dart';
+import '../../widgets/custom_nav_bar.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {

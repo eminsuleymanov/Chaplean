@@ -1,10 +1,11 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import '../../widgets/app_logo_text.dart';
+import '../../widgets/login_button.dart';
 import 'widgets/chaplean_picture.dart';
 import 'widgets/onboard_view.dart';
 import 'widgets/register_royalty_button.dart';
-import '../../widgets/app_logo_text.dart';
-import '../../widgets/login_button.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class OnboardSecondPage extends StatelessWidget {
   const OnboardSecondPage({super.key});

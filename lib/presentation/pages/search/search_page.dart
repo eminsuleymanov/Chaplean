@@ -1,6 +1,8 @@
-import 'package:chaplean/presentation/pages/home/home_page.dart';
-import 'package:chaplean/presentation/widgets/global_input.dart';
-import 'package:chaplean/utils/constants/app_strings.dart';
+import '../../../core/routes/generator.dart';
+
+import '../home/home_page.dart';
+import '../../widgets/global_input.dart';
+import '../../../utils/constants/app_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -26,17 +28,20 @@ class SearchPage extends StatelessWidget {
               padding: AppPaddings.all12,
               child: Row(
                 children: [
-                  const CustomBackButton(
-                    page: HomePage(),
+                  CustomBackButton(
+                    onPressed: () => Navigate.back(
+                      context,
+                      const HomePage(),
+                    ),
                   ),
                   10.horizontalSpace,
                   const SizedBox(
-                    width: 310,
-                    height: 40,
+                      width: 310,
+                      height: 40,
                       child: GlobalInput(
-                       prefixIcon: Icon(Icons.search_rounded), 
-                    hintText: AppStrings.search,
-                  ))
+                        prefixIcon: Icon(Icons.search_rounded),
+                        hintText: AppStrings.search,
+                      ))
                 ],
               ),
             ),

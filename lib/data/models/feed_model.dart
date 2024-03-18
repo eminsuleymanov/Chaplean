@@ -1,5 +1,5 @@
-import 'package:chaplean/utils/constants/app_strings.dart';
-import 'package:chaplean/utils/constants/assets_paths.dart';
+import '../../utils/constants/app_strings.dart';
+import '../../utils/constants/assets_paths.dart';
 
 class FeedModel {
   final String id;

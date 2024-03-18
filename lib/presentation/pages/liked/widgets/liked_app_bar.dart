@@ -1,4 +1,5 @@
-import 'package:chaplean/presentation/pages/home/home_page.dart';
+import '../../../../core/routes/generator.dart';
+import '../../home/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -25,8 +26,8 @@ class LikedAppBar extends StatelessWidget implements PreferredSizeWidget {
             padding: AppPaddings.all12,
             child: Row(
               children: [
-                const CustomBackButton(
-                  page: HomePage(),
+                CustomBackButton(
+                  onPressed: () => Navigate.replace(context, const HomePage()),
                 ),
                 128.horizontalSpace,
                 const Text(

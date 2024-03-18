@@ -1,6 +1,6 @@
-import 'package:chaplean/presentation/widgets/global_input.dart';
-import 'package:chaplean/utils/constants/app_colors.dart';
-import 'package:chaplean/utils/constants/app_strings.dart';
+import '../../../../widgets/global_input.dart';
+import '../../../../../utils/constants/app_colors.dart';
+import '../../../../../utils/constants/app_strings.dart';
 import 'package:flutter/material.dart';
 
 class ShareBottomSheet extends StatelessWidget {

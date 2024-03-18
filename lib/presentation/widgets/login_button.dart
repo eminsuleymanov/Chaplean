@@ -1,10 +1,10 @@
-import '../pages/auth/login/login_page.dart';
+import 'package:flutter/material.dart';
 
 import '../../core/routes/generator.dart';
-import 'global_button.dart';
 import '../../utils/constants/app_strings.dart';
 import '../../utils/constants/app_text_styles.dart';
-import 'package:flutter/material.dart';
+import '../pages/auth/login/login_page.dart';
+import 'global_button.dart';
 
 class LoginButton extends StatelessWidget {
   const LoginButton({super.key});

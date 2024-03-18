@@ -14,4 +14,10 @@ class AppBorders {
     static get all8 {
     return const BorderRadius.all(Radius.circular(12));
   }
+
+
+ static get c12 {
+    return  BorderRadius.circular(12);
+  }
+
 }

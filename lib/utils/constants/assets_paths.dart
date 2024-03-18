@@ -35,6 +35,9 @@ class AssetsPaths {
 
   static const String disc = 'assets/images/png/disc.png';
 
+  static const String xIcon = 'assets/images/svg/x-icon.svg';
+
+
   //app png paths
   static const String musicImage_1 = 'assets/images/png/music_image_1.png';
   static const String musicImage_2 = 'assets/images/png/music_image_2.png';

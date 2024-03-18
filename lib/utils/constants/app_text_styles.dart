@@ -15,6 +15,8 @@ class AppTextStyles {
       etheralWhite.copyWith(fontSize: 12.sp, fontWeight: FontWeight.w400);
   static var etheralWhite25 = etheralWhite.copyWith(
       fontSize: 25.sp, fontWeight: FontWeight.w700, letterSpacing: -1);
+       static var etheralWhite8 =
+      etheralWhite.copyWith(fontSize: 8.sp, fontWeight: FontWeight.w600);
 
 //primary
   static var primaryColor = const TextStyle(

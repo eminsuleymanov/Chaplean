@@ -1,3 +1,4 @@
+import 'package:chaplean/presentation/pages/home/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -6,7 +7,6 @@ import '../../../../utils/constants/app_paddings.dart';
 import '../../../../utils/constants/app_strings.dart';
 import '../../../widgets/custom_back_button.dart';
 import '../../../widgets/global_divider.dart';
-import '../../home/home-page.dart';
 import 'custom_tab.dart';
 
 class LikedAppBar extends StatelessWidget implements PreferredSizeWidget {

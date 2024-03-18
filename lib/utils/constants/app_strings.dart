@@ -77,8 +77,10 @@ class AppStrings {
   static const String followers = 'Followers';
   static const String following = 'Following';
 
-  //Library Page
+  //Search Page
   static const String search = "search";
+  static const String recents = "Recents";
+
 
   //Liked Content Music Page
   static const String liked = 'Liked';

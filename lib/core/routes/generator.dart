@@ -18,5 +18,5 @@ class Navigate {
         ),
       );
   static void back(BuildContext context, Widget page) =>
-      Navigator.of(context).popUntil((route) => route.isFirst);
+      Navigator.of(context).pop();
 }

@@ -1,7 +1,7 @@
 class AppStrings {
   // App Name
   static const String appName = 'Chaplean';
-  static const String acdca = 'egveswg';
+ 
 
 
   // Landing Page
@@ -61,6 +61,12 @@ class AppStrings {
   static const String chat = 'Chat';
 
   //Home Page
+   static const String downlandMp4 = 'MP4 downland';
+      static const String commentText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.';
+
+
+
+
 
   //Notification Page
   static const String notifications = 'Notification';

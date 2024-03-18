@@ -1,25 +1,18 @@
+import 'package:chaplean/presentation/widgets/global_input.dart';
+import 'package:chaplean/utils/constants/app_colors.dart';
+import 'package:chaplean/utils/constants/app_strings.dart';
 import 'package:flutter/material.dart';
 
 class ShareBottomSheet extends StatelessWidget {
+  const ShareBottomSheet({super.key});
 
-  const ShareBottomSheet({ super.key });
+  @override
+  Widget build(BuildContext context) {
+    return Container( color: AppColors.primaryColor,
+        child: const Column(),
 
-   @override
-   Widget build(BuildContext context) {
-       return
-     Column(
-       mainAxisSize: MainAxisSize.min,
-       children: <Widget>[
-         ListTile(
-           leading: const Icon(Icons.share),
-           title: const Text('Paylaş'),
-           onTap: () {
-             // Paylaşma işlemi
-             Navigator.pop(context); // Bottom sheet'i kapat
-           },
-         ),
-       ],
-     );
-      }
+
+    );
+
   }
- 
+}

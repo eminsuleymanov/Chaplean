@@ -1,3 +1,4 @@
+
 import '../../../../../utils/constants/app_colors.dart';
 import 'package:flutter/material.dart';
 
@@ -7,7 +8,8 @@ class MusicSlader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: double.infinity,
+      width:double.infinity,
+
       child: Slider(
         value: 0.5,
         onChanged: (double value) {},

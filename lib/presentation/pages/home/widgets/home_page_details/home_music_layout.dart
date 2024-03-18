@@ -38,7 +38,7 @@ class HomeMusicLayout extends StatelessWidget {
             ),
             Expanded(
               child: SizedBox(
-                height: MediaQuery.of(context).size.height / 2.6,
+                height: MediaQuery.of(context).size.height / 2.9,
                 child: const HomeSideBar(),
               ),
             ),

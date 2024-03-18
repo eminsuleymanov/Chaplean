@@ -1,6 +1,6 @@
-import 'package:chaplean/presentation/pages/liked/views/music_list_view.dart';
-import 'package:chaplean/presentation/pages/liked/views/playlist_list_view.dart';
-import 'package:chaplean/presentation/pages/liked/views/podcast_list_view.dart';
+import '../views/music_list_view.dart';
+import '../views/playlist_list_view.dart';
+import '../views/podcast_list_view.dart';
 import 'package:flutter/material.dart';
 
 class LikedTabBar extends StatelessWidget {

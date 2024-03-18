@@ -1,4 +1,4 @@
-import 'package:chaplean/data/models/feed_model.dart';
+import '../../../../../data/models/feed_model.dart';
 
 import 'hastags_text_boxes.dart';
 import 'music_names.dart';

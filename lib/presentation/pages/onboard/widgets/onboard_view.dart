@@ -1,5 +1,6 @@
-import '../../../../utils/constants/app_paddings.dart';
 import 'package:flutter/material.dart';
+
+import '../../../../utils/constants/app_paddings.dart';
 class OnboardView extends StatelessWidget {
   const OnboardView({Key? key, required this.children}) : super(key: key);
   final List<Widget> children;

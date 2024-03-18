@@ -1,7 +1,7 @@
-import 'package:chaplean/data/models/feed_model.dart';
-import 'package:chaplean/presentation/pages/home/widgets/home_side/home_side_bar.dart';
-import 'package:chaplean/presentation/pages/home/widgets/music_details/music_detail_items.dart';
-import 'package:chaplean/presentation/pages/home/widgets/music_svg.dart';
+import '../../../../../data/models/feed_model.dart';
+import '../home_side/home_side_bar.dart';
+import '../music_details/music_detail_items.dart';
+import '../music_svg.dart';
 import 'package:flutter/material.dart';
 
 class HomeMusicLayout extends StatelessWidget {

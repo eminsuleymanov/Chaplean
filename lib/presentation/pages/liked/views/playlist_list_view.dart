@@ -1,6 +1,6 @@
-import 'package:chaplean/data/models/playlist_model.dart';
-import 'package:chaplean/presentation/pages/liked/widgets/custom_list_tile.dart';
-import 'package:chaplean/utils/constants/app_paddings.dart';
+import '../../../../data/models/playlist_model.dart';
+import '../widgets/custom_list_tile.dart';
+import '../../../../utils/constants/app_paddings.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

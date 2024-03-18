@@ -4,8 +4,8 @@ import 'package:svg_flutter/svg.dart';
 
 import '../../../../utils/constants/app_colors.dart';
 import '../../../../utils/constants/assets_paths.dart';
-import 'package:chaplean/core/routes/generator.dart';
-import 'package:chaplean/presentation/pages/search/search_page.dart';
+import '../../../../core/routes/generator.dart';
+import '../../search/search_page.dart';
 
 class HomeAppbar extends StatelessWidget implements PreferredSizeWidget {
   const HomeAppbar({Key? key}) : super(key: key);

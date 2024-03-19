@@ -1,8 +1,6 @@
 class AppStrings {
   // App Name
   static const String appName = 'Chaplean';
- 
-
 
   // Landing Page
   static const String login = 'Login';
@@ -61,12 +59,9 @@ class AppStrings {
   static const String chat = 'Chat';
 
   //Home Page
-   static const String downlandMp4 = 'MP4 downland';
-      static const String commentText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.';
-
-
-
-
+  static const String downlandMp4 = 'MP4 downland';
+  static const String commentText =
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit.';
 
   //Notification Page
   static const String notifications = 'Notification';
@@ -87,10 +82,11 @@ class AppStrings {
   static const String search = "search";
   static const String recents = "Recents";
 
-
   //Liked Content Music Page
   static const String liked = 'Liked';
   static const String music = 'Music';
   static const String playlist = 'Playlist';
   static const String podcast = 'Podcast';
+  //profile page text
+  static const String edit = 'Edit';
 }

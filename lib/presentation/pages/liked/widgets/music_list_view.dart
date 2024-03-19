@@ -1,7 +1,7 @@
-import '../../../data/models/music_model.dart';
-import 'widgets/custom_list_tile.dart';
+import '../../../../data/models/music_model.dart';
+import 'custom_list_tile.dart';
 
-import '../../../utils/constants/app_paddings.dart';
+import '../../../../utils/constants/app_paddings.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

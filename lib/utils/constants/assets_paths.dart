@@ -23,6 +23,7 @@ class AssetsPaths {
   static const String libraryIcon = 'assets/images/svg/library-icon.svg';
   static const String chatIcon = 'assets/images/svg/chat-icon.svg';
   static const String profileIcon = 'assets/images/svg/profile-icon.svg';
+  static const String profileIcon_2 = 'assets/images/svg/profile_icon_2.svg';
   static const String notificationIcon =
       'assets/images/svg/notification-icon.svg';
   static const String musicListIcon = 'assets/images/svg/music-list-icon.svg';

@@ -1,117 +1,126 @@
-import '../../widgets/global_divider.dart';
-import '../../../utils/constants/app_text_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:sliver_tools/sliver_tools.dart';
 import 'package:svg_flutter/svg.dart';
 
 import '../../../utils/constants/app_colors.dart';
-import '../../../utils/constants/app_paddings.dart';
 import '../../../utils/constants/assets_paths.dart';
+import '../../widgets/custom_nav_bar.dart';
+import '../../widgets/global_divider.dart';
+import '../liked/views/music_list_view.dart';
+import 'profile_app_bar.dart';
+import 'profile_list_tile.dart';
 
-class ProfilePage extends StatelessWidget {
+class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});
+
+  @override
+  State<ProfilePage> createState() {
+    return _ProfilePageState();
+  }
+}
+
+class _ProfilePageState extends State<ProfilePage>
+    with TickerProviderStateMixin {
+  late TabController tabController;
+  int activeTabIndex = 0;
+
+  @override
+  void initState() {
+    super.initState();
+    tabController = TabController(vsync: this, length: 2);
+    tabController.addListener(() {
+      setState(() {
+        activeTabIndex = tabController.index;
+      });
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        backgroundColor: AppColors.primaryColor,
-        leading: Padding(
-          padding: AppPaddings.l12,
-          child: Center(
-            child: Container(
-              width: 40.r,
-              height: 40.r,
-              decoration: BoxDecoration(
-                color: AppColors.secondaryBlue,
-                borderRadius: BorderRadius.circular(12.sp),
-              ),
-              child: IconButton(
-                icon: SvgPicture.asset(
-                  AssetsPaths.like,
-                  height: 16.h,
-                  width: 17.79.w,
+      backgroundColor: AppColors.greyScaleBlack,
+      appBar: const ProfileAppBar(),
+      body: CustomScrollView(
+        slivers: [
+          SliverAppBar(
+            pinned: false,
+            floating: false,
+            expandedHeight: 120.h,
+            flexibleSpace: const FlexibleSpaceBar(
+              centerTitle: true,
+              background: ColoredBox(
+                color: AppColors.primaryColor,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    ProfileListTile(),
+                    GlobalDivider(),
+                  ],
                 ),
-                onPressed: () {},
               ),
             ),
           ),
-        ),
-        title: Center(
-          child: Text(
-            'emildost',
-            style: TextStyle(
-              fontSize: 13.sp,
-              fontWeight: FontWeight.w600,
-              color: AppColors.white,
-            ),
-          ),
-        ),
-        actions: [
-          Padding(
-            padding: AppPaddings.r20,
-            child: Container(
-              width: 40.r,
-              height: 40.r,
-              decoration: BoxDecoration(
-                color: AppColors.secondaryBlue,
-                borderRadius: BorderRadius.circular(12.sp),
-              ),
-              child: IconButton(
-                icon: SvgPicture.asset(
-                  AssetsPaths.settings_2,
-                  height: 24.h,
-                  width: 24.w,
-                ),
-                onPressed: () {},
+          SliverPinnedHeader(
+            child: ColoredBox(
+              color: AppColors.primaryColor,
+              child: TabBar(
+                indicatorSize: TabBarIndicatorSize.tab,
+                controller: tabController,
+                tabs: [
+                  SizedBox(
+                    height: 48.h,
+                    child: SvgPicture.asset(AssetsPaths.musicListIcon),
+                  ),
+                  SizedBox(
+                    height: 48.h,
+                    child: SvgPicture.asset(AssetsPaths.profileIcon_2),
+                  ),
+                ],
               ),
             ),
           ),
+          SliverList(
+              delegate: SliverChildBuilderDelegate(
+            childCount: 20,
+            (context, index) {
+              return const MusicListView();
+            },
+          )),
         ],
       ),
-      body: Column(children: [
-        const GlobalDivider(),
-        ListTile(
-          horizontalTitleGap: 12.w,
-          leading: Image.asset(
-            filterQuality: FilterQuality.high,
-            AssetsPaths.defaultProfileImage,
-            width: 96.r,
-            height: 96.r,
-            fit: BoxFit.contain,
-          ),
-          title: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                'Emil Dostaliyev',
-                style: AppTextStyles.etheralWhite16,
-              ),
-              8.verticalSpace,
-              Text(
-                'No way back',
-                style: AppTextStyles.etheralWhite12,
-              ),
-            ],
-          ),
-          subtitle: Row(
-            children: [
-              40.verticalSpace,
-              Text(
-                '205 Followers',
-                style: AppTextStyles.smalStyle10,
-              ),
-              16.horizontalSpace,
-              Text(
-                '105 Folowing',
-                style: AppTextStyles.smalStyle10,
-              ),
-            ],
-          ),
-          trailing: const Icon(Icons.edit_square),
-        ),
-      ]),
+      bottomNavigationBar: const BottomNavBar(currentIndex: 0),
     );
   }
 }
+
+
+
+// TabBarView(controller: tabController,
+//             children: [
+//             CustomListTile(
+//                 image: AssetsPaths.musicImage_1,
+//                 title: 'title',
+//                 subtitle: 'subtitle'),
+//                 CustomListTile(
+//                 image: AssetsPaths.musicImage_1,
+//                 title: 'title',
+//                 subtitle: 'subtitle')
+//           ])
+
+
+
+
+// SliverList(
+//               delegate: SliverChildBuilderDelegate(
+//             childCount: 20,
+//             (context, index) {
+//               return TabBarView(viewportFraction: 2,
+//                 controller: tabController,
+//                 children: const [
+//                   MusicListView(),
+//                   PlaylistListView(),
+//                 ],
+//               );
+//             },
+//           )),

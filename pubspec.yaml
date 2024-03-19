@@ -16,6 +16,7 @@ dependencies:
   shared_preferences: ^2.2.2
   salomon_bottom_bar: ^3.3.2
   bottom_nav_bar: ^1.0.3
+  sliver_tools: ^0.2.12
 dev_dependencies:
   flutter_test:
     sdk: flutter

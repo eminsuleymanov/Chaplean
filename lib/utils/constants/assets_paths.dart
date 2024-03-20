@@ -37,6 +37,9 @@ class AssetsPaths {
   static const String disc = 'assets/images/png/disc.png';
 
   static const String xIcon = 'assets/images/svg/x-icon.svg';
+  static const String eyeVisibility = 'assets/images/svg/eye_visibility.svg';
+  static const String infoIcon = 'assets/images/svg/info_icon.svg';
+  static const String shareIcon_3 = 'assets/images/svg/share_icon_3.svg';
 
 
   //app png paths

@@ -15,7 +15,7 @@ class AppTextStyles {
       etheralWhite.copyWith(fontSize: 12.sp, fontWeight: FontWeight.w400);
   static var etheralWhite25 = etheralWhite.copyWith(
       fontSize: 25.sp, fontWeight: FontWeight.w700, letterSpacing: -1);
-       static var etheralWhite8 =
+  static var etheralWhite8 =
       etheralWhite.copyWith(fontSize: 8.sp, fontWeight: FontWeight.w600);
 
 //primary
@@ -48,4 +48,22 @@ class AppTextStyles {
       appBarTitle.copyWith(fontSize: 25.sp, fontWeight: FontWeight.w700);
   static var appBarTitle13 =
       appBarTitle.copyWith(fontSize: 13.sp, fontWeight: FontWeight.w500);
+
+  static TextStyle get whiteS16W400 {
+    return TextStyle(
+      color: AppColors.white,
+      fontSize: 16.sp,
+      fontWeight: FontWeight.w400,
+    );
+  }
+
+  static TextStyle get whiteBlueS16W600 {
+    return TextStyle(
+      color: AppColors.etherealWhite,
+      fontSize: 16.sp,
+      fontWeight: FontWeight.w600,
+    );
+  }
+
+  
 }

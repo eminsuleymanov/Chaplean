@@ -1,3 +1,4 @@
+import 'package:chaplean/presentation/pages/onboard/onboard_first_page.dart';
 import 'package:flutter/material.dart';
 
 import 'app/app_theme.dart';
@@ -11,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: UITheme.appTheme,
-      home: const ProfilePage(),
+      home: const OnboardFirstPage(),
     );
   }
 }

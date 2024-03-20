@@ -26,7 +26,7 @@ class _RegisterPageState extends State<RegisterPage> {
   Widget build(BuildContext context) {
     return Scaffold(
         body: AuthView(children: [
-      CustomBackButton(onPressed: () => Navigate.replace(context, const OnboardSecondPage()),),
+      CustomBackButton(onPressed: () => Navigate.replace(context, const OnboardSecondPage()), icon:const Icon(Icons.arrow_back),),
       20.verticalSpace,
       const RegisterTitleText(),
       34.verticalSpace,

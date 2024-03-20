@@ -62,6 +62,8 @@ class AppStrings {
   static const String downlandMp4 = 'MP4 downland';
   static const String commentText =
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit.';
+    static const String message = 'Message';
+
 
   //Notification Page
   static const String notifications = 'Notification';

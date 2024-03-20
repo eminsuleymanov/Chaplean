@@ -1,3 +1,5 @@
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
 import '../../../../../utils/constants/app_colors.dart';
 import '../../../../../utils/constants/assets_paths.dart';
 import 'package:flutter/material.dart';
@@ -28,7 +30,7 @@ class SaveBottomSheet extends StatelessWidget {
               borderRadius: BorderRadius.circular(50),
             ),
           ),
-          const SizedBox(height: 20),
+          20.verticalSpace,
           SizedBox(
             height: 300, 
             child: ListView.builder(

@@ -16,10 +16,8 @@ class OnboardFirstPage extends StatelessWidget {
     return const Scaffold(
       body: OnboardView(
         children: [
-          Center(
-            child: Center(child: AppLogoText()),
-          ),
-          // Spacer(),
+          Center(child: AppLogoText()),
+        //   Spacer(),
           OnboardDescription(),
         ],
       ),

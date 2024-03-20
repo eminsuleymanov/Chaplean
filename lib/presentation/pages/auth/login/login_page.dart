@@ -22,7 +22,7 @@ class LoginPage extends StatelessWidget {
     return Scaffold(
       body: AuthView(
         children: [
-          CustomBackButton(onPressed: () => Navigate.replace(context, const OnboardSecondPage()),),
+          CustomBackButton(onPressed: () => Navigate.replace(context, const OnboardSecondPage()), icon: Icon(Icons.arrow_back),),
           20.verticalSpace,
           const LoginTitleText(),
           120.verticalSpace,

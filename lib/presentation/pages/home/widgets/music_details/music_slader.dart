@@ -15,7 +15,7 @@ class MusicSlader extends StatelessWidget {
         onChanged: (double value) {},
         min: 0,
         max: 1,
-        activeColor: AppColors.karimunBlue,
+        activeColor: AppColors.karimunBlue,inactiveColor: AppColors.primaryColor,
       ),
     );
   }

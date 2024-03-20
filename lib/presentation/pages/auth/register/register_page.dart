@@ -26,7 +26,10 @@ class _RegisterPageState extends State<RegisterPage> {
   Widget build(BuildContext context) {
     return Scaffold(
         body: AuthView(children: [
-      CustomBackButton(onPressed: () => Navigate.replace(context, const OnboardSecondPage()), icon:const Icon(Icons.arrow_back),),
+      CustomBackButton(
+        onPressed: () => Navigate.replace(context, const OnboardSecondPage()),
+        icon: Icons.arrow_back,
+      ),
       20.verticalSpace,
       const RegisterTitleText(),
       34.verticalSpace,
@@ -43,7 +46,6 @@ class _RegisterPageState extends State<RegisterPage> {
       const RegisterButton(),
       8.verticalSpace,
       const RequestAccountText(),
-    
     ]));
   }
 }

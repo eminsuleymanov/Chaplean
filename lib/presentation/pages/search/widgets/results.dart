@@ -13,7 +13,7 @@ class Results extends StatelessWidget {
     return SizedBox(
       height: 120.h,
       child: ListView.separated(
-        // shrinkWrap: true,  
+        // shrinkWrap: true,
         itemCount: 3,
         separatorBuilder: (context, index) => const SizedBox(height: 5),
         itemBuilder: (context, index) {
@@ -26,9 +26,12 @@ class Results extends StatelessWidget {
                 style: AppTextStyles.etheralWhite16,
               ),
               IconButton(
-                  onPressed: () {}, icon: SvgPicture.asset(AssetsPaths.xIcon))
+                onPressed: () {},
+                icon: SvgPicture.asset(AssetsPaths.xIcon),
+              )
             ],
           );
+          return const SizedBox.shrink();
         },
       ),
     );

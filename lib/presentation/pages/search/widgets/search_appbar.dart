@@ -25,7 +25,8 @@ class SearchAppbar extends StatelessWidget implements PreferredSizeWidget {
             padding: AppPaddings.all12,
             child: Row(
               children: [
-                CustomBackButton(icon:const  Icon(Icons.arrow_back),
+                CustomBackButton(
+                  icon: Icons.arrow_back,
                   onPressed: () => Navigate.back(
                     Scaffold.of(context).context,
                     const HomePage(),

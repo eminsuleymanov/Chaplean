@@ -10,6 +10,7 @@ class OnboardDescription extends StatelessWidget {
     return Text(
       AppStrings.description,
       style: AppTextStyles.etheralWhite12,
+      textAlign: TextAlign.center,
     );
   }
 }

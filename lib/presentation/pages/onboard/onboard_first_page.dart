@@ -14,14 +14,16 @@ class OnboardFirstPage extends StatelessWidget {
       Navigate.to(context, const OnboardSecondPage());
     });
     return const Scaffold(
-      body: OnboardView(
-        children: [
-          Center(child: AppLogoText()),
-        //   Spacer(),
-          OnboardDescription(),
-        ],
+      body: Center(
+        child: OnboardView(
+          children: [
+            AppLogoText(),
+          ],
+        ),
+      ),
+      bottomNavigationBar: SafeArea(
+        child: OnboardDescription(),
       ),
     );
   }
 }
-

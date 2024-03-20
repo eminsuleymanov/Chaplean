@@ -6,8 +6,11 @@ import '../../utils/constants/app_strings.dart';
 import 'package:flutter/material.dart';
 
 class BottomNavBar extends StatelessWidget {
-  const BottomNavBar({Key? key, this.onSelect, required this.currentIndex})
-      : super(key: key);
+  const BottomNavBar({
+    Key? key,
+    this.onSelect,
+    required this.currentIndex,
+  }) : super(key: key);
 
   final Function(int)? onSelect;
   final int currentIndex;

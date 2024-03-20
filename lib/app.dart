@@ -1,4 +1,4 @@
-import 'package:chaplean/presentation/pages/home/home_page.dart';
+
 import 'package:chaplean/presentation/pages/onboard/onboard_first_page.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: UITheme.appTheme,
-      home: const OnboardFirstPage(),
+      home: const ProfilePage(),
     );
   }
 }

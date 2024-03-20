@@ -27,7 +27,7 @@ class LikedAppBar extends StatelessWidget implements PreferredSizeWidget {
             child: Row(
               children: [
                 CustomBackButton(
-                  onPressed: () => Navigate.replace(context, const HomePage()), icon:const Icon(Icons.arrow_back),
+                  onPressed: () => Navigate.replace(context, const HomePage()), icon:Icons.arrow_back,
                 ),
                 128.horizontalSpace,
                 const Text(

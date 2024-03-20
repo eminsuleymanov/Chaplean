@@ -10,7 +10,7 @@ class CustomBackButton extends StatelessWidget {
   }) : super(key: key);
 
   final void Function() onPressed;
-  final Widget icon;
+  final IconData icon;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -22,7 +22,7 @@ class CustomBackButton extends StatelessWidget {
       ),
       child: IconButton(
         padding: EdgeInsets.only(right: 2.sp, top: 2.sp),
-        icon: icon,
+        icon: Icon(icon,color: AppColors.doverGrey,),
         onPressed: () => onPressed,
       ),
     );

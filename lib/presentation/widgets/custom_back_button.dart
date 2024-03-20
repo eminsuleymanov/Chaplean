@@ -17,12 +17,12 @@ class CustomBackButton extends StatelessWidget {
       width: 40.r,
       height: 40.r,
       decoration: BoxDecoration(
-        color: AppColors.royalty,
+        color: AppColors.secondaryBlue,
         borderRadius: BorderRadius.circular(12.sp),
       ),
       child: IconButton(
         padding: EdgeInsets.only(right: 2.sp, top: 2.sp),
-        icon: Icon(icon,color: AppColors.doverGrey,),
+        icon: Icon(icon,color: AppColors.etherealWhite,),
         onPressed: () => onPressed,
       ),
     );

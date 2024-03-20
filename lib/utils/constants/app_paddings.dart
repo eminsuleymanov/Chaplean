@@ -4,6 +4,8 @@ class AppPaddings {
   const AppPaddings._();
 //all
   static const all4 = EdgeInsets.all(4);
+  static const all6 = EdgeInsets.all(6);
+  static const all8 = EdgeInsets.all(8);
   static const all10 = EdgeInsets.all(10);
   static const all12 = EdgeInsets.all(12);
   static const all16 = EdgeInsets.all(16);

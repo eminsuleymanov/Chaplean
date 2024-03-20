@@ -9,9 +9,43 @@ import '../../../widgets/custom_back_button.dart';
 import '../../../widgets/global_input.dart';
 import '../../home/home_page.dart';
 
-class SearchAppbar extends StatelessWidget implements PreferredSizeWidget {
-  const SearchAppbar({super.key});
+class SearchAppbar extends StatefulWidget implements PreferredSizeWidget {
+  const SearchAppbar({Key? key}) : super(key: key);
 
+  @override
+  _SearchAppbarState createState() => _SearchAppbarState();
+
+  @override
+  Size get preferredSize => const Size.fromHeight(80);
+}
+
+class _SearchAppbarState extends State<SearchAppbar> {
+  final TextEditingController _textEditingController = TextEditingController();
+  bool _showTabBarContent = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _textEditingController.addListener(_onTextChanged);
+  }
+
+  @override
+  void dispose() {
+    _textEditingController.dispose();
+    super.dispose();
+  }
+
+  void _onTextChanged() {
+    setState(() {
+      _showTabBarContent = _textEditingController.text.isNotEmpty;
+    });
+  }
+  void _onSubmitted(String value) {
+    setState(() {
+      _showTabBarContent = true; // Display tab bar content on submit
+    });
+  }
+  
   @override
   Widget build(BuildContext context) {
     return AppBar(
@@ -33,13 +67,16 @@ class SearchAppbar extends StatelessWidget implements PreferredSizeWidget {
                   ),
                 ),
                 10.horizontalSpace,
-                const SizedBox(
-                    width: 310,
-                    height: 40,
-                    child: GlobalInput(
-                      prefixIcon: Icon(Icons.search_rounded),
-                      hintText: AppStrings.search,
-                    ))
+                SizedBox(
+                  width: 310.w,
+                  height: 40.h,
+                  child: GlobalInput(
+                    controller: _textEditingController,
+                    prefixIcon: const Icon(Icons.search_rounded),
+                    hintText: AppStrings.search,
+                    onChanged: _onSubmitted,
+                  ),
+                ),
               ],
             ),
           ),
@@ -49,19 +86,6 @@ class SearchAppbar extends StatelessWidget implements PreferredSizeWidget {
           ),
         ],
       ),
-      // bottom: TabBar(
-      //   indicatorSize: TabBarIndicatorSize.tab,
-      //   controller: tabController,
-      //   tabs: const [
-      //     CustomTab.music(),
-      //     CustomTab.playlist(),
-      //     CustomTab.podcast(),
-      //   ],
-      //   onTap: (index) {},
-      // ),
     );
   }
-
-  @override
-  Size get preferredSize => const Size.fromHeight(80);
 }

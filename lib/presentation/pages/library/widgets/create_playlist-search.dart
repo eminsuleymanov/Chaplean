@@ -19,45 +19,30 @@ class SearchAppbar extends StatelessWidget implements PreferredSizeWidget {
       titleSpacing: 0,
       backgroundColor: AppColors.primaryColor,
       leadingWidth: 0,
-      title: Column(
+      title:const Column(
         children: [
           Padding(
             padding: AppPaddings.all12,
             child: Row(
               children: [
-                CustomBackButton(icon:const  Icon(Icons.arrow_back),
-                  onPressed: () => Navigate.back(
-                    Scaffold.of(context).context,
-                    const HomePage(),
-                  ),
-                ),
-                10.horizontalSpace,
-                const SizedBox(
+               SizedBox(
                     width: 310,
                     height: 40,
                     child: GlobalInput(
                       prefixIcon: Icon(Icons.search_rounded),
                       hintText: AppStrings.search,
-                    ))
+                    )),
+                    
               ],
             ),
           ),
-          const Divider(
+           Divider(
             thickness: 2,
             color: AppColors.secondaryBlue,
           ),
         ],
       ),
-      // bottom: TabBar(
-      //   indicatorSize: TabBarIndicatorSize.tab,
-      //   controller: tabController,
-      //   tabs: const [
-      //     CustomTab.music(),
-      //     CustomTab.playlist(),
-      //     CustomTab.podcast(),
-      //   ],
-      //   onTap: (index) {},
-      // ),
+      
     );
   }
 

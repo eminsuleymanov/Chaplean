@@ -1,17 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:svg_flutter/svg.dart';
 
 import '../../utils/constants/app_colors.dart';
-import '../../utils/constants/assets_paths.dart';
 
 class CustomBackButton extends StatelessWidget {
   const CustomBackButton({
     Key? key,
-    required this.onPressed,
+    required this.onPressed, required this.icon,
   }) : super(key: key);
 
   final void Function() onPressed;
+  final Widget icon;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -23,7 +22,7 @@ class CustomBackButton extends StatelessWidget {
       ),
       child: IconButton(
         padding: EdgeInsets.only(right: 2.sp, top: 2.sp),
-        icon: SvgPicture.asset(AssetsPaths.backArrow),
+        icon: icon,
         onPressed: () => onPressed,
       ),
     );

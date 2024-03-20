@@ -1,3 +1,7 @@
+import 'package:chaplean/presentation/pages/home/widgets/home_side/save_bottom_sheet.dart';
+import 'package:chaplean/utils/constants/assets_paths.dart';
+import 'package:svg_flutter/svg.dart';
+
 import '../../../../../data/models/feed_model.dart';
 
 import 'hastags_text_boxes.dart';
@@ -25,7 +29,22 @@ class MusicDetailItems extends StatelessWidget {
             8.verticalSpace,
             const MusicName(),
             4.verticalSpace,
-            const SingerName(),
+            Row(mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                const SingerName(),
+                
+               GestureDetector(
+                              onTap: () {
+                                showModalBottomSheet(
+                                  context: context,
+                                  builder: (builder) {
+                                    return const SaveBottomSheet();
+                                  },
+                                );
+                              },
+                              child: SvgPicture.asset(AssetsPaths.save))
+              ],
+            ),
             2.verticalSpace,
             const MusicSlader()
           ]),

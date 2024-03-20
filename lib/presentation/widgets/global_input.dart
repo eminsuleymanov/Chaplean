@@ -39,10 +39,9 @@ class GlobalInput extends StatelessWidget {
       maxLines: maxLine,
       style: AppTextStyles.etheralWhite16,
       decoration: InputDecoration(
-        contentPadding: AppPaddings.all4,
+        contentPadding: AppPaddings.all10,
         hintStyle: AppTextStyles.smalStyle16,
         fillColor: AppColors.secondaryBlue,
-        focusColor: AppColors.etherealWhite,
         filled: true,
         hintText: hintText,
         errorStyle: TextStyle(

@@ -11,7 +11,7 @@ class OnboardView extends StatelessWidget {
         child: Padding(
           padding: AppPaddings.all16,
           child: Column(
-            mainAxisSize: MainAxisSize.min, 
+          
             children: children,
           ),
         ),

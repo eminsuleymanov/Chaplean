@@ -1,53 +1,42 @@
 import 'package:chaplean/presentation/pages/home/widgets/home_side/bottom_sheet_box.dart';
+import 'package:chaplean/presentation/pages/home/widgets/home_side/comment_tile.dart';
+import 'package:chaplean/presentation/widgets/global_input.dart';
 import 'package:chaplean/utils/constants/app_colors.dart';
-import 'package:chaplean/utils/constants/app_strings.dart';
-import 'package:chaplean/utils/constants/app_text_styles.dart';
-import 'package:chaplean/utils/constants/assets_paths.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:svg_flutter/svg.dart';
+
+import '../../../../../utils/constants/app_strings.dart';
 
 class CommentBottomSheet extends StatelessWidget {
-  const CommentBottomSheet({super.key});
+  const CommentBottomSheet({
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
-    return BottomSheetBox(children: [
-      Row(
+    return SingleChildScrollView(
+      child: BottomSheetBox(
         children: [
-          Container(
-            width: 24.r,
-            height: 24.r,
-            decoration: BoxDecoration(
+          Expanded(
+            child: ListView.builder(
+              shrinkWrap: true,
+              itemCount: 6,
+              itemBuilder: (context, index) {
+                return const CommentTile(
+                  username: AppStrings.username,
+                  comment: AppStrings.commentText,
+                );
+              },
+            ),
+          ),
+          const GlobalInput(
+            hintText: AppStrings.message,
+            suffixIcon: Icon(
+              Icons.send,
               color: AppColors.etherealWhite,
-              borderRadius: BorderRadius.circular(4),
             ),
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(4),
-              child: Center(
-                child: SvgPicture.asset(
-                  AssetsPaths.profileIconFilled,
-                  height: 20.r,
-                  width: 20.r,
-                ),
-              ),
-            ),
-          ),
-          8.horizontalSpace,
-          Text(
-            AppStrings.username,
-            style: AppTextStyles.etheralWhite12,
-          ),
+          )
         ],
       ),
-      8.verticalSpace,
-      Text(
-        AppStrings.commentText,
-        style: AppTextStyles.smalStyle10,
-      ),
-
-      8.verticalSpace,
-     const Divider(color: AppColors.karimunBlue,)
-    ]);
+    );
   }
 }

@@ -39,7 +39,7 @@ class GlobalInput extends StatelessWidget {
       maxLines: maxLine,
       style: AppTextStyles.etheralWhite16,
       decoration: InputDecoration(
-        contentPadding: AppPaddings.all10,
+        contentPadding: AppPaddings.all6,
         hintStyle: AppTextStyles.smalStyle16,
         fillColor: AppColors.secondaryBlue,
         filled: true,
@@ -50,7 +50,9 @@ class GlobalInput extends StatelessWidget {
           fontWeight: FontWeight.w700,
         ),
         border: OutlineInputBorder(
+          borderSide: BorderSide.none,
           borderRadius: BorderRadius.circular(8.0),
+          
         ),
         disabledBorder: OutlineInputBorder(
             borderSide: const BorderSide(color: AppColors.secondaryBlue),
@@ -61,6 +63,7 @@ class GlobalInput extends StatelessWidget {
         ),
         suffixIcon: suffixIcon,
         prefixIcon: prefixIcon,
+        prefixIconColor: AppColors.etherealWhite
       ),
     );
   }

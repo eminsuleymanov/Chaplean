@@ -10,7 +10,7 @@ class GlobalDivider extends StatelessWidget {
     return Divider(
       thickness: 2.h,
       color: AppColors.secondaryBlue,
-      height: 1,
+      height: 1.h,
     );
   }
 }

@@ -1,3 +1,4 @@
+import '../../utils/constants/app_borders.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -39,7 +40,7 @@ class GlobalInput extends StatelessWidget {
       maxLines: maxLine,
       style: AppTextStyles.etheralWhite16,
       decoration: InputDecoration(
-        contentPadding: AppPaddings.all6,
+        contentPadding: AppPaddings.all10,
         hintStyle: AppTextStyles.smalStyle16,
         fillColor: AppColors.secondaryBlue,
         filled: true,
@@ -51,15 +52,15 @@ class GlobalInput extends StatelessWidget {
         ),
         border: OutlineInputBorder(
           borderSide: BorderSide.none,
-          borderRadius: BorderRadius.circular(8.0),
+          borderRadius: AppBorders.all8,
           
         ),
         disabledBorder: OutlineInputBorder(
             borderSide: const BorderSide(color: AppColors.secondaryBlue),
-            borderRadius: BorderRadius.circular(8.0)),
+            borderRadius:AppBorders.all8),
         focusedBorder: OutlineInputBorder(
           borderSide: const BorderSide(color: AppColors.karimunBlue),
-          borderRadius: BorderRadius.circular(8.0),
+          borderRadius:AppBorders.all8,
         ),
         suffixIcon: suffixIcon,
         prefixIcon: prefixIcon,

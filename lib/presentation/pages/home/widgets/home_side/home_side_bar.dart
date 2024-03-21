@@ -1,11 +1,6 @@
-import 'package:chaplean/presentation/pages/home/widgets/home_side/comment_bottom_sheet.dart';
-import 'package:chaplean/presentation/pages/home/widgets/home_side/grid_profil_item.dart';
-import 'package:chaplean/presentation/pages/home/widgets/home_side/pause_box.dart';
-import 'package:chaplean/presentation/pages/home/widgets/home_side/share_bottom_sheet.dart';
-import 'package:chaplean/presentation/widgets/global_input.dart';
-import 'package:chaplean/utils/constants/app_colors.dart';
-import 'package:chaplean/utils/constants/app_strings.dart';
-
+import 'comment_bottom_sheet.dart';
+import 'pause_box.dart';
+import 'share_bottom_sheet.dart';
 import 'home_side_item.dart';
 import '../../../../../utils/constants/app_paddings.dart';
 import '../../../../../utils/constants/assets_paths.dart';
@@ -55,7 +50,7 @@ class HomeSideBar extends StatelessWidget {
               child: SideBarItem(iconName: AssetsPaths.share, style: style),
             ),
             16.verticalSpace,
-            const PauseBox(
+            const IconBox(
               icon: Icons.pause,
             )
           ]),

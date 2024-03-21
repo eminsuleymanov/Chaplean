@@ -1,6 +1,7 @@
 
-import '../../../../../utils/constants/app_colors.dart';
 import 'package:flutter/material.dart';
+
+import '../../../../../utils/constants/app_colors.dart';
 
 class MusicSlader extends StatelessWidget {
   const MusicSlader({super.key});

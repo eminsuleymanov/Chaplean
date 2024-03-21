@@ -1,8 +1,8 @@
 
-import 'package:chaplean/utils/constants/app_colors.dart';
-import 'package:chaplean/utils/constants/app_paddings.dart';
-import 'package:chaplean/utils/constants/app_text_styles.dart';
-import 'package:chaplean/utils/constants/assets_paths.dart';
+import '../../../utils/constants/app_colors.dart';
+import '../../../utils/constants/app_paddings.dart';
+import '../../../utils/constants/app_text_styles.dart';
+import '../../../utils/constants/assets_paths.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:svg_flutter/svg.dart';

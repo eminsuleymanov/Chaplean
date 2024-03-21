@@ -1,4 +1,6 @@
 class AssetsPaths {
+
+  //svg 
   static const String chapleanLogo = 'assets/images/svg/login_logo.svg';
   static const String chapleanHat = 'assets/images/svg/main_logo.svg';
   static const String chapleantext = 'assets/images/svg/chaplean.svg';

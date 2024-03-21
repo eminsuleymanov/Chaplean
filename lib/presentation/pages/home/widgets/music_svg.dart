@@ -1,5 +1,6 @@
-import '../../../../utils/constants/assets_paths.dart';
 import 'package:flutter/material.dart';
+
+import '../../../../utils/constants/assets_paths.dart';
 
 class MusicSvg extends StatelessWidget {
   const MusicSvg({super.key});

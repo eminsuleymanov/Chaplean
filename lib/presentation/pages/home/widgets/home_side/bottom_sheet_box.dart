@@ -1,5 +1,7 @@
-import 'package:chaplean/utils/constants/app_colors.dart';
-import 'package:chaplean/utils/constants/app_paddings.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import '../../../../../utils/constants/app_colors.dart';
+import '../../../../../utils/constants/app_paddings.dart';
 import 'package:flutter/material.dart';
 
 class BottomSheetBox extends StatelessWidget {
@@ -10,7 +12,8 @@ class BottomSheetBox extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
         width: MediaQuery.of(context).size.width,
-        height: 450,padding:AppPaddings.all16,
+        height: 414.h,
+        padding:AppPaddings.all16,
         decoration: const BoxDecoration(
           color: AppColors.primaryColor,
           borderRadius: BorderRadius.only(

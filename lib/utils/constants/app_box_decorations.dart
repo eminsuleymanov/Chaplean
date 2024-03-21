@@ -1,5 +1,5 @@
-import 'package:chaplean/utils/constants/app_borders.dart';
-import 'package:chaplean/utils/constants/app_colors.dart';
+import 'app_borders.dart';
+import 'app_colors.dart';
 import 'package:flutter/material.dart';
 
 class AppBoxDecorations {

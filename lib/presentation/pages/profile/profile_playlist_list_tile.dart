@@ -1,4 +1,4 @@
-import 'package:chaplean/utils/constants/app_box_decorations.dart';
+import '../../../utils/constants/app_box_decorations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:svg_flutter/svg.dart';

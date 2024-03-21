@@ -1,5 +1,6 @@
-import '../../../../../../utils/constants/app_paddings.dart';
 import 'package:flutter/material.dart';
+
+import '../../../../../../utils/constants/app_paddings.dart';
 
 class AuthView extends StatelessWidget {
   const AuthView({super.key, required this.children});

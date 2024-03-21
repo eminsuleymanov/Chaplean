@@ -1,6 +1,8 @@
-import 'package:chaplean/utils/constants/app_colors.dart';
-import 'package:chaplean/utils/constants/app_strings.dart';
-import 'package:chaplean/utils/constants/app_text_styles.dart';
+import '../../../../../utils/constants/app_borders.dart';
+
+import '../../../../../utils/constants/app_colors.dart';
+import '../../../../../utils/constants/app_strings.dart';
+import '../../../../../utils/constants/app_text_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -10,15 +12,17 @@ class MusicDownlandBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 57,
-      width: 200,
+      height: 56.h,
+      width: 198.w,
       decoration: BoxDecoration(
         color: AppColors.royalty,
-        borderRadius: BorderRadius.circular(12),
+        borderRadius: AppBorders.c12,
       ),
-      child: Row(mainAxisAlignment: MainAxisAlignment.center,crossAxisAlignment: CrossAxisAlignment.center,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          const Icon(Icons.download, color: AppColors.etherealWhite, size: 30),
+           Icon(Icons.file_download_outlined, color: AppColors.etherealWhite, size: 24.sp),
           16.horizontalSpace,
           Text(
             AppStrings.downlandMp4,

@@ -14,6 +14,7 @@ class HomeAppbar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return AppBar(
       backgroundColor: AppColors.primaryColor,
+      automaticallyImplyLeading: false, 
       title: SvgPicture.asset(AssetsPaths.chapleantext, height: 24.h),
       actions: [
         IconButton(

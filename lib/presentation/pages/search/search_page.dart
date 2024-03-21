@@ -1,9 +1,8 @@
-import 'package:chaplean/presentation/pages/search/widgets/results.dart';
+import 'widgets/results.dart';
 import 'package:flutter/material.dart';
 
 import '../../../utils/constants/app_colors.dart';
 import '../../widgets/custom_nav_bar.dart';
-import 'widgets/recent_results.dart';
 import 'widgets/search_appbar.dart';
 import 'widgets/tabbar_content.dart';
 

@@ -1,12 +1,12 @@
-import 'package:chaplean/presentation/pages/home/widgets/home_side/bottom_sheet_box.dart';
-import 'package:chaplean/presentation/pages/home/widgets/home_side/copy_link_share_box.dart';
-import 'package:chaplean/presentation/pages/home/widgets/home_side/grid_profil_item.dart';
-import 'package:chaplean/presentation/pages/home/widgets/home_side/music_downland_box.dart';
-import 'package:chaplean/presentation/widgets/global_input.dart';
-import 'package:chaplean/utils/constants/app_colors.dart';
-import 'package:chaplean/utils/constants/app_strings.dart';
+import 'grid_profil_item.dart';
+import 'music_downland_box.dart';
+import '../../../../../utils/constants/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import '../../../../widgets/global_input.dart';
+import 'bottom_sheet_box.dart';
+import 'copy_link_share_box.dart';
 
 class ShareBottomSheet extends StatelessWidget {
   const ShareBottomSheet({Key? key}) : super(key: key);
@@ -15,11 +15,11 @@ class ShareBottomSheet extends StatelessWidget {
   Widget build(BuildContext context) {
     return BottomSheetBox(
       children: [
-        const Padding(
-          padding: EdgeInsets.all(16.0),
-          child: GlobalInput(
+        Padding(
+          padding: EdgeInsets.all(16.w),
+          child: const GlobalInput(
             prefixIcon: Icon(Icons.search_rounded),
-            hintText: AppStrings.search,
+            hintText: 'Search',
           ),
         ),
         Expanded(
@@ -38,12 +38,16 @@ class ShareBottomSheet extends StatelessWidget {
         const Divider(
           color: AppColors.royalty,
         ),
-        Row(
-          children: [
-            const CopyLinkShareBox(),
-            16.horizontalSpace,
-          const  MusicDownlandBox()
-          ],
+        SafeArea(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              const CopyLinkShareBox(),
+              SizedBox(width: 16.w),
+              const MusicDownlandBox(),
+            ],
+          ),
         ),
       ],
     );

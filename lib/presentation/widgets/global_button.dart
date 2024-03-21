@@ -1,3 +1,4 @@
+import '../../utils/constants/app_borders.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../utils/constants/app_colors.dart';
@@ -25,7 +26,7 @@ class GlobalButton extends StatelessWidget {
             alignment: Alignment.center,
             decoration: BoxDecoration(
               color: color ?? AppColors.karimunBlue,
-              borderRadius: BorderRadius.circular(8.sp),
+              borderRadius:AppBorders.all8,
             ),
             child: Center(
               child: isLoadings

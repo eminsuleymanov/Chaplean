@@ -1,5 +1,5 @@
-import 'package:chaplean/presentation/pages/profile/profile_playlist_list_tile.dart';
-import 'package:chaplean/utils/constants/app_paddings.dart';
+import 'profile_playlist_list_tile.dart';
+import '../../../utils/constants/app_paddings.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:sliver_tools/sliver_tools.dart';

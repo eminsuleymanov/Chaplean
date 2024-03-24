@@ -91,4 +91,8 @@ class AppStrings {
   static const String podcast = 'Podcast';
   //profile page text
   static const String edit = 'Edit';
+
+  //edit profile page texts
+  static const String editProfile = 'Edit Profile';
+
 }

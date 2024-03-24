@@ -1,17 +1,16 @@
-import 'profile_playlist_list_tile.dart';
-import '../../../utils/constants/app_paddings.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:sliver_tools/sliver_tools.dart';
 import 'package:svg_flutter/svg.dart';
 
 import '../../../utils/constants/app_colors.dart';
+import '../../../utils/constants/app_paddings.dart';
 import '../../../utils/constants/assets_paths.dart';
 import '../../widgets/custom_nav_bar.dart';
 import '../../widgets/global_divider.dart';
-import '../liked/views/music_list_view.dart';
 import 'profile_app_bar.dart';
 import 'profile_list_tile.dart';
+import 'profile_playlist_list_tile.dart';
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});
@@ -48,13 +47,14 @@ class _ProfilePageState extends State<ProfilePage>
           SliverAppBar(
             pinned: false,
             floating: false,
-            expandedHeight: 120.h,
+            expandedHeight: 128.h,
+            scrolledUnderElevation: 0,
             flexibleSpace: const FlexibleSpaceBar(
               centerTitle: true,
               background: ColoredBox(
                 color: AppColors.primaryColor,
                 child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     ProfileListTile(),
                     GlobalDivider(),
@@ -84,19 +84,36 @@ class _ProfilePageState extends State<ProfilePage>
           ),
           SliverList(
               delegate: SliverChildBuilderDelegate(
-            childCount: 20,
+            childCount: 10,
             (context, index) {
-              return Padding(
-                padding: AppPaddings.tlr24b16,
-                child: ListView.separated(
-                  shrinkWrap: true,
-                  itemCount: 1,
-                  scrollDirection: Axis.vertical,
-                  physics: const NeverScrollableScrollPhysics(),
-                  separatorBuilder: (context, index) => 16.verticalSpace,
-                  itemBuilder: (context, index) {
-                    return const ProfilePlaylistListTile();
-                  },
+              return SizedBox(
+                height: 92,
+                child: TabBarView(
+                  controller: tabController,
+                  children: [
+                    ListView.separated(
+                      padding: AppPaddings.tlr24b16,
+                      shrinkWrap: true,
+                      itemCount: 1,
+                      scrollDirection: Axis.vertical,
+                      physics: const NeverScrollableScrollPhysics(),
+                      separatorBuilder: (context, index) => 16.verticalSpace,
+                      itemBuilder: (context, index) {
+                        return const ProfilePlaylistListTile();
+                      },
+                    ),
+                    ListView.separated(
+                      padding: AppPaddings.tlr24b16,
+                      shrinkWrap: true,
+                      itemCount: 1,
+                      scrollDirection: Axis.vertical,
+                      physics: const NeverScrollableScrollPhysics(),
+                      separatorBuilder: (context, index) => 16.verticalSpace,
+                      itemBuilder: (context, index) {
+                        return const ProfilePlaylistListTile();
+                      },
+                    ),
+                  ],
                 ),
               );
             },
@@ -138,3 +155,17 @@ class _ProfilePageState extends State<ProfilePage>
 //               );
 //             },
 //           )),
+
+
+
+// ListView.separated(
+//                       padding: AppPaddings.tlr24b16,
+//                       shrinkWrap: true,
+//                       itemCount: 1,
+//                       scrollDirection: Axis.vertical,
+//                       physics: const NeverScrollableScrollPhysics(),
+//                       separatorBuilder: (context, index) => 16.verticalSpace,
+//                       itemBuilder: (context, index) {
+//                         return const ProfilePlaylistListTile();
+//                       },
+//                     ),

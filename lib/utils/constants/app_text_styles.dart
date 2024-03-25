@@ -64,4 +64,12 @@ class AppTextStyles {
       fontWeight: FontWeight.w600,
     );
   }
+
+   static TextStyle get grayScaleS13W500 {
+    return TextStyle(
+      color: AppColors.doverGrey,
+      fontSize: 13.sp,
+      fontWeight: FontWeight.w500,
+    );
+  }
 }

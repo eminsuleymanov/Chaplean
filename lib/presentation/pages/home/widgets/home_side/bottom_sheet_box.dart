@@ -1,8 +1,8 @@
+import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../../utils/constants/app_colors.dart';
 import '../../../../../utils/constants/app_paddings.dart';
-import 'package:flutter/material.dart';
 
 class BottomSheetBox extends StatelessWidget {
   const BottomSheetBox({super.key, required this.children});

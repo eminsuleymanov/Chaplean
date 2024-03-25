@@ -1,8 +1,9 @@
-import '../../../../data/models/music_model.dart';
-import '../widgets/custom_list_tile.dart';
-import '../../../../utils/constants/app_paddings.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import '../../../../data/models/music_model.dart';
+import '../../../../utils/constants/app_paddings.dart';
+import '../widgets/custom_list_tile.dart';
 
 class MusicListView extends StatelessWidget {
   const MusicListView({super.key});

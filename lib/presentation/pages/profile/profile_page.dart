@@ -1,17 +1,16 @@
-import 'profile_playlist_list_tile.dart';
-import '../../../utils/constants/app_paddings.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:sliver_tools/sliver_tools.dart';
 import 'package:svg_flutter/svg.dart';
 
 import '../../../utils/constants/app_colors.dart';
+import '../../../utils/constants/app_paddings.dart';
 import '../../../utils/constants/assets_paths.dart';
 import '../../widgets/custom_nav_bar.dart';
 import '../../widgets/global_divider.dart';
-import '../liked/views/music_list_view.dart';
 import 'profile_app_bar.dart';
 import 'profile_list_tile.dart';
+import 'profile_playlist_list_tile.dart';
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});

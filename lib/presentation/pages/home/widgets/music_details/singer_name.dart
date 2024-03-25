@@ -1,6 +1,7 @@
+import 'package:flutter/material.dart';
+
 import '../../../../../utils/constants/app_strings.dart';
 import '../../../../../utils/constants/app_text_styles.dart';
-import 'package:flutter/material.dart';
 
 class SingerName extends StatelessWidget {
   const SingerName({super.key});

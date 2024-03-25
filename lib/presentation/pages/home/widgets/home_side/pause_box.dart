@@ -1,7 +1,7 @@
+import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../../utils/constants/app_colors.dart';
-import 'package:flutter/material.dart';
 
 class IconBox extends StatelessWidget {
   const IconBox({super.key, this.color, this.icon});

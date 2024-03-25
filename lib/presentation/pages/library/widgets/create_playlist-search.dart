@@ -1,13 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../../../core/routes/generator.dart';
 import '../../../../utils/constants/app_colors.dart';
 import '../../../../utils/constants/app_paddings.dart';
 import '../../../../utils/constants/app_strings.dart';
-import '../../../widgets/custom_back_button.dart';
 import '../../../widgets/global_input.dart';
-import '../../home/home_page.dart';
 
 class SearchAppbar extends StatefulWidget implements PreferredSizeWidget {
   const SearchAppbar({Key? key}) : super(key: key);
@@ -42,7 +39,7 @@ class _SearchAppbarState extends State<SearchAppbar> {
   }
   void _onSubmitted(String value) {
     setState(() {
-      _showTabBarContent = true; // Display tab bar content on submit
+      _showTabBarContent = true; 
     });
   }
   
@@ -59,9 +56,7 @@ class _SearchAppbarState extends State<SearchAppbar> {
             padding: AppPaddings.tlr16b12,
             child: Row(
               children: [
-                
-                10.horizontalSpace,
-                SizedBox(
+                  SizedBox(
                   width: 310.w,
                   height: 40.h,
                   child: GlobalInput(

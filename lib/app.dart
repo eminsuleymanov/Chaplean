@@ -1,5 +1,5 @@
 
-import 'package:chaplean/presentation/pages/library/create_playlist_page.dart';
+import 'presentation/pages/library/create_playlist_page.dart';
 
 import 'presentation/pages/onboard/onboard_first_page.dart';
 

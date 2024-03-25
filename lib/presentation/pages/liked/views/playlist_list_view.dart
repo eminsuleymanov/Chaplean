@@ -3,7 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../data/models/playlist_model.dart';
 import '../../../../utils/constants/app_paddings.dart';
-import '../widgets/custom_list_tile.dart';
+import '../../../widgets/custom_list_tile.dart';
 
 class PlaylistListView extends StatelessWidget {
   const PlaylistListView({super.key});

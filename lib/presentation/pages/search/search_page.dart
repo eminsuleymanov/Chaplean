@@ -15,11 +15,12 @@ class SearchPage extends StatefulWidget {
 
 class _SearchPageState extends State<SearchPage> {
    bool _showRecentResults = true;
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.primaryColor,
-      appBar: const SearchAppbar(),
+appBar: const SearchAppbar(),
       body: 
       _showRecentResults ? const Results() : const TabbarContent() ,
       bottomNavigationBar: const BottomNavBar(currentIndex: 0),

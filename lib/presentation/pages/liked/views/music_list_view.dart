@@ -1,5 +1,8 @@
+import 'package:chaplean/utils/constants/assets_paths.dart';
+import 'package:svg_flutter/svg.dart';
+
 import '../../../../data/models/music_model.dart';
-import '../widgets/custom_list_tile.dart';
+import '../../../widgets/custom_list_tile.dart';
 import '../../../../utils/constants/app_paddings.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -19,6 +22,9 @@ class MusicListView extends StatelessWidget {
       itemBuilder: (context, index) {
         final musicList = musicListModel[index];
         return CustomListTile(
+          trailing: SvgPicture.asset(AssetsPaths.verticalDots),
+          hasTrailing: true,
+          hasUsername: true,
           image: musicList.image,
           title: musicList.title,
           subtitle: musicList.subtitle,

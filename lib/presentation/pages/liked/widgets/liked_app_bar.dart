@@ -8,7 +8,7 @@ import '../../../../utils/constants/app_paddings.dart';
 import '../../../../utils/constants/app_strings.dart';
 import '../../../widgets/custom_back_button.dart';
 import '../../../widgets/global_divider.dart';
-import 'custom_tab.dart';
+import '../../../widgets/custom_tab.dart';
 
 class LikedAppBar extends StatelessWidget implements PreferredSizeWidget {
   const LikedAppBar({super.key, this.controller});
@@ -52,7 +52,7 @@ class LikedAppBar extends StatelessWidget implements PreferredSizeWidget {
           CustomTab.playlist(),
           CustomTab.podcast(),
         ],
-        onTap: (index) {},
+   
       ),
     );
   }

@@ -1,4 +1,10 @@
+import '../../widgets/custom_nav_bar.dart';
+import '../../widgets/global_button.dart';
+import '../../widgets/global_input.dart';
+import '../../../utils/constants/app_text_styles.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:svg_flutter/svg.dart';
 
 import '../../../utils/constants/app_colors.dart';
 import '../../../utils/constants/app_paddings.dart';
@@ -13,14 +19,15 @@ class EditProfilePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppColors.greyScaleBlack,
       appBar: AppBar(
         titleSpacing: 0,
         centerTitle: true,
+        scrolledUnderElevation: 0,
         backgroundColor: AppColors.primaryColor,
         leading: Center(
-          child: CustomBackButton( 
+          child: CustomBackButton(
             onPressed: () {},
-            
             icon: Icons.arrow_back,
           ),
         ),
@@ -40,11 +47,65 @@ class EditProfilePage extends StatelessWidget {
           child: GlobalDivider(),
         ),
       ),
-      body: Column(
-        children: [
-          Image.asset(AssetsPaths.defaultProfileImage),
-        ],
+      body: Padding(
+        padding: AppPaddings.h24,
+        child: SingleChildScrollView(
+          physics: const BouncingScrollPhysics(),
+          child: Column(
+            children: [
+              23.verticalSpace,
+              Center(
+                child: Stack(
+                  children: [
+                    Image.asset(
+                      AssetsPaths.defaultProfileImage,
+                    ),
+                    Positioned(
+                      right: 0,
+                      child: SvgPicture.asset(
+                        AssetsPaths.editPencil,
+                      ),
+                    )
+                  ],
+                ),
+              ),
+              47.verticalSpace,
+              Text(
+                'Username',
+                style: AppTextStyles.grayScaleS13W500,
+              ),
+              8.verticalSpace,
+              const GlobalInput(
+                hintText: 'emildost',
+                maxLine: 1,
+              ),
+              12.verticalSpace,
+              Text(
+                'Name',
+                style: AppTextStyles.grayScaleS13W500,
+              ),
+              8.verticalSpace,
+              const GlobalInput(
+                hintText: 'Emil Dostaliyev',
+                maxLine: 1,
+              ),
+              12.verticalSpace,
+              Text(
+                'Bio',
+                style: AppTextStyles.grayScaleS13W500,
+              ),
+              8.verticalSpace,
+              const GlobalInput(
+                hintText: 'No way back.',
+                maxLine: 4,
+              ),
+              95.verticalSpace,
+              GlobalButton(onTap: () {}, title: 'Save')
+            ],
+          ),
+        ),
       ),
+      bottomNavigationBar: const BottomNavBar(currentIndex: 0),
     );
   }
 

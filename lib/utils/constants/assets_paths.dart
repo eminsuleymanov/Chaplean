@@ -42,6 +42,7 @@ class AssetsPaths {
   static const String eyeVisibility = 'assets/images/svg/eye_visibility.svg';
   static const String infoIcon = 'assets/images/svg/info_icon.svg';
   static const String shareIcon_3 = 'assets/images/svg/share_icon_3.svg';
+  static const String editPencil = 'assets/images/svg/edit_pencil.svg';
 
 
   //app png paths

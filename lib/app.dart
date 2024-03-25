@@ -1,6 +1,5 @@
 
 import 'package:chaplean/presentation/pages/edit_profile/edit_profile_page.dart';
-import 'package:chaplean/presentation/pages/profile/profile_page.dart';
 import 'package:flutter/material.dart';
 
 import 'app/app_theme.dart';

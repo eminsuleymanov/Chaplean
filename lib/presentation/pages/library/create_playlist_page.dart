@@ -1,4 +1,4 @@
-import 'package:chaplean/presentation/pages/library/widgets/create_playlist-search.dart';
+import 'package:chaplean/presentation/pages/search/widgets/search_appbar.dart';
 import 'package:flutter/material.dart';
 
 class CreatePlaylistPage extends StatelessWidget {
@@ -8,7 +8,7 @@ class CreatePlaylistPage extends StatelessWidget {
    @override
    Widget build(BuildContext context) {
        return Scaffold(
-           appBar:const SearchAppbar() ,
+           appBar: SearchAppbar(),
            body: Container(),
        );
   }

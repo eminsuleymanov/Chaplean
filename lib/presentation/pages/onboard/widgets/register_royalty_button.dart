@@ -1,9 +1,9 @@
-import '../../../widgets/global_button.dart';
-import '../../../../utils/constants/app_strings.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../utils/constants/app_colors.dart';
+import '../../../../utils/constants/app_strings.dart';
 import '../../../../utils/constants/app_text_styles.dart';
+import '../../../widgets/global_button.dart';
 
 class RegisterRoyaltyButton extends StatelessWidget {
   const RegisterRoyaltyButton({super.key});

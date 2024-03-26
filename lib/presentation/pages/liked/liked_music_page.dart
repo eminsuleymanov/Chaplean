@@ -36,7 +36,7 @@ class _LikedMusicPageState extends State<LikedMusicPage>
       body: LikedTabBar(
         controller: tabController,
       ),
-      bottomNavigationBar: const BottomNavBar(currentIndex: 0),
+      bottomNavigationBar: const BottomNavBar(),
     );
   }
 }

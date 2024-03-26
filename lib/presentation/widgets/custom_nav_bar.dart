@@ -1,31 +1,35 @@
+import '../pages/home/home_page.dart';
+import '../pages/library/create_playlist_page.dart';
+import '../pages/profile/profile_page.dart';
+import '../../utils/constants/app_colors.dart';
+
 import '../../utils/constants/assets_paths.dart';
 import 'package:svg_flutter/svg.dart';
 
-import '../../utils/constants/app_colors.dart';
 import '../../utils/constants/app_strings.dart';
 import 'package:flutter/material.dart';
 
-class BottomNavBar extends StatelessWidget {
+class BottomNavBar extends StatefulWidget {
   const BottomNavBar({
     Key? key,
-    this.onSelect,
-    required this.currentIndex,
   }) : super(key: key);
 
-  final Function(int)? onSelect;
-  final int currentIndex;
+  @override
+  State<BottomNavBar> createState() => _BottomNavBarState();
+}
+
+class _BottomNavBarState extends State<BottomNavBar> {
+  final List<Widget> views = [
+    HomePage(),
+    Container(),
+    ProfilePage(),
+    CreatePlaylistPage(),
+  ];
+  int seletedIndex = 0;
 
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
-      selectedItemColor: AppColors.white,
-      currentIndex: currentIndex,
-      onTap: onSelect,
-      backgroundColor: AppColors.primaryColor,
-      selectedIconTheme: const IconThemeData(
-        color: AppColors.etherealWhite,
-      ),
-      unselectedItemColor: Colors.grey,
       items: [
         BottomNavigationBarItem(
           icon: SvgPicture.asset(AssetsPaths.homeIcon),
@@ -48,6 +52,12 @@ class BottomNavBar extends StatelessWidget {
           label: AppStrings.chat,
         ),
       ],
+      currentIndex: seletedIndex,
+      selectedItemColor: AppColors.etherealWhite,
+      onTap: (i) {
+        seletedIndex = i;
+        setState(() {});
+      },
     );
   }
 }

@@ -1,10 +1,10 @@
-import '../../../login/login_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../../../utils/constants/app_colors.dart';
 import '../../../../../../utils/constants/app_strings.dart';
 import '../../../../../../utils/constants/app_text_styles.dart';
+import '../../../login/login_page.dart';
 
 class RequestAccountText extends StatelessWidget {
   const RequestAccountText({Key? key}) : super(key: key);

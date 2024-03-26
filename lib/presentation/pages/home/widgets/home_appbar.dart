@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:svg_flutter/svg.dart';
 
+import '../../../../core/routes/generator.dart';
 import '../../../../utils/constants/app_colors.dart';
 import '../../../../utils/constants/assets_paths.dart';
-import '../../../../core/routes/generator.dart';
 import '../../search/search_page.dart';
 
 class HomeAppbar extends StatelessWidget implements PreferredSizeWidget {

@@ -68,4 +68,8 @@ class AssetsPaths {
   static const String podcastImage_5 = 'assets/images/png/podcast_image_5.png';
   static const String defaultProfileImage =
       'assets/images/png/default_profile_image.png';
+
+  //library
+    static const String blueApple = 'assets/images/png/blue_apple.png';
+
 }

@@ -120,7 +120,7 @@ class _ProfilePageState extends State<ProfilePage>
           )),
         ],
       ),
-      bottomNavigationBar: const BottomNavBar(currentIndex: 0),
+      bottomNavigationBar: const BottomNavBar(),
     );
   }
 }

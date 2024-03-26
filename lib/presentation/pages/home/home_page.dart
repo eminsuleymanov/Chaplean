@@ -17,7 +17,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar:  const HomeAppbar(),
+      appBar: const HomeAppbar(),
       body: PageView.builder(
         onPageChanged: (int page) => {},
         scrollDirection: Axis.vertical,
@@ -27,13 +27,7 @@ class _HomePageState extends State<HomePage> {
           return HomeMusicLayout(musicdetail: musicdetail);
         },
       ),
-      bottomNavigationBar: BottomNavBar(
-        currentIndex: seletedIndex,
-        onSelect: (i) {
-          seletedIndex = i;
-          setState(() {});
-        },
-      ),
+      bottomNavigationBar:const BottomNavBar(),
     );
   }
 }

@@ -1,5 +1,7 @@
 
-import 'package:chaplean/presentation/pages/edit_profile/edit_profile_page.dart';
+import 'presentation/pages/home/home_page.dart';
+import 'presentation/pages/library/create_playlist_page.dart';
+import 'presentation/pages/search/search_page.dart';
 
 import 'package:flutter/material.dart';
 
@@ -13,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: UITheme.appTheme,
-      home: const SearchPage(),
+      home: const HomePage(),
     );
   }
 }

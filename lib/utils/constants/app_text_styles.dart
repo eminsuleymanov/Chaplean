@@ -65,11 +65,35 @@ class AppTextStyles {
     );
   }
 
-   static TextStyle get grayScaleS13W500 {
+  static TextStyle get grayScaleS13W500 {
     return TextStyle(
       color: AppColors.doverGrey,
       fontSize: 13.sp,
       fontWeight: FontWeight.w500,
+    );
+  }
+
+  static TextStyle get whiteS13W600 {
+    return TextStyle(
+      color: AppColors.white,
+      fontSize: 13.sp,
+      fontWeight: FontWeight.w600,
+    );
+  }
+
+  static TextStyle get whiteS13W500 {
+    return TextStyle(
+      color: AppColors.white,
+      fontSize: 13.sp,
+      fontWeight: FontWeight.w500,
+    );
+  }
+
+  static TextStyle get redS13W500 {
+    return const TextStyle(
+      fontSize: 13,
+      fontWeight: FontWeight.w500,
+      color: AppColors.red,
     );
   }
 }

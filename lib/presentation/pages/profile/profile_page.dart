@@ -84,7 +84,7 @@ class _ProfilePageState extends State<ProfilePage>
           ),
           SliverList(
               delegate: SliverChildBuilderDelegate(
-            childCount: 10,
+            childCount: 8,
             (context, index) {
               return SizedBox(
                 height: 92,
@@ -102,15 +102,20 @@ class _ProfilePageState extends State<ProfilePage>
                         return const ProfilePlaylistListTile();
                       },
                     ),
-                    ListView.separated(
-                      padding: AppPaddings.tlr24b16,
-                      shrinkWrap: true,
-                      itemCount: 1,
-                      scrollDirection: Axis.vertical,
+                    GridView.builder(
                       physics: const NeverScrollableScrollPhysics(),
-                      separatorBuilder: (context, index) => 16.verticalSpace,
+                      shrinkWrap: true,
+                      itemCount: 5,
+                      scrollDirection: Axis.vertical,
+                      gridDelegate:
+                          const SliverGridDelegateWithFixedCrossAxisCount(
+                        mainAxisExtent: 56,
+                        crossAxisCount: 3,
+                        crossAxisSpacing: 10,
+                        mainAxisSpacing: 10,
+                      ),
                       itemBuilder: (context, index) {
-                        return const ProfilePlaylistListTile();
+                        return Image.asset(AssetsPaths.defaultProfileImage);
                       },
                     ),
                   ],

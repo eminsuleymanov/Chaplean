@@ -23,8 +23,6 @@ class MusicListView extends StatelessWidget {
         final musicList = musicListModel[index];
         return CustomListTile(
           trailing: SvgPicture.asset(AssetsPaths.verticalDots),
-          hasTrailing: true,
-          hasUsername: true,
           image: musicList.image,
           title: musicList.title,
           subtitle: musicList.subtitle,

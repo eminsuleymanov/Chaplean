@@ -1,16 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../../../core/routes/generator.dart';
-import '../../../../utils/constants/app_colors.dart';
-import '../../../../utils/constants/app_paddings.dart';
-import '../../../../utils/constants/app_strings.dart';
-import '../../../widgets/custom_back_button.dart';
-import '../../../widgets/global_input.dart';
-import '../../home/home_page.dart';
+import '../../core/routes/generator.dart';
+import '../../utils/constants/app_colors.dart';
+import '../../utils/constants/app_paddings.dart';
+import '../../utils/constants/app_strings.dart';
+import '../pages/home/home_page.dart';
+import 'custom_back_button.dart';
+import 'global_input.dart';
 
 class SearchAppbar extends StatefulWidget implements PreferredSizeWidget {
-  const SearchAppbar({Key? key}) : super(key: key);
+  const SearchAppbar({Key? key, this.showCustomBackButton = false, this.showSecondContanier = false}) : super(key: key);
+
+  final bool showCustomBackButton;
+  final bool showSecondContanier;
 
   @override
   _SearchAppbarState createState() => _SearchAppbarState();
@@ -21,7 +24,7 @@ class SearchAppbar extends StatefulWidget implements PreferredSizeWidget {
 
 class _SearchAppbarState extends State<SearchAppbar> {
   final TextEditingController _textEditingController = TextEditingController();
-  bool _showTabBarContent = false;
+  bool showTabBarContent = false;
 
   @override
   void initState() {
@@ -37,15 +40,16 @@ class _SearchAppbarState extends State<SearchAppbar> {
 
   void _onTextChanged() {
     setState(() {
-      _showTabBarContent = _textEditingController.text.isNotEmpty;
+      showTabBarContent = _textEditingController.text.isNotEmpty;
     });
   }
+
   void _onSubmitted(String value) {
     setState(() {
-      _showTabBarContent = true; // Display tab bar content on submit
+      showTabBarContent = true;
     });
   }
-  
+
   @override
   Widget build(BuildContext context) {
     return AppBar(
@@ -56,16 +60,17 @@ class _SearchAppbarState extends State<SearchAppbar> {
       title: Column(
         children: [
           Padding(
-            padding: AppPaddings.all12,
+            padding: AppPaddings.all8,
             child: Row(
               children: [
-                CustomBackButton(
-                  icon: Icons.arrow_back,
-                  onPressed: () => Navigate.back(
-                    Scaffold.of(context).context,
-                    const HomePage(),
+                if (widget.showCustomBackButton == true)
+                  CustomBackButton(
+                    icon: Icons.arrow_back,
+                    onPressed: () => Navigate.back(
+                      Scaffold.of(context).context,
+                      const HomePage(),
+                    ),
                   ),
-                ),
                 10.horizontalSpace,
                 SizedBox(
                   width: 310.w,
@@ -77,6 +82,9 @@ class _SearchAppbarState extends State<SearchAppbar> {
                     onChanged: _onSubmitted,
                   ),
                 ),
+                8.horizontalSpace,
+                if (widget.showSecondContanier == true)
+                  CustomBackButton(onPressed: () {}, icon: Icons.add),
               ],
             ),
           ),

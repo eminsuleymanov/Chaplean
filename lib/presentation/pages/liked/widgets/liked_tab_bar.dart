@@ -1,7 +1,8 @@
+import 'package:flutter/material.dart';
+
 import '../views/music_list_view.dart';
 import '../views/playlist_list_view.dart';
 import '../views/podcast_list_view.dart';
-import 'package:flutter/material.dart';
 
 class LikedTabBar extends StatelessWidget {
   const LikedTabBar({super.key, this.controller});

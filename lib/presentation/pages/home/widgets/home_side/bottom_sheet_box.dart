@@ -1,8 +1,8 @@
+import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../../utils/constants/app_colors.dart';
 import '../../../../../utils/constants/app_paddings.dart';
-import 'package:flutter/material.dart';
 
 class BottomSheetBox extends StatelessWidget {
   const BottomSheetBox({super.key, required this.children});
@@ -13,7 +13,7 @@ class BottomSheetBox extends StatelessWidget {
     return Container(
         width: MediaQuery.of(context).size.width,
         height: 414.h,
-        padding:AppPaddings.all16,
+        padding: AppPaddings.all16,
         decoration: const BoxDecoration(
           color: AppColors.primaryColor,
           borderRadius: BorderRadius.only(
@@ -22,7 +22,8 @@ class BottomSheetBox extends StatelessWidget {
           ),
         ),
         child: Column(
-         mainAxisAlignment: MainAxisAlignment.start,crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: children,
         ));
   }

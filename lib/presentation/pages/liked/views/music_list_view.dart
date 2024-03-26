@@ -1,4 +1,4 @@
-import 'package:chaplean/utils/constants/assets_paths.dart';
+import '../../../../utils/constants/assets_paths.dart';
 import 'package:svg_flutter/svg.dart';
 
 import '../../../../data/models/music_model.dart';

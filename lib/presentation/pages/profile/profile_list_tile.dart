@@ -1,5 +1,5 @@
-import 'package:chaplean/core/routes/generator.dart';
-import 'package:chaplean/presentation/pages/edit_profile/edit_profile_page.dart';
+import '../../../core/routes/generator.dart';
+import '../edit_profile/edit_profile_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

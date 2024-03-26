@@ -1,11 +1,12 @@
-import 'comment_bottom_sheet.dart';
-import 'pause_box.dart';
-import 'share_bottom_sheet.dart';
-import 'home_side_item.dart';
-import '../../../../../utils/constants/app_paddings.dart';
-import '../../../../../utils/constants/assets_paths.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import '../../../../../utils/constants/app_paddings.dart';
+import '../../../../../utils/constants/assets_paths.dart';
+import 'comment_bottom_sheet.dart';
+import 'home_side_item.dart';
+import 'pause_box.dart';
+import 'share_bottom_sheet.dart';
 
 class HomeSideBar extends StatelessWidget {
   const HomeSideBar({

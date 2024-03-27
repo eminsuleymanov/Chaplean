@@ -1,7 +1,7 @@
-import 'package:chaplean/presentation/widgets/custom_back_button.dart';
-import 'package:chaplean/presentation/widgets/global_divider.dart';
-import 'package:chaplean/utils/constants/app_colors.dart';
-import 'package:chaplean/utils/constants/app_text_styles.dart';
+import 'custom_back_button.dart';
+import 'global_divider.dart';
+import '../../utils/constants/app_colors.dart';
+import '../../utils/constants/app_text_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

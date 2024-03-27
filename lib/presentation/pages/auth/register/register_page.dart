@@ -1,9 +1,9 @@
-import '../../onboard/onboard_second_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../core/routes/generator.dart';
 import '../../../widgets/custom_back_button.dart';
+import '../../onboard/onboard_second_page.dart';
 import '../login/widgets/inputs/auth_view.dart';
 import 'widgets/buttons_texts/privacy_policy_text.dart';
 import 'widgets/buttons_texts/register_button.dart';

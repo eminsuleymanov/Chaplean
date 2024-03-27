@@ -1,9 +1,9 @@
-import 'widgets/results.dart';
 import 'package:flutter/material.dart';
 
 import '../../../utils/constants/app_colors.dart';
 import '../../widgets/custom_nav_bar.dart';
 import '../../widgets/search_appbar.dart';
+import 'widgets/results.dart';
 import 'widgets/tabbar_content.dart';
 
 class SearchPage extends StatefulWidget {

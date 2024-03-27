@@ -11,14 +11,11 @@ import '../../widgets/global_divider.dart';
 import 'profile_app_bar.dart';
 import 'profile_list_tile.dart';
 import 'profile_playlist_list_tile.dart';
-
 class ProfilePage extends StatefulWidget {
-  const ProfilePage({super.key});
+  const ProfilePage({Key? key}) : super(key: key);
 
   @override
-  State<ProfilePage> createState() {
-    return _ProfilePageState();
-  }
+  _ProfilePageState createState() => _ProfilePageState();
 }
 
 class _ProfilePageState extends State<ProfilePage>
@@ -82,53 +79,46 @@ class _ProfilePageState extends State<ProfilePage>
               ),
             ),
           ),
-          SliverList(
-              delegate: SliverChildBuilderDelegate(
-            childCount: 8,
-            (context, index) {
-              return SizedBox(
-                height: 92,
-                child: TabBarView(
-                  controller: tabController,
-                  children: [
-                    ListView.separated(
-                      padding: AppPaddings.tlr24b16,
-                      shrinkWrap: true,
-                      itemCount: 1,
-                      scrollDirection: Axis.vertical,
-                      physics: const NeverScrollableScrollPhysics(),
-                      separatorBuilder: (context, index) => 16.verticalSpace,
-                      itemBuilder: (context, index) {
-                        return const ProfilePlaylistListTile();
-                      },
-                    ),
-                    GridView.builder(
-                      physics: const NeverScrollableScrollPhysics(),
-                      shrinkWrap: true,
-                      itemCount: 5,
-                      scrollDirection: Axis.vertical,
-                      gridDelegate:
-                          const SliverGridDelegateWithFixedCrossAxisCount(
-                        mainAxisExtent: 56,
-                        crossAxisCount: 3,
-                        crossAxisSpacing: 10,
-                        mainAxisSpacing: 10,
-                      ),
-                      itemBuilder: (context, index) {
-                        return Image.asset(AssetsPaths.defaultProfileImage);
-                      },
-                    ),
-                  ],
+          SliverFillRemaining(
+            child: TabBarView(
+              controller: tabController,
+              children: [
+                ListView.separated(
+                  padding: AppPaddings.tlr24b16,
+                  shrinkWrap: true,
+                  itemCount: 1,
+                  scrollDirection: Axis.vertical,
+                  physics: const NeverScrollableScrollPhysics(),
+                  separatorBuilder: (context, index) => 16.verticalSpace,
+                  itemBuilder: (context, index) {
+                    return const ProfilePlaylistListTile();
+                  },
                 ),
-              );
-            },
-          )),
+                GridView.builder(
+                  physics: const NeverScrollableScrollPhysics(),
+                  shrinkWrap: true,
+                  itemCount: 5,
+                  scrollDirection: Axis.vertical,
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                    mainAxisExtent: 56,
+                    crossAxisCount: 3,
+                    crossAxisSpacing: 10,
+                    mainAxisSpacing: 10,
+                  ),
+                  itemBuilder: (context, index) {
+                    return Image.asset(AssetsPaths.defaultProfileImage);
+                  },
+                ),
+              ],
+            ),
+          ),
         ],
       ),
       bottomNavigationBar: const BottomNavBar(),
     );
   }
 }
+
 
 
 

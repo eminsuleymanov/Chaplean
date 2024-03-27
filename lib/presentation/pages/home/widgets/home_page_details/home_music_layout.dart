@@ -22,7 +22,7 @@ class HomeMusicLayout extends StatelessWidget {
               end: Alignment.bottomCenter,
               colors: [
                 Color(0xff2f3f63),
-                Color.fromARGB(255, 43, 50, 67),
+                Color.fromRGBO(26,26,26,1),
               ],
             ),
           ),

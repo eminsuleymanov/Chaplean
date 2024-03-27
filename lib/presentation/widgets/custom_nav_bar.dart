@@ -1,13 +1,12 @@
+import 'package:flutter/material.dart';
+import 'package:svg_flutter/svg.dart';
+
+import '../../utils/constants/app_colors.dart';
+import '../../utils/constants/app_strings.dart';
+import '../../utils/constants/assets_paths.dart';
 import '../pages/home/home_page.dart';
 import '../pages/library/create_playlist_page.dart';
 import '../pages/profile/profile_page.dart';
-import '../../utils/constants/app_colors.dart';
-
-import '../../utils/constants/assets_paths.dart';
-import 'package:svg_flutter/svg.dart';
-
-import '../../utils/constants/app_strings.dart';
-import 'package:flutter/material.dart';
 
 class BottomNavBar extends StatefulWidget {
   const BottomNavBar({
@@ -23,7 +22,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
     HomePage(),
     Container(),
     ProfilePage(),
-    CreatePlaylistPage(),
+    LibraryPage(),
   ];
   int seletedIndex = 0;
 

@@ -1,8 +1,9 @@
-import '../../../../data/models/podcast_model.dart';
-import '../../../widgets/custom_list_tile.dart';
-import '../../../../utils/constants/app_paddings.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import '../../../../data/models/podcast_model.dart';
+import '../../../../utils/constants/app_paddings.dart';
+import '../../../widgets/custom_list_tile.dart';
 
 class PodcastListView extends StatelessWidget {
   const PodcastListView({super.key});

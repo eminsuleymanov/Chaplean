@@ -1,12 +1,12 @@
-import '../../../core/routes/generator.dart';
-import '../edit_profile/edit_profile_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import '../../../core/routes/generator.dart';
 import '../../../utils/constants/app_colors.dart';
 import '../../../utils/constants/app_strings.dart';
 import '../../../utils/constants/app_text_styles.dart';
 import '../../../utils/constants/assets_paths.dart';
+import '../edit_profile/edit_profile_page.dart';
 
 class ProfileListTile extends StatelessWidget {
   const ProfileListTile({super.key});

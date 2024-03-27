@@ -1,4 +1,6 @@
 
+import 'presentation/pages/profile/profile_page.dart';
+
 import 'presentation/pages/home/home_page.dart';
 import 'presentation/pages/library/create_playlist_page.dart';
 import 'presentation/pages/search/search_page.dart';
@@ -15,7 +17,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: UITheme.appTheme,
-      home: const HomePage(),
+      home: const ProfilePage(),
     );
   }
 }

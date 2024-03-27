@@ -1,12 +1,12 @@
-import 'grid_profil_item.dart';
-import 'music_downland_box.dart';
-import '../../../../../utils/constants/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import '../../../../../utils/constants/app_colors.dart';
 import '../../../../widgets/global_input.dart';
 import 'bottom_sheet_box.dart';
 import 'copy_link_share_box.dart';
+import 'grid_profil_item.dart';
+import 'music_downland_box.dart';
 
 class ShareBottomSheet extends StatelessWidget {
   const ShareBottomSheet({Key? key}) : super(key: key);

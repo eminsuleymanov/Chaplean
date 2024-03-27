@@ -91,6 +91,11 @@ class AppStrings {
   //profile page text
   static const String edit = 'Edit';
 
+
+  //library
+    static const String choosePlatform = 'Choose Platform';
+
+
   //edit profile page texts
   static const String editProfile = 'Edit Profile';
 

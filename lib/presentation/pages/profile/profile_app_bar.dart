@@ -1,4 +1,3 @@
-import '../../widgets/global_divider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:svg_flutter/svg.dart';
@@ -6,6 +5,7 @@ import 'package:svg_flutter/svg.dart';
 import '../../../utils/constants/app_colors.dart';
 import '../../../utils/constants/app_paddings.dart';
 import '../../../utils/constants/assets_paths.dart';
+import '../../widgets/global_divider.dart';
 
 class ProfileAppBar extends StatelessWidget implements PreferredSizeWidget {
   const ProfileAppBar({super.key});

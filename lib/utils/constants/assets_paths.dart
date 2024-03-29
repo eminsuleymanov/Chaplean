@@ -1,6 +1,5 @@
 class AssetsPaths {
-
-  //svg 
+  //svg
   static const String chapleanLogo = 'assets/images/svg/login_logo.svg';
   static const String chapleanHat = 'assets/images/svg/main_logo.svg';
   static const String chapleantext = 'assets/images/svg/chaplean.svg';
@@ -44,7 +43,6 @@ class AssetsPaths {
   static const String shareIcon_3 = 'assets/images/svg/share_icon_3.svg';
   static const String editPencil = 'assets/images/svg/edit_pencil.svg';
 
-
   //app png paths
   static const String musicImage_1 = 'assets/images/png/music_image_1.png';
   static const String musicImage_2 = 'assets/images/png/music_image_2.png';
@@ -70,6 +68,7 @@ class AssetsPaths {
       'assets/images/png/default_profile_image.png';
 
   //library
-    static const String blueApple = 'assets/images/png/blue_apple.png';
+  static const String blueApple = 'assets/images/png/blue_apple.png';
+
 
 }

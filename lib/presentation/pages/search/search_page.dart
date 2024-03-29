@@ -20,7 +20,7 @@ class _SearchPageState extends State<SearchPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.primaryColor,
-appBar: const SearchAppbar(showSecondContanier: false,showCustomBackButton: true,),
+appBar:  SearchAppbar(showSecondContanier: false,showCustomBackButton: true, onPressed: () {  },),
       body: 
       _showRecentResults ? const Results() : const TabbarContent() ,
       bottomNavigationBar: const BottomNavBar(),

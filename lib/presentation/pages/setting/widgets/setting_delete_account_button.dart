@@ -19,7 +19,7 @@ class SettingDeleteAccountButton extends StatelessWidget {
           child: Center(
             child: Text(
               AppStrings.deleteAccount,
-              style: AppTextStyles.redS13W500,
+              style: AppTextStyles.red13,
             ),
           ),
         ),

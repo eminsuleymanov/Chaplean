@@ -91,10 +91,15 @@ class AppStrings {
   //profile page text
   static const String edit = 'Edit';
 
-
   //library
-    static const String choosePlatform = 'Choose Platform';
-
+  static const String choosePlatform = 'Choose Platform';
+  static const String playlistDetails = 'Playlist Details';
+  static const String playlistInfo = 'Playlist Info';
+  static const String renamePlaylist = 'Rename  Playlist ';
+  static const String likeThisPlaylist = 'Like this playlist ';
+  static const String downlandPlaylist = 'Download playlist ';
+  static const String share = 'Share ';
+  static const String deletPlaylist = 'Delete playlist ';
 
   //edit profile page texts
   static const String editProfile = 'Edit Profile';

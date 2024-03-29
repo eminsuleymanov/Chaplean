@@ -10,10 +10,16 @@ import 'custom_back_button.dart';
 import 'global_input.dart';
 
 class SearchAppbar extends StatefulWidget implements PreferredSizeWidget {
-  const SearchAppbar({Key? key, this.showCustomBackButton = false, this.showSecondContanier = false}) : super(key: key);
+  const SearchAppbar(
+      {Key? key,
+      this.showCustomBackButton = false,
+      this.showSecondContanier = false,
+      required this.onPressed})
+      : super(key: key);
 
   final bool showCustomBackButton;
   final bool showSecondContanier;
+  final void Function() onPressed;
 
   @override
   _SearchAppbarState createState() => _SearchAppbarState();

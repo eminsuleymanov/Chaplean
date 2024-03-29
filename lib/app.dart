@@ -1,4 +1,7 @@
 
+import 'package:chaplean/presentation/pages/liked/liked_music_page.dart';
+import 'package:chaplean/presentation/pages/search/widgets/results.dart';
+
 import 'presentation/pages/profile/profile_page.dart';
 
 import 'presentation/pages/home/home_page.dart';
@@ -17,7 +20,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: UITheme.appTheme,
-      home: const ProfilePage(),
+      home:LikedMusicPage()
     );
   }
 }

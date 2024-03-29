@@ -89,11 +89,13 @@ class AppTextStyles {
     );
   }
 
-  static TextStyle get redS13W500 {
-    return const TextStyle(
-      fontSize: 13,
-      fontWeight: FontWeight.w500,
-      color: AppColors.red,
-    );
-  }
+//red
+  static TextStyle red = const TextStyle(
+    color: Colors.red,
+  );
+
+  static var red13 =
+      red.copyWith(fontSize: 13.sp, fontWeight: FontWeight.w400);
+  static var red16 =
+      red.copyWith(fontSize: 16.sp, fontWeight: FontWeight.w500);
 }

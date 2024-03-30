@@ -23,7 +23,7 @@ class _SearchPageState extends State<SearchPage> {
 appBar:  SearchAppbar(showSecondContanier: false,showCustomBackButton: true, onPressed: () {  },),
       body: 
       _showRecentResults ? const Results() : const TabbarContent() ,
-      bottomNavigationBar: const BottomNavBar(),
+      // bottomNavigationBar: const BottomNavBar(),
     );
   }
 }

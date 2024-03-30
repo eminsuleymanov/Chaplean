@@ -1,4 +1,5 @@
 
+
 import 'package:chaplean/presentation/pages/edit_profile/edit_profile_page.dart';
 import 'package:chaplean/presentation/pages/liked/liked_music_page.dart';
 import 'package:chaplean/presentation/pages/privacy/privacy_page.dart';
@@ -11,9 +12,10 @@ import 'presentation/pages/home/home_page.dart';
 import 'presentation/pages/library/create_playlist_page.dart';
 import 'presentation/pages/search/search_page.dart';
 
-import 'package:flutter/material.dart';
 
+import 'package:flutter/material.dart';
 import 'app/app_theme.dart';
+import 'presentation/pages/library/create_playlist_page.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -23,7 +25,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: UITheme.appTheme,
-      home:ProfilePage()
+
+      home: const NavigationScreens()
+
+
     );
   }
 }

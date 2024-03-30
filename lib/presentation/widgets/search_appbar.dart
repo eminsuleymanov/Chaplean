@@ -90,7 +90,7 @@ class _SearchAppbarState extends State<SearchAppbar> {
                 ),
                 8.horizontalSpace,
                 if (widget.showSecondContanier == true)
-                  CustomBackButton(onPressed: () {}, icon: Icons.add),
+                  CustomBackButton(onPressed: widget.onPressed, icon: Icons.add),
               ],
             ),
           ),

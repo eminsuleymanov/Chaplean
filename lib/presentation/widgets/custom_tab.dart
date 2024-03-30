@@ -17,7 +17,7 @@ class CustomTab extends StatelessWidget {
     super.key,
     this.text = AppStrings.podcast,
   });
-
+  
   final String text;
 
   @override

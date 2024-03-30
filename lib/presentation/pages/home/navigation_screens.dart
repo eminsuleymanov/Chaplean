@@ -3,6 +3,7 @@ import 'package:chaplean/presentation/pages/home/home_page.dart';
 import 'package:chaplean/presentation/pages/library/create_playlist_page.dart';
 import 'package:chaplean/presentation/pages/notification/notification_page.dart';
 import 'package:chaplean/presentation/pages/profile/profile_page.dart';
+import 'package:chaplean/presentation/pages/search/search_page.dart';
 import 'package:flutter/material.dart';
 
 import '../../widgets/custom_nav_bar.dart';
@@ -22,7 +23,8 @@ class _NavigationScreensState extends State<NavigationScreens> {
     NotificationPage(),
     ProfilePage(),
     LibraryPage(),
-    ChatPage()
+    ChatPage(),
+    SearchPage(),
   ];
 
   @override

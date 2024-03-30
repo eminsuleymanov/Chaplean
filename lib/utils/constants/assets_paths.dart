@@ -66,9 +66,14 @@ class AssetsPaths {
   static const String podcastImage_5 = 'assets/images/png/podcast_image_5.png';
   static const String defaultProfileImage =
       'assets/images/png/default_profile_image.png';
+  static const String profilePictureWoman =
+      'assets/images/png/profile_picture_woman.png';
+  static const String profilePictureRounded =
+      'assets/images/png/profile_picture_rounded.png';
+  static const String profilePlaylistImage_1 = 'assets/images/png/profile_playlist_image_1.png';
+  static const String profilePlaylistImage_2 = 'assets/images/png/profile_playlist_image_2.png';
+
 
   //library
   static const String blueApple = 'assets/images/png/blue_apple.png';
-
-
 }

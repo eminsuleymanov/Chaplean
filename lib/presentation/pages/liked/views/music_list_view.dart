@@ -26,6 +26,7 @@ class MusicListView extends StatelessWidget {
           image: musicList.image,
           title: musicList.title,
           subtitle: musicList.subtitle,
+          hasTrailing: true,
         );
       },
     );

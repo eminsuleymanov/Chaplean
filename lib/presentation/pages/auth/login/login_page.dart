@@ -1,3 +1,4 @@
+import 'package:chaplean/presentation/pages/home/navigation_screens.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -34,7 +35,7 @@ class LoginPage extends StatelessWidget {
           131.verticalSpace,
           
          GlobalButton(onTap: (){
-            Navigate.to(context,const HomePage());
+            Navigate.to(context,const NavigationScreens());
             }, title: AppStrings.login),
           8.verticalSpace,
           const CreateAccountTextButton()

@@ -4,27 +4,21 @@ import 'package:svg_flutter/svg.dart';
 import '../../utils/constants/app_colors.dart';
 import '../../utils/constants/app_strings.dart';
 import '../../utils/constants/assets_paths.dart';
-import '../pages/home/home_page.dart';
-import '../pages/library/create_playlist_page.dart';
-import '../pages/profile/profile_page.dart';
 
 class BottomNavBar extends StatefulWidget {
   const BottomNavBar({
     Key? key,
+    required this.selectedIndex,
+    required this.onIndexChanged, // New callback function
   }) : super(key: key);
+  final int selectedIndex;
+  final Function(int) onIndexChanged; // Callback function type definition
 
   @override
   State<BottomNavBar> createState() => _BottomNavBarState();
 }
 
 class _BottomNavBarState extends State<BottomNavBar> {
-  final List<Widget> views = [
-    HomePage(),
-    Container(),
-    ProfilePage(),
-    LibraryPage(),
-  ];
-  int seletedIndex = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -51,11 +45,10 @@ class _BottomNavBarState extends State<BottomNavBar> {
           label: AppStrings.chat,
         ),
       ],
-      currentIndex: seletedIndex,
+      currentIndex: widget.selectedIndex,
       selectedItemColor: AppColors.etherealWhite,
-      onTap: (i) {
-        seletedIndex = i;
-        setState(() {});
+      onTap: (index) {
+        widget.onIndexChanged(index); // Call the callback function
       },
     );
   }

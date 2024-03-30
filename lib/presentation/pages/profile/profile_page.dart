@@ -114,7 +114,7 @@ class _ProfilePageState extends State<ProfilePage>
           ),
         ],
       ),
-      bottomNavigationBar: const BottomNavBar(),
+      // bottomNavigationBar: const BottomNavBar(),
     );
   }
 }

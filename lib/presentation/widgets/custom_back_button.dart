@@ -6,7 +6,8 @@ import '../../utils/constants/app_colors.dart';
 class CustomBackButton extends StatelessWidget {
   const CustomBackButton({
     Key? key,
-    required this.onPressed, required this.icon,
+    required this.onPressed,
+    required this.icon,
   }) : super(key: key);
 
   final void Function() onPressed;
@@ -23,7 +24,7 @@ class CustomBackButton extends StatelessWidget {
       child: IconButton(
         padding: EdgeInsets.only(right: 2.sp, top: 2.sp),
         icon: Icon(icon,color: AppColors.etherealWhite,),
-        onPressed:  onPressed,
+        onPressed: () => onPressed,
       ),
     );
   }

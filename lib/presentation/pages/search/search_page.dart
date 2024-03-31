@@ -48,7 +48,7 @@ class _SearchPageState extends State<SearchPage>
       body: _showRecentResults
           ? const Results()
           : TabbarContent(
-              controller: tabController,
+             
             ),
     );
   }

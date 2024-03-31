@@ -1,3 +1,4 @@
+import 'package:chaplean/presentation/pages/home/home_page.dart';
 import 'package:flutter/material.dart';
 
 class Navigate {
@@ -17,6 +18,6 @@ class Navigate {
           builder: (context) => page,
         ),
       );
-  static void back(BuildContext context) =>
+  static void back(BuildContext context, HomePage homePage) =>
       Navigator.of(context).pop();
 }

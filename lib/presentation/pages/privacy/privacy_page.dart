@@ -15,7 +15,7 @@ class PrivacyPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.greyScaleBlack,
-      appBar:  GlobalBasicAppBar(title: AppStrings.privacy,onPressed: () => Navigate.to(context,const SettingPage()),),
+      appBar:  GlobalBasicAppBar(title: AppStrings.privacy,onPressed: () => Navigate.back(context,const SettingPage()),),
       body: SingleChildScrollView(
         child: Column(
           children: [

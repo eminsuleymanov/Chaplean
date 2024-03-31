@@ -74,7 +74,7 @@ class _SearchAppbarState extends State<SearchAppbar> {
                     icon: Icons.arrow_back,
                     onPressed: () => Navigate.back(
                       Scaffold.of(context).context,
-                      const HomePage(),
+                      
                     ),
                   ),
                 10.horizontalSpace,

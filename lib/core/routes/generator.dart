@@ -17,6 +17,6 @@ class Navigate {
           builder: (context) => page,
         ),
       );
-  static void back(BuildContext context, Widget page) =>
+  static void back(BuildContext context) =>
       Navigator.of(context).pop();
 }

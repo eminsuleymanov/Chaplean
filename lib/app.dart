@@ -25,7 +25,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: UITheme.appTheme,
 
+
       home: const NavigationScreens()
+
 
 
     );

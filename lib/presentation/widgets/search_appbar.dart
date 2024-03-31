@@ -72,10 +72,7 @@ class _SearchAppbarState extends State<SearchAppbar> {
                 if (widget.showCustomBackButton == true)
                   CustomBackButton(
                     icon: Icons.arrow_back,
-                    onPressed: () => Navigate.back(
-                      Scaffold.of(context).context,
-                      const HomePage(),
-                    ),
+                    onPressed: () => Navigate.back(context),
                   ),
                 10.horizontalSpace,
                 SizedBox(
@@ -90,7 +87,8 @@ class _SearchAppbarState extends State<SearchAppbar> {
                 ),
                 8.horizontalSpace,
                 if (widget.showSecondContanier == true)
-                  CustomBackButton(onPressed: widget.onPressed, icon: Icons.add),
+                  CustomBackButton(
+                      onPressed: widget.onPressed, icon: Icons.add),
               ],
             ),
           ),

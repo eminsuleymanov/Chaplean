@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../../../utils/constants/app_colors.dart';
-import '../../widgets/custom_nav_bar.dart';
 import 'profile_app_bar.dart';
 import 'profile_header.dart';
 import 'profile_pinned_tab_bar.dart';

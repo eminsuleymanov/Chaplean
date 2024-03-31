@@ -1,7 +1,9 @@
+import 'package:chaplean/presentation/pages/setting/setting_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:svg_flutter/svg.dart';
 
+import '../../../core/routes/generator.dart';
 import '../../../utils/constants/app_colors.dart';
 import '../../../utils/constants/app_paddings.dart';
 import '../../../utils/constants/assets_paths.dart';
@@ -63,7 +65,9 @@ class ProfileAppBar extends StatelessWidget implements PreferredSizeWidget {
                 height: 24.h,
                 width: 24.w,
               ),
-              onPressed: () {},
+              onPressed: () {
+                Navigate.to(context, const SettingPage());
+              },
             ),
           ),
         ),

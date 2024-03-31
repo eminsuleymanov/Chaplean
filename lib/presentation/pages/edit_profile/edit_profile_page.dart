@@ -1,7 +1,9 @@
+import 'package:chaplean/presentation/pages/profile/profile_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:svg_flutter/svg.dart';
 
+import '../../../core/routes/generator.dart';
 import '../../../utils/constants/app_colors.dart';
 import '../../../utils/constants/app_paddings.dart';
 import '../../../utils/constants/app_strings.dart';
@@ -27,7 +29,9 @@ class EditProfilePage extends StatelessWidget {
         backgroundColor: AppColors.primaryColor,
         leading: Center(
           child: CustomBackButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigate.to(context, ProfilePage());
+            },
             icon: Icons.arrow_back,
           ),
         ),

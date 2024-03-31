@@ -1,3 +1,5 @@
+import 'package:chaplean/core/routes/generator.dart';
+import 'package:chaplean/presentation/pages/setting/setting_page.dart';
 import 'package:flutter/material.dart';
 
 import '../../../utils/constants/app_colors.dart';
@@ -13,7 +15,7 @@ class PrivacyPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.greyScaleBlack,
-      appBar: const GlobalBasicAppBar(title: AppStrings.privacy),
+      appBar:  GlobalBasicAppBar(title: AppStrings.privacy,onPressed: () => Navigate.to(context,const SettingPage()),),
       body: SingleChildScrollView(
         child: Column(
           children: [

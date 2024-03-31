@@ -22,7 +22,7 @@ class SettingPage extends StatelessWidget {
       appBar: GlobalBasicAppBar(
         title: AppStrings.setting,
         onPressed: () {
-          Navigate.to(context,const ProfilePage());
+          Navigate.back(context,const ProfilePage());
         },
       ),
       body: SafeArea(

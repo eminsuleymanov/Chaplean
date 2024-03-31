@@ -23,54 +23,5 @@ List<ProfilePlaylistModel> profilePlaylist = [
     title: 'Gecənin günəşi',
     subtitle: 'Emil Dost',
   ),
-   ProfilePlaylistModel(
-    image: AssetsPaths.profilePlaylistImage_1,
-    title: 'Lorem ipsum',
-    subtitle: 'Lorem ipsum',
-  ),
-   ProfilePlaylistModel(
-    image: AssetsPaths.profilePlaylistImage_1,
-    title: 'Lorem ipsum',
-    subtitle: 'Lorem ipsum',
-  ),
-   ProfilePlaylistModel(
-    image: AssetsPaths.profilePlaylistImage_1,
-    title: 'Lorem ipsum',
-    subtitle: 'Lorem ipsum',
-  ),
-   ProfilePlaylistModel(
-    image: AssetsPaths.profilePlaylistImage_1,
-    title: 'Lorem ipsum',
-    subtitle: 'Lorem ipsum',
-  ),
-   ProfilePlaylistModel(
-    image: AssetsPaths.profilePlaylistImage_1,
-    title: 'Lorem ipsum',
-    subtitle: 'Lorem ipsum',
-  ),
-   ProfilePlaylistModel(
-    image: AssetsPaths.profilePlaylistImage_1,
-    title: 'Lorem ipsum',
-    subtitle: 'Lorem ipsum',
-  ),
-   ProfilePlaylistModel(
-    image: AssetsPaths.profilePlaylistImage_1,
-    title: 'Lorem ipsum',
-    subtitle: 'Lorem ipsum',
-  ),
-   ProfilePlaylistModel(
-    image: AssetsPaths.profilePlaylistImage_1,
-    title: 'Lorem ipsum',
-    subtitle: 'Lorem ipsum',
-  ),
-   ProfilePlaylistModel(
-    image: AssetsPaths.profilePlaylistImage_1,
-    title: 'Lorem ipsum',
-    subtitle: 'Lorem ipsum',
-  ),
-  ProfilePlaylistModel(
-    image: AssetsPaths.profilePlaylistImage_2,
-    title: 'Gecənin günəşi',
-    subtitle: 'Emil Dost',
-  ),
+   
 ];

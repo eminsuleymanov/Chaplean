@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../data/models/profile_frame_model.dart';
 import '../../../utils/constants/app_paddings.dart';
@@ -15,8 +16,8 @@ class ProfileUsersGridView extends StatelessWidget {
       itemCount: profileFrame.length,
       padding: AppPaddings.t24lr16b16,
       scrollDirection: Axis.vertical,
-      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-        mainAxisExtent: 123,
+      gridDelegate:  SliverGridDelegateWithFixedCrossAxisCount(
+        mainAxisExtent: 123.h,
         crossAxisCount: 3,
         crossAxisSpacing: 11,
         mainAxisSpacing: 16,

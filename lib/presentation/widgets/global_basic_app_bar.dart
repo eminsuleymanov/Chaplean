@@ -6,10 +6,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class GlobalBasicAppBar extends StatelessWidget implements PreferredSizeWidget {
-  const GlobalBasicAppBar({super.key, required this.title});
+  const GlobalBasicAppBar({super.key, required this.title, required this.onPressed});
 
   final String title;
-
+   final  void Function() onPressed;
   @override
   Widget build(BuildContext context) {
     return AppBar(
@@ -20,7 +20,7 @@ class GlobalBasicAppBar extends StatelessWidget implements PreferredSizeWidget {
       backgroundColor: AppColors.primaryColor,
       leading: Center(
         child: CustomBackButton(
-          onPressed: () {},
+          onPressed: onPressed,
           icon: Icons.arrow_back,
         ),
       ),

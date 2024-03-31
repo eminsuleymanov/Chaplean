@@ -1,8 +1,10 @@
+import 'package:chaplean/presentation/pages/privacy/privacy_page.dart';
+import 'package:chaplean/presentation/pages/profile/profile_page.dart';
 import 'package:flutter/material.dart';
 
+import '../../../core/routes/generator.dart';
 import '../../../utils/constants/app_colors.dart';
 import '../../../utils/constants/app_strings.dart';
-import '../../widgets/custom_nav_bar.dart';
 import '../../widgets/global_basic_app_bar.dart';
 import '../../widgets/global_divider.dart';
 import 'widgets/setting_about_button.dart';
@@ -15,13 +17,18 @@ class SettingPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       backgroundColor: AppColors.greyScaleBlack,
-      appBar: GlobalBasicAppBar(title: AppStrings.setting),
+      appBar: GlobalBasicAppBar(
+        title: AppStrings.setting,
+        onPressed: () {
+          Navigate.to(context,const ProfilePage());
+        },
+      ),
       body: SafeArea(
         child: Column(
           children: [
-            SettingPrivacyButton(),
+            SettingPrivacyButton(onTap: () => Navigate.to(context,PrivacyPage()),),
             GlobalDivider(),
             SettingSecurityButton(),
             GlobalDivider(),

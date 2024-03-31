@@ -89,6 +89,14 @@ class AppTextStyles {
     );
   }
 
+  static TextStyle get whiteS10W300 {
+    return TextStyle(
+      fontSize: 10.sp,
+      fontWeight: FontWeight.w300,
+      color: AppColors.white,
+    );
+  }
+
 //red
   static TextStyle red = const TextStyle(
     color: Colors.red,
@@ -110,4 +118,5 @@ static TextStyle blue = const TextStyle(
       blue.copyWith(fontSize: 13.sp, fontWeight: FontWeight.w400);
   static var blue16 =
       blue.copyWith(fontSize: 16.sp, fontWeight: FontWeight.w500);
+
 }

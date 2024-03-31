@@ -17,7 +17,18 @@ class CustomTab extends StatelessWidget {
     super.key,
     this.text = AppStrings.podcast,
   });
-
+  const CustomTab.audio({
+    super.key,
+    this.text = AppStrings.audio
+  });
+  const CustomTab.account({
+    super.key,
+    this.text = AppStrings.account
+  });
+  const CustomTab.tag({
+    super.key,
+    this.text = AppStrings.tag
+  });
   final String text;
 
   @override

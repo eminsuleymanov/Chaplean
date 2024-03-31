@@ -13,7 +13,6 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  int seletedIndex = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,7 +26,7 @@ class _HomePageState extends State<HomePage> {
           return HomeMusicLayout(musicdetail: musicdetail);
         },
       ),
-      bottomNavigationBar:const BottomNavBar(),
+       
     );
   }
 }

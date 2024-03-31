@@ -23,6 +23,13 @@ class AppBorders {
 
   }
 
+   static get c360 {
+    return  BorderRadius.circular(360).w;
+        
+
+  }
+
+
    static get c4 {
     return  BorderRadius.circular(4).w;
         

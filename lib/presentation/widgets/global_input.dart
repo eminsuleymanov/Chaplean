@@ -17,7 +17,7 @@ class GlobalInput extends StatelessWidget {
     this.onChanged,
     this.maxLine = 1,
     this.suffixIcon,
-    this.prefixIcon,
+    this.prefixIcon, this.onSubmitted,
   });
 
   final dynamic controller;
@@ -28,6 +28,7 @@ class GlobalInput extends StatelessWidget {
   final Color? color;
   final String? Function(String?)? validate;
   final void Function(String)? onChanged;
+  final void Function(String)? onSubmitted;
   final int maxLine;
 
   @override
@@ -35,6 +36,7 @@ class GlobalInput extends StatelessWidget {
     return TextFormField(
       controller: controller,
       onChanged: onChanged,
+      onFieldSubmitted: onSubmitted,
       obscureText: isSecure,
       validator: validate,
       maxLines: maxLine,
@@ -64,7 +66,8 @@ class GlobalInput extends StatelessWidget {
         ),
         suffixIcon: suffixIcon,
         prefixIcon: prefixIcon,
-        prefixIconColor: AppColors.etherealWhite
+        prefixIconColor: AppColors.etherealWhite,
+        
       ),
     );
   }

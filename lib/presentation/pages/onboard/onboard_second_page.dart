@@ -13,17 +13,17 @@ class OnboardSecondPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: OnboardView(children: [
-              const AppLogoText(),
-            70.verticalSpace,
-              const ChapleanPicture(),
-            120.verticalSpace,
-              const LoginButton(),
-              16.verticalSpace,
-              const RegisterRoyaltyButton()
-            ],
-          ),
-        );
+      body: OnboardView(
+        children: [
+          const AppLogoText(),
+          70.verticalSpace,
+          const ChapleanPicture(),
+          120.verticalSpace,
+          const LoginButton(),
+          16.verticalSpace,
+          const RoyaltyColorButton()
+        ],
+      ),
+    );
   }
 }
-

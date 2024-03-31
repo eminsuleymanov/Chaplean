@@ -10,16 +10,18 @@ import 'custom_back_button.dart';
 import 'global_input.dart';
 
 class SearchAppbar extends StatefulWidget implements PreferredSizeWidget {
-  const SearchAppbar(
-      {Key? key,
-      this.showCustomBackButton = false,
-      this.showSecondContanier = false,
-      required this.onPressed})
-      : super(key: key);
+  const SearchAppbar({
+    Key? key,
+    this.showCustomBackButton = false,
+    this.showSecondContanier = false,
+    required this.onPressed,
+    this.onSubmitted,
+  }) : super(key: key);
 
   final bool showCustomBackButton;
   final bool showSecondContanier;
   final void Function() onPressed;
+  final void Function(String)? onSubmitted;
 
   @override
   _SearchAppbarState createState() => _SearchAppbarState();
@@ -50,11 +52,7 @@ class _SearchAppbarState extends State<SearchAppbar> {
     });
   }
 
-  void _onSubmitted(String value) {
-    setState(() {
-      showTabBarContent = true;
-    });
-  }
+ 
 
   @override
   Widget build(BuildContext context) {
@@ -72,7 +70,10 @@ class _SearchAppbarState extends State<SearchAppbar> {
                 if (widget.showCustomBackButton == true)
                   CustomBackButton(
                     icon: Icons.arrow_back,
-                    onPressed: () => Navigate.back(context),
+                    onPressed: () => Navigate.back(
+                      Scaffold.of(context).context,
+                      const HomePage(),
+                    ),
                   ),
                 10.horizontalSpace,
                 SizedBox(
@@ -82,7 +83,7 @@ class _SearchAppbarState extends State<SearchAppbar> {
                     controller: _textEditingController,
                     prefixIcon: const Icon(Icons.search_rounded),
                     hintText: AppStrings.search,
-                    onChanged: _onSubmitted,
+                    onSubmitted: widget.onSubmitted,
                   ),
                 ),
                 8.horizontalSpace,

@@ -59,7 +59,7 @@ class AppStrings {
   static const String chat = 'Chat';
 
   //Home Page
-  static const String downlandMp4 = 'MP4 downland';
+  static const String downlandMp4 = 'MP4 download';
   static const String commentText =
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit.';
   static const String message = 'Message';
@@ -82,6 +82,8 @@ class AppStrings {
   //Search Page
   static const String search = "search";
   static const String recents = "Recents";
+  static const String audio = "Audio";
+  static const String tag= 'Tag';
 
   //Liked Content Music Page
   static const String liked = 'Liked';
@@ -103,6 +105,7 @@ class AppStrings {
 
   //edit profile page texts
   static const String editProfile = 'Edit Profile';
+  static const String account = 'Account';
 
   //setting page texts
   static const String setting = 'Setting';

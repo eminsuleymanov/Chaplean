@@ -102,6 +102,21 @@ class AppTextStyles {
     color: Colors.red,
   );
 
-  static var red13 = red.copyWith(fontSize: 13.sp, fontWeight: FontWeight.w400);
-  static var red16 = red.copyWith(fontSize: 16.sp, fontWeight: FontWeight.w500);
+  static var red13 =
+      red.copyWith(fontSize: 13.sp, fontWeight: FontWeight.w400);
+  static var red16 =
+      red.copyWith(fontSize: 16.sp, fontWeight: FontWeight.w500);
+
+
+
+//blue
+static TextStyle blue = const TextStyle(
+    color: Colors.blue,
+  );
+
+  static var blue13 =
+      blue.copyWith(fontSize: 13.sp, fontWeight: FontWeight.w400);
+  static var blue16 =
+      blue.copyWith(fontSize: 16.sp, fontWeight: FontWeight.w500);
+
 }

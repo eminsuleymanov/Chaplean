@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'app/app_theme.dart';
-import 'presentation/pages/home/navigation_screens.dart';
+import 'presentation/pages/library/create_playlist_page.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -9,8 +9,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        theme: UITheme.appTheme,
-        home: const NavigationScreens());
+      debugShowCheckedModeBanner: false,
+      theme: UITheme.appTheme,
+
+      home: const NavigationScreens()
+
+
+    );
   }
 }

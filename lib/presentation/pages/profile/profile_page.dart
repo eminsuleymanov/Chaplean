@@ -42,9 +42,11 @@ class _ProfilePageState extends State<ProfilePage>
           SliverFillRemaining(
             child: TabBarView(
               controller: tabController,
+
               children: const [
                 ProfilePlaylistListView(),
                 ProfileUsersGridView(),
+
               ],
             ),
           ),

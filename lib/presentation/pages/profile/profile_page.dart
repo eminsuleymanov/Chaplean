@@ -84,12 +84,12 @@ class _ProfilePageState extends State<ProfilePage>
               controller: tabController,
               children: [
                 ListView.separated(
-                  padding: AppPaddings.tlr24b16,
+                  padding: AppPaddings.all16,
                   shrinkWrap: true,
-                  itemCount: 1,
+                  itemCount: 3,
                   scrollDirection: Axis.vertical,
                   physics: const NeverScrollableScrollPhysics(),
-                  separatorBuilder: (context, index) => 16.verticalSpace,
+                  separatorBuilder: (context, index) => 12.verticalSpace,
                   itemBuilder: (context, index) {
                     return const ProfilePlaylistListTile();
                   },

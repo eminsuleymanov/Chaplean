@@ -1,4 +1,8 @@
 
+import 'package:chaplean/presentation/pages/home/home_page.dart';
+import 'package:chaplean/presentation/pages/liked/liked_music_page.dart';
+import 'package:chaplean/presentation/pages/playlist_content/playlist_content_page.dart';
+import 'package:chaplean/presentation/pages/profile/profile_page.dart';
 import 'package:flutter/material.dart';
 
 import 'app/app_theme.dart';
@@ -12,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: UITheme.appTheme,
-      home:LibraryPage(),
+      home:PlaylistContentPage(),
     );
   }
 }

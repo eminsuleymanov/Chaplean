@@ -23,7 +23,7 @@ class CustomBackButton extends StatelessWidget {
       child: IconButton(
         padding: EdgeInsets.only(right: 2.sp, top: 2.sp),
         icon: Icon(icon,color: AppColors.etherealWhite,),
-        onPressed: () => onPressed,
+        onPressed:  onPressed,
       ),
     );
   }

@@ -10,13 +10,14 @@ class GlobalButton extends StatelessWidget {
       required this.onTap,
       required this.title,
       this.isLoadings = false,
-      this.color, this.style});
+      this.color, this.style, this.borderside});
 
   final void Function() onTap;
   final String title;
   final bool isLoadings;
   final Color? color;
   final TextStyle? style;
+   final  BoxBorder? borderside;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -27,7 +28,7 @@ class GlobalButton extends StatelessWidget {
             alignment: Alignment.center,
             decoration: BoxDecoration(
               color: color ?? AppColors.karimunBlue,
-              borderRadius:AppBorders.all8,
+              borderRadius:AppBorders.all8,border:borderside,
             ),
             child: Center(
               child: isLoadings

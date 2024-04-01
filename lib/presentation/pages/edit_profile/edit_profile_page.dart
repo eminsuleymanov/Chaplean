@@ -1,4 +1,3 @@
-import 'package:chaplean/presentation/pages/profile/profile_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:svg_flutter/svg.dart';
@@ -10,10 +9,10 @@ import '../../../utils/constants/app_strings.dart';
 import '../../../utils/constants/app_text_styles.dart';
 import '../../../utils/constants/assets_paths.dart';
 import '../../widgets/custom_back_button.dart';
-import '../../widgets/custom_nav_bar.dart';
 import '../../widgets/global_button.dart';
 import '../../widgets/global_divider.dart';
 import '../../widgets/global_input.dart';
+import '../profile/profile_page.dart';
 
 class EditProfilePage extends StatelessWidget {
   const EditProfilePage({super.key});
@@ -30,7 +29,7 @@ class EditProfilePage extends StatelessWidget {
         leading: Center(
           child: CustomBackButton(
             onPressed: () {
-              Navigate.to(context, ProfilePage());
+              Navigate.replace(context, const ProfilePage());
             },
             icon: Icons.arrow_back,
           ),

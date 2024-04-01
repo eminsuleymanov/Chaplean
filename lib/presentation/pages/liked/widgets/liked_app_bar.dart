@@ -1,14 +1,14 @@
-import '../../../../core/routes/generator.dart';
-import '../../home/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import '../../../../core/routes/generator.dart';
 import '../../../../utils/constants/app_colors.dart';
 import '../../../../utils/constants/app_paddings.dart';
 import '../../../../utils/constants/app_strings.dart';
 import '../../../widgets/custom_back_button.dart';
-import '../../../widgets/global_divider.dart';
 import '../../../widgets/custom_tab.dart';
+import '../../../widgets/global_divider.dart';
+import '../../profile/profile_page.dart';
 
 class LikedAppBar extends StatelessWidget implements PreferredSizeWidget {
   const LikedAppBar({super.key, this.controller});
@@ -19,6 +19,7 @@ class LikedAppBar extends StatelessWidget implements PreferredSizeWidget {
     return AppBar(
       toolbarHeight: 112.h,
       titleSpacing: 0,
+      leadingWidth: 12.w,
       backgroundColor: AppColors.primaryColor,
       title: Column(
         children: [
@@ -27,7 +28,9 @@ class LikedAppBar extends StatelessWidget implements PreferredSizeWidget {
             child: Row(
               children: [
                 CustomBackButton(
-                  onPressed: () => Navigate.replace(context, const HomePage()), icon:Icons.arrow_back,
+                  onPressed: () =>
+                      Navigate.replace(context, const ProfilePage()),
+                  icon: Icons.arrow_back,
                 ),
                 128.horizontalSpace,
                 const Text(
@@ -52,7 +55,6 @@ class LikedAppBar extends StatelessWidget implements PreferredSizeWidget {
           CustomTab.playlist(),
           CustomTab.podcast(),
         ],
-   
       ),
     );
   }

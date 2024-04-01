@@ -7,19 +7,24 @@ import '../../../widgets/global_divider.dart';
 import '../../../widgets/global_rectangle.dart';
 
 class SettingDeleteAccountButton extends StatelessWidget {
-  const SettingDeleteAccountButton({super.key});
+  const SettingDeleteAccountButton({super.key, this.onTap});
+
+  final Function()? onTap;
 
   @override
   Widget build(BuildContext context) {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        GlobalRectangle(
-          borderRadius: false,
-          child: Center(
-            child: Text(
-              AppStrings.deleteAccount,
-              style: AppTextStyles.red13,
+        GestureDetector(
+          onTap: onTap,
+          child: GlobalRectangle(
+            borderRadius: false,
+            child: Center(
+              child: Text(
+                AppStrings.deleteAccount,
+                style: AppTextStyles.red13,
+              ),
             ),
           ),
         ),

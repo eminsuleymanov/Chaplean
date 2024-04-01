@@ -5,30 +5,38 @@ import '../../../../utils/constants/app_colors.dart';
 import '../../utils/constants/app_borders.dart';
 
 class GlobalButton extends StatelessWidget {
-  const GlobalButton(
-      {super.key,
-      required this.onTap,
-      required this.title,
-      this.isLoadings = false,
-      this.color, this.style, this.borderside});
+  const GlobalButton({
+    super.key,
+    required this.onTap,
+    required this.title,
+    this.isLoadings = false,
+    this.color,
+    this.style,
+    this.borderside,
+    this.height,
+    this.width,
+  });
 
   final void Function() onTap;
   final String title;
   final bool isLoadings;
   final Color? color;
   final TextStyle? style;
-   final  BoxBorder? borderside;
+  final BoxBorder? borderside;
+  final double? height;
+  final double? width;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
         onTap: onTap,
         child: Container(
-            width: double.infinity,
-            height: 56.sp,
+            width: width ?? double.infinity,
+            height: height ?? 56.sp,
             alignment: Alignment.center,
             decoration: BoxDecoration(
               color: color ?? AppColors.karimunBlue,
-              borderRadius:AppBorders.all8,border:borderside,
+              borderRadius: AppBorders.all8,
+              border: borderside,
             ),
             child: Center(
               child: isLoadings

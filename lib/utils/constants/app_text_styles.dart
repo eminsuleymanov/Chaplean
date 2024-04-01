@@ -89,6 +89,14 @@ class AppTextStyles {
     );
   }
 
+  static TextStyle get doverGreyS14W500 {
+    return TextStyle(
+      color: AppColors.doverGrey,
+      fontSize: 14.sp,
+      fontWeight: FontWeight.w500,
+    );
+  }
+
   static TextStyle get whiteS10W300 {
     return TextStyle(
       fontSize: 10.sp,
@@ -102,15 +110,11 @@ class AppTextStyles {
     color: Colors.red,
   );
 
-  static var red13 =
-      red.copyWith(fontSize: 13.sp, fontWeight: FontWeight.w400);
-  static var red16 =
-      red.copyWith(fontSize: 16.sp, fontWeight: FontWeight.w500);
-
-
+  static var red13 = red.copyWith(fontSize: 13.sp, fontWeight: FontWeight.w400);
+  static var red16 = red.copyWith(fontSize: 16.sp, fontWeight: FontWeight.w500);
 
 //blue
-static TextStyle blue = const TextStyle(
+  static TextStyle blue = const TextStyle(
     color: Colors.blue,
   );
 
@@ -118,5 +122,4 @@ static TextStyle blue = const TextStyle(
       blue.copyWith(fontSize: 13.sp, fontWeight: FontWeight.w400);
   static var blue16 =
       blue.copyWith(fontSize: 16.sp, fontWeight: FontWeight.w500);
-
 }

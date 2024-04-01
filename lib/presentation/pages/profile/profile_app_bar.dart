@@ -1,3 +1,4 @@
+import 'package:chaplean/presentation/pages/liked/liked_music_page.dart';
 import 'package:chaplean/presentation/pages/setting/setting_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -34,7 +35,9 @@ class ProfileAppBar extends StatelessWidget implements PreferredSizeWidget {
                 height: 16.h,
                 width: 17.79.w,
               ),
-              onPressed: () {},
+              onPressed: () {
+                Navigate.replace(context, const LikedMusicPage());
+              },
             ),
           ),
         ),

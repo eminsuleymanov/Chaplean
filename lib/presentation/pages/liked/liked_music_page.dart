@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../../../utils/constants/app_colors.dart';
-import '../../widgets/custom_nav_bar.dart';
 import 'widgets/liked_app_bar.dart';
 import 'widgets/liked_tab_bar.dart';
 

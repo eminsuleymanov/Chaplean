@@ -1,7 +1,8 @@
-import 'hashtag_texts_box.dart';
-import '../../../../../utils/constants/app_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import '../../../../../utils/constants/app_strings.dart';
+import 'hashtag_texts_box.dart';
 
 class HastagsTextBoxes extends StatelessWidget {
   const HastagsTextBoxes({super.key});

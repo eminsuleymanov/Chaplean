@@ -26,10 +26,17 @@ class AppStrings {
   // Forgot Password Page
   static const String enterUrEmail = 'Enter your email';
   static const String sendCode = 'Send code';
+
+  static const String resend = 'Send code';
+  static const String resendtext = "Didn’t received code?";
+  static const String changedSuccessfully =
+      'Your password has been changed successfully. ';
+
   static const String forgotContent =
       "Don't worry! It occurs. Please enter the email address linked with your account.";
   static const String privacyPolicy =
       'I agree to all the Term  & Privacy Policy';
+  static const String passwordChanged = 'Password Changed!';
 
   //OTP Page
   static const String otpTitle = "OTP Verification";
@@ -81,7 +88,7 @@ class AppStrings {
 
   //Search Page
   static const String search = "search";
-  static const String recents = "Recents";
+  static const String recents = "Resend";
   static const String audio = "Audio";
   static const String tag = 'Tag';
 
@@ -102,6 +109,11 @@ class AppStrings {
   static const String downlandPlaylist = 'Download playlist ';
   static const String share = 'Share ';
   static const String deletPlaylist = 'Delete playlist ';
+  static const String contentDetails = 'Content Details';
+  static const String credits = 'Credits';
+  static const String like = 'Like';
+  static const String saveOtherPlaylist = 'Save other playlist';
+  static const String deleteFromplaylist = 'Delete from playlist';
 
   //edit profile page texts
   static const String editProfile = 'Edit Profile';

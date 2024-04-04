@@ -1,4 +1,4 @@
-import 'package:chaplean/presentation/pages/home/navigation_screens.dart';
+import '../../home/navigation_screens.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -23,7 +23,11 @@ class LoginPage extends StatelessWidget {
     return Scaffold(
       body: AuthView(
         children: [
-          CustomBackButton(onPressed: () => Navigate.replace(context, const OnboardSecondPage()), icon: Icons.arrow_back,),
+          CustomBackButton(
+            onPressed: () =>
+                Navigate.replace(context, const OnboardSecondPage()),
+            icon: Icons.arrow_back,
+          ),
           20.verticalSpace,
           const LoginTitleText(),
           120.verticalSpace,
@@ -33,10 +37,11 @@ class LoginPage extends StatelessWidget {
           16.verticalSpace,
           const FogotPasswordTextButton(),
           131.verticalSpace,
-          
-         GlobalButton(onTap: (){
-            Navigate.to(context,const NavigationScreens());
-            }, title: AppStrings.login),
+          GlobalButton(
+              onTap: () {
+                Navigate.to(context, const NavigationScreens());
+              },
+              title: AppStrings.login),
           8.verticalSpace,
           const CreateAccountTextButton()
         ],

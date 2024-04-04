@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 import '../../../../../utils/constants/app_strings.dart';
 import '../../../../../utils/constants/app_text_styles.dart';
 
-class SingerName extends StatelessWidget {
-  const SingerName({super.key});
+class SuccessDescription extends StatelessWidget {
+  const SuccessDescription({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Text(
-      AppStrings.rihanna,
-      style: AppTextStyles.appBarTitle13,
+      AppStrings.changedSuccessfully,
+      style: AppTextStyles.smalStyle16,
     );
   }
 }

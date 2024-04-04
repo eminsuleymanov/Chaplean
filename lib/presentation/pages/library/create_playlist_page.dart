@@ -1,5 +1,7 @@
-import 'package:chaplean/presentation/pages/library/widgets/create_playlist_bottom_sheet.dart';
-import 'package:chaplean/presentation/pages/library/widgets/playlist_details_bottom_sheet.dart';
+import '../../../core/routes/generator.dart';
+import 'widgets/create_playlist_bottom_sheet.dart';
+import 'widgets/playlist_details_bottom_sheet.dart';
+import '../playlist_content/playlist_content_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:svg_flutter/svg_flutter.dart';
@@ -41,29 +43,31 @@ class LibraryPage extends StatelessWidget {
         separatorBuilder: (context, index) => 16.verticalSpace,
         itemBuilder: (context, index) {
           final createMusicList = createPlayListModel[index];
-          return CustomListTile(
-            trailing: GestureDetector(
-              onTap: () {
-                showModalBottomSheet(
-                  context: context,
-                  builder: (context) {
-                    return const BottomSheetRounded(
-                      children: [
-                        PlaylistDetailsBottomSheet(),
-                      ],
-                    );
-                  },
-                );
-              },
-              child: SizedBox(
-                child: SvgPicture.asset(AssetsPaths.horizontalDots),
+          return GestureDetector(onTap:() => Navigate.to(context,PlaylistContentPage()),
+            child: CustomListTile(
+              trailing: GestureDetector(
+                onTap: () {
+                  showModalBottomSheet(
+                    context: context,
+                    builder: (context) {
+                      return const BottomSheetRounded(
+                        children: [
+                          PlaylistDetailsBottomSheet(),
+                        ],
+                      );
+                    },
+                  );
+                },
+                child: SizedBox(
+                  child: SvgPicture.asset(AssetsPaths.horizontalDots),
+                ),
               ),
+              hasTrailing: true,
+              hasUsername: true,
+              image: createMusicList.image,
+              title: createMusicList.title,
+              subtitle: createMusicList.subtitle,
             ),
-            hasTrailing: true,
-            hasUsername: true,
-            image: createMusicList.image,
-            title: createMusicList.title,
-            subtitle: createMusicList.subtitle,
           );
         },
       ),

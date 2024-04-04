@@ -5,8 +5,8 @@ import '../../../utils/constants/app_colors.dart';
 import '../../../utils/constants/app_paddings.dart';
 import '../../../utils/constants/app_strings.dart';
 import '../../../utils/constants/app_text_styles.dart';
-import '../setting/setting_page.dart';
 import '../../widgets/global_basic_app_bar.dart';
+import '../setting/setting_page.dart';
 
 class AboutPage extends StatelessWidget {
   const AboutPage({super.key});

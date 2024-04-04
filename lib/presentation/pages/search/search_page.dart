@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../utils/constants/app_colors.dart';
+import '../../widgets/custom_nav_bar.dart';
 import '../../widgets/search_appbar.dart';
 import 'widgets/results.dart';
 import 'widgets/tabbar_content.dart';
@@ -34,11 +34,17 @@ class _SearchPageState extends State<SearchPage>
       _showRecentResults = searchText.isEmpty;
     });
   }
+  int _selectedIndex = 0;
+
+  void _onItemTapped(int index) {
+    setState(() {
+      _selectedIndex = index;
+    });
+  }
 
   @override
   Widget build(context) {
     return Scaffold(
-      backgroundColor: AppColors.primaryColor,
       appBar: SearchAppbar(
         showSecondContanier: false,
         showCustomBackButton: true,
@@ -50,6 +56,10 @@ class _SearchPageState extends State<SearchPage>
           : TabbarContent(
              controller: tabController,
             ),
+            bottomNavigationBar: BottomNavBar(
+        selectedIndex: _selectedIndex,
+        onIndexChanged: _onItemTapped,
+      ),
     );
   }
 }

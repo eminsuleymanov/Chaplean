@@ -43,8 +43,8 @@ class _ProfilePageState extends State<ProfilePage>
             child: TabBarView(
               controller: tabController,
 
-              children: const [
-                ProfilePlaylistListView(),
+              children:   [
+                ProfilePlaylistListView(profileBottomSheet:true,),
                 ProfileUsersGridView(),
 
               ],

@@ -1,8 +1,8 @@
-import 'package:chaplean/core/routes/generator.dart';
-import 'package:chaplean/presentation/pages/delete/alert_dialog.dart';
-import 'package:chaplean/presentation/pages/setting/setting_page.dart';
-import 'package:chaplean/presentation/widgets/global_button.dart';
-import 'package:chaplean/utils/constants/app_colors.dart';
+import '../../../core/routes/generator.dart';
+import 'alert_dialog.dart';
+import '../setting/setting_page.dart';
+import '../../widgets/global_button.dart';
+import '../../../utils/constants/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

@@ -1,5 +1,5 @@
-import 'package:chaplean/presentation/pages/liked/liked_music_page.dart';
-import 'package:chaplean/presentation/pages/setting/setting_page.dart';
+import '../liked/liked_music_page.dart';
+import '../setting/setting_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:svg_flutter/svg.dart';

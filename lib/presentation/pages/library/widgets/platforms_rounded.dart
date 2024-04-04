@@ -1,6 +1,6 @@
-import 'package:chaplean/utils/constants/app_borders.dart';
-import 'package:chaplean/utils/constants/app_colors.dart';
-import 'package:chaplean/utils/constants/app_text_styles.dart';
+import '../../../../utils/constants/app_borders.dart';
+import '../../../../utils/constants/app_colors.dart';
+import '../../../../utils/constants/app_text_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

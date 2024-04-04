@@ -8,7 +8,7 @@ class LoginInputUsername extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const GlobalInput(
+    return const GlobalInput(maxLine: 2,
       hintText: AppStrings.emailOrUsername,
     );
   }

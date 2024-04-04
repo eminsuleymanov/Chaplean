@@ -1,5 +1,5 @@
-import 'package:chaplean/presentation/pages/library/widgets/choose_platform_bottom_sheet.dart';
-import 'package:chaplean/presentation/widgets/bottom_sheet_rounded.dart';
+import 'choose_platform_bottom_sheet.dart';
+import '../../../widgets/bottom_sheet_rounded.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

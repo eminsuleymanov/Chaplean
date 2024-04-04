@@ -1,5 +1,5 @@
-import 'package:chaplean/utils/constants/app_colors.dart';
-import 'package:chaplean/utils/constants/app_paddings.dart';
+import '../../../../utils/constants/app_colors.dart';
+import '../../../../utils/constants/app_paddings.dart';
 import 'package:chips_choice/chips_choice.dart';
 import 'package:flutter/material.dart';
 

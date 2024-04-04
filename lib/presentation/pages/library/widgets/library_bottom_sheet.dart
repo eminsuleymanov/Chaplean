@@ -1,4 +1,4 @@
-import 'package:chaplean/utils/constants/app_strings.dart';
+import '../../../../utils/constants/app_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

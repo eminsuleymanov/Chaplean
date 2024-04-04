@@ -45,10 +45,10 @@ class _BottomNavBarState extends State<BottomNavBar> {
           label: AppStrings.chat,
         ),
       ],
-      currentIndex: widget.selectedIndex,
+      currentIndex: widget.selectedIndex,elevation: 0,
       selectedItemColor: AppColors.etherealWhite,
       onTap: (index) {
-        widget.onIndexChanged(index); // Call the callback function
+        widget.onIndexChanged(index); 
       },
     );
   }

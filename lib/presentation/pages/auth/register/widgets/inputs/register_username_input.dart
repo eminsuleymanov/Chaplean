@@ -9,7 +9,7 @@ class RegisterUsernameInput extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const GlobalInput(
-      hintText: AppStrings.username,
+      hintText: AppStrings.username,maxLine: 2,
     );
   }
 }

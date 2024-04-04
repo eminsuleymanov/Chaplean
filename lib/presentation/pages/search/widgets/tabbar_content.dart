@@ -1,4 +1,4 @@
-import 'package:chaplean/presentation/pages/search/widgets/tags.dart';
+import 'tags.dart';
 import 'package:flutter/material.dart';
 
 import '../../../widgets/custom_tab.dart';

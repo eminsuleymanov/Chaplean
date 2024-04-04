@@ -1,3 +1,4 @@
+import '../playlist_content/widgets/playlist_content_details_bottom_sheet.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:svg_flutter/svg.dart';
@@ -9,7 +10,12 @@ import '../../widgets/custom_list_tile.dart';
 import 'profile_bottom_sheet.dart';
 
 class ProfilePlaylistListView extends StatelessWidget {
-  const ProfilePlaylistListView({super.key});
+  const ProfilePlaylistListView({
+    Key? key,
+    this.profileBottomSheet = false,
+  }) : super(key: key);
+
+  final bool profileBottomSheet;
 
   @override
   Widget build(BuildContext context) {
@@ -28,10 +34,15 @@ class ProfilePlaylistListView extends StatelessWidget {
           subtitle: playlist.subtitle,
           hasTrailing: true,
           trailing: GestureDetector(
-              onTap: () {
+            onTap: () {
+              if (profileBottomSheet == true) {
                 ProfileBottomSheet.profileSheet(context);
-              },
-              child: SvgPicture.asset(AssetsPaths.verticalDots)),
+              } else {
+                PlaylistContentDetailsBottomSheet.playlistSheet(context);
+              }
+            },
+            child: SvgPicture.asset(AssetsPaths.verticalDots),
+          ),
         );
       },
     );

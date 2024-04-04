@@ -1,4 +1,4 @@
-import 'package:chaplean/presentation/pages/security/security_page.dart';
+import '../security/security_page.dart';
 import 'package:flutter/material.dart';
 
 import '../../../core/routes/generator.dart';

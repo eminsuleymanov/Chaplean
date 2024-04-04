@@ -17,7 +17,8 @@ class GlobalInput extends StatelessWidget {
     this.onChanged,
     this.maxLine = 1,
     this.suffixIcon,
-    this.prefixIcon, this.onSubmitted,
+    this.prefixIcon,
+    this.onSubmitted,
   });
 
   final dynamic controller;
@@ -43,6 +44,8 @@ class GlobalInput extends StatelessWidget {
       style: AppTextStyles.etheralWhite16,
       decoration: InputDecoration(
         contentPadding: AppPaddings.all10,
+        labelText: hintText,
+        labelStyle: AppTextStyles.smalStyle16,
         hintStyle: AppTextStyles.smalStyle16,
         fillColor: AppColors.secondaryBlue,
         filled: true,
@@ -55,19 +58,17 @@ class GlobalInput extends StatelessWidget {
         border: OutlineInputBorder(
           borderSide: BorderSide.none,
           borderRadius: AppBorders.all8,
-          
         ),
         disabledBorder: OutlineInputBorder(
             borderSide: const BorderSide(color: AppColors.secondaryBlue),
-            borderRadius:AppBorders.all8),
+            borderRadius: AppBorders.all8),
         focusedBorder: OutlineInputBorder(
           borderSide: const BorderSide(color: AppColors.karimunBlue),
-          borderRadius:AppBorders.all8,
+          borderRadius: AppBorders.all8,
         ),
         suffixIcon: suffixIcon,
         prefixIcon: prefixIcon,
         prefixIconColor: AppColors.etherealWhite,
-        
       ),
     );
   }

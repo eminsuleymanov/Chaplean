@@ -1,3 +1,4 @@
+import 'package:chaplean/utils/constants/app_text_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -41,7 +42,7 @@ class GlobalButton extends StatelessWidget {
             child: Center(
               child: isLoadings
                   ? const CircularProgressIndicator.adaptive()
-                  : Text(title, style: style),
+                  : Text(title, style: style??AppTextStyles.primary16),
             )));
   }
 }

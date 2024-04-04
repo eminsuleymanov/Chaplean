@@ -1,12 +1,12 @@
-import '../../../../../utils/constants/app_paddings.dart';
-
-import '../../../../../utils/constants/app_colors.dart';
-import '../../../../../utils/constants/app_strings.dart';
-import '../../../../../utils/constants/app_text_styles.dart';
-import '../../../../../utils/constants/assets_paths.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:svg_flutter/svg.dart';
+
+import '../../../../../utils/constants/app_colors.dart';
+import '../../../../../utils/constants/app_paddings.dart';
+import '../../../../../utils/constants/app_strings.dart';
+import '../../../../../utils/constants/app_text_styles.dart';
+import '../../../../../utils/constants/assets_paths.dart';
 
 class GridProfilItem extends StatelessWidget {
   const GridProfilItem({Key? key}) : super(key: key);

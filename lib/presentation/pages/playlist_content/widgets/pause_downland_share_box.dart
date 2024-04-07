@@ -1,8 +1,9 @@
-import '../../home/widgets/home_side/pause_box.dart';
-import '../../../widgets/custom_back_button.dart';
-import '../../../../utils/constants/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import '../../../../utils/constants/app_colors.dart';
+import '../../../widgets/custom_back_button.dart';
+import '../../home/widgets/home_side/pause_box.dart';
 
 class PauseDownlandShareBox extends StatelessWidget {
   const PauseDownlandShareBox({super.key});

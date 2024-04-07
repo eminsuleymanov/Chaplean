@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
 
-import '../../../core/routes/generator.dart';
+import '../../../features/app_router/route_constants.dart';
 import '../../../utils/constants/app_colors.dart';
 import '../../../utils/constants/app_strings.dart';
 import '../../../utils/constants/app_text_styles.dart';
 import '../../../utils/constants/assets_paths.dart';
-import '../edit_profile/edit_profile_page.dart';
 
 class ProfileListTile extends StatelessWidget {
   const ProfileListTile({super.key});
@@ -63,8 +63,7 @@ class ProfileListTile extends StatelessWidget {
                       ),
                       child: Center(
                         child: GestureDetector(
-                          onTap: () => Navigate.replace(
-                              context, const EditProfilePage()),
+                          onTap: () => context.pushNamed(RouteConstants.editPage),
                           child: Text(
                             AppStrings.edit,
                             style: TextStyle(

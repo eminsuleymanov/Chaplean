@@ -1,18 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
 import 'package:svg_flutter/svg.dart';
 
-import '../../../core/routes/generator.dart';
+import '../../../features/app_router/route_constants.dart';
 import '../../../utils/constants/app_colors.dart';
 import '../../../utils/constants/app_paddings.dart';
 import '../../../utils/constants/app_strings.dart';
 import '../../../utils/constants/app_text_styles.dart';
 import '../../../utils/constants/assets_paths.dart';
 import '../../widgets/custom_back_button.dart';
+import '../../widgets/custom_nav_bar.dart';
 import '../../widgets/global_button.dart';
 import '../../widgets/global_divider.dart';
 import '../../widgets/global_input.dart';
-import '../profile/profile_page.dart';
 
 class EditProfilePage extends StatelessWidget {
   const EditProfilePage({super.key});
@@ -29,7 +30,7 @@ class EditProfilePage extends StatelessWidget {
         leading: Center(
           child: CustomBackButton(
             onPressed: () {
-              Navigate.replace(context, const ProfilePage());
+              context.pushNamed(RouteConstants.profile);
             },
             icon: Icons.arrow_back,
           ),
@@ -108,7 +109,7 @@ class EditProfilePage extends StatelessWidget {
           ),
         ),
       ),
-      // bottomNavigationBar: const BottomNavBar(),
+      bottomNavigationBar: const BottomNavBar(),
     );
   }
 

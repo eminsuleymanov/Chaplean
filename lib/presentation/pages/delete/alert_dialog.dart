@@ -1,9 +1,10 @@
-import '../../widgets/global_button.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
 import '../../../utils/constants/app_colors.dart';
 import '../../../utils/constants/app_strings.dart';
 import '../../../utils/constants/app_text_styles.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+import '../../widgets/global_button.dart';
 
 showAlertDialog(BuildContext context) {
   Widget deleteButton = GlobalButton(

@@ -1,8 +1,8 @@
-import 'package:chaplean/presentation/pages/forgot_password/widgets/texts/forgot_title_description.dart';
-import 'package:chaplean/presentation/pages/forgot_password/widgets/texts/forgot_title_text.dart';
-import 'package:chaplean/presentation/widgets/global_button.dart';
-import 'package:chaplean/presentation/widgets/global_input.dart';
-import 'package:chaplean/utils/constants/app_strings.dart';
+import 'widgets/texts/forgot_title_description.dart';
+import 'widgets/texts/forgot_title_text.dart';
+import '../../widgets/global_button.dart';
+import '../../widgets/global_input.dart';
+import '../../../utils/constants/app_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

@@ -1,3 +1,5 @@
+import '../../widgets/custom_nav_bar.dart';
+
 import '../../../core/routes/generator.dart';
 import 'widgets/create_playlist_bottom_sheet.dart';
 import 'widgets/playlist_details_bottom_sheet.dart';
@@ -43,7 +45,8 @@ class LibraryPage extends StatelessWidget {
         separatorBuilder: (context, index) => 16.verticalSpace,
         itemBuilder: (context, index) {
           final createMusicList = createPlayListModel[index];
-          return GestureDetector(onTap:() => Navigate.to(context,PlaylistContentPage()),
+          return GestureDetector(
+            onTap: () => Navigate.to(context, const PlaylistContentPage()),
             child: CustomListTile(
               trailing: GestureDetector(
                 onTap: () {
@@ -71,6 +74,7 @@ class LibraryPage extends StatelessWidget {
           );
         },
       ),
+      bottomNavigationBar: const BottomNavBar(),
     );
   }
 }

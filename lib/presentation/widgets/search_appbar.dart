@@ -24,6 +24,7 @@ class SearchAppbar extends StatefulWidget implements PreferredSizeWidget {
   final void Function(String)? onSubmitted;
 
   @override
+  // ignore: library_private_types_in_public_api
   _SearchAppbarState createState() => _SearchAppbarState();
 
   @override
@@ -51,8 +52,6 @@ class _SearchAppbarState extends State<SearchAppbar> {
       showTabBarContent = _textEditingController.text.isNotEmpty;
     });
   }
-
- 
 
   @override
   Widget build(BuildContext context) {

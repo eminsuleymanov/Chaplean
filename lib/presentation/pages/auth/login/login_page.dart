@@ -1,13 +1,10 @@
-import '../../home/navigation_screens.dart';
+import '../../../../features/app_router/route_constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
-import '../../../../core/routes/generator.dart';
+import 'package:go_router/go_router.dart';
 import '../../../../utils/constants/app_strings.dart';
 import '../../../widgets/custom_back_button.dart';
 import '../../../widgets/global_button.dart';
-import '../../home/home_page.dart';
-import '../../onboard/onboard_second_page.dart';
 import 'widgets/buttons/create_account_text_button.dart';
 import 'widgets/buttons/fogot_password_text_button.dart';
 import 'widgets/buttons/login_title_text.dart';
@@ -24,8 +21,7 @@ class LoginPage extends StatelessWidget {
       body: AuthView(
         children: [
           CustomBackButton(
-            onPressed: () =>
-                Navigate.replace(context, const OnboardSecondPage()),
+            onPressed: () => context.pushNamed(RouteConstants.onboarding2),
             icon: Icons.arrow_back,
           ),
           20.verticalSpace,
@@ -39,7 +35,7 @@ class LoginPage extends StatelessWidget {
           131.verticalSpace,
           GlobalButton(
               onTap: () {
-                Navigate.to(context, const NavigationScreens());
+                context.pushNamed(RouteConstants.home);
               },
               title: AppStrings.login),
           8.verticalSpace,

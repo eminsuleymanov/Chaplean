@@ -1,7 +1,8 @@
-import 'package:chaplean/utils/constants/app_strings.dart';
-import 'package:chaplean/utils/constants/app_text_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import '../../../../../utils/constants/app_strings.dart';
+import '../../../../../utils/constants/app_text_styles.dart';
 
 class OtpResendText extends StatelessWidget {
   const OtpResendText({super.key});

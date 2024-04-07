@@ -1,4 +1,3 @@
-import '../security/security_page.dart';
 import 'package:flutter/material.dart';
 
 import '../../../core/routes/generator.dart';
@@ -10,6 +9,7 @@ import '../about/about_page.dart';
 import '../delete/delete_page.dart';
 import '../privacy/privacy_page.dart';
 import '../profile/profile_page.dart';
+import '../security/security_page.dart';
 import 'widgets/setting_about_button.dart';
 import 'widgets/setting_delete_account_button.dart';
 import 'widgets/setting_privacy_button.dart';

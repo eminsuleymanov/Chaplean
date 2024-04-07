@@ -1,6 +1,6 @@
+import '../../widgets/custom_nav_bar.dart';
 import 'package:flutter/material.dart';
 
-import '../../widgets/custom_nav_bar.dart';
 import '../../widgets/search_appbar.dart';
 import 'widgets/results.dart';
 import 'widgets/tabbar_content.dart';
@@ -34,6 +34,7 @@ class _SearchPageState extends State<SearchPage>
       _showRecentResults = searchText.isEmpty;
     });
   }
+
   int _selectedIndex = 0;
 
   void _onItemTapped(int index) {
@@ -54,12 +55,9 @@ class _SearchPageState extends State<SearchPage>
       body: _showRecentResults
           ? const Results()
           : TabbarContent(
-             controller: tabController,
+              controller: tabController,
             ),
-            bottomNavigationBar: BottomNavBar(
-        selectedIndex: _selectedIndex,
-        onIndexChanged: _onItemTapped,
-      ),
+      bottomNavigationBar: const BottomNavBar(),
     );
   }
 }

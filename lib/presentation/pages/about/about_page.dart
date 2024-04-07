@@ -1,12 +1,13 @@
+import '../../../features/app_router/route_constants.dart';
+import '../../widgets/custom_nav_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
-import '../../../core/routes/generator.dart';
 import '../../../utils/constants/app_colors.dart';
 import '../../../utils/constants/app_paddings.dart';
 import '../../../utils/constants/app_strings.dart';
 import '../../../utils/constants/app_text_styles.dart';
 import '../../widgets/global_basic_app_bar.dart';
-import '../setting/setting_page.dart';
 
 class AboutPage extends StatelessWidget {
   const AboutPage({super.key});
@@ -17,7 +18,7 @@ class AboutPage extends StatelessWidget {
       backgroundColor: AppColors.greyScaleBlack,
       appBar: GlobalBasicAppBar(
         title: AppStrings.about,
-        onPressed: () => Navigate.back(context, const SettingPage()),
+        onPressed: () => context.pushNamed(RouteConstants.privacyPage)
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -33,6 +34,7 @@ class AboutPage extends StatelessWidget {
           ],
         ),
       ),
+      bottomNavigationBar: const BottomNavBar(),
     );
   }
 }

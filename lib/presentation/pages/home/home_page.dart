@@ -26,7 +26,7 @@ class _HomePageState extends State<HomePage> {
           return HomeMusicLayout(musicdetail: musicdetail);
         },
       ),
-       
+       bottomNavigationBar:const BottomNavBar(),
     );
   }
 }

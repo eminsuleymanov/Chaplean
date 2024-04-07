@@ -1,7 +1,7 @@
-import '../liked/liked_music_page.dart';
-import '../setting/setting_page.dart';
+import 'package:chaplean/features/app_router/route_constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
 import 'package:svg_flutter/svg.dart';
 
 import '../../../core/routes/generator.dart';
@@ -9,6 +9,8 @@ import '../../../utils/constants/app_colors.dart';
 import '../../../utils/constants/app_paddings.dart';
 import '../../../utils/constants/assets_paths.dart';
 import '../../widgets/global_divider.dart';
+import '../liked/liked_music_page.dart';
+import '../setting/setting_page.dart';
 
 class ProfileAppBar extends StatelessWidget implements PreferredSizeWidget {
   const ProfileAppBar({super.key});
@@ -36,7 +38,7 @@ class ProfileAppBar extends StatelessWidget implements PreferredSizeWidget {
                 width: 17.79.w,
               ),
               onPressed: () {
-                Navigate.replace(context, const LikedMusicPage());
+               context.pushNamed(RouteConstants.likedPage);
               },
             ),
           ),

@@ -1,7 +1,8 @@
-import '../../../widgets/global_rectangle.dart';
+import 'package:flutter/material.dart';
+
 import '../../../../utils/constants/app_strings.dart';
 import '../../../../utils/constants/app_text_styles.dart';
-import 'package:flutter/material.dart';
+import '../../../widgets/global_rectangle.dart';
 
 class SettingPrivacyButton extends StatelessWidget {
   const SettingPrivacyButton({super.key, this.onTap});

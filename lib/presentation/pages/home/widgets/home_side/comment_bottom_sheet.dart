@@ -1,12 +1,11 @@
-import '../../../../../utils/constants/app_paddings.dart';
-
-import 'bottom_sheet_box.dart';
-import 'comment_tile.dart';
-import '../../../../widgets/global_input.dart';
-import '../../../../../utils/constants/app_colors.dart';
 import 'package:flutter/material.dart';
 
+import '../../../../../utils/constants/app_colors.dart';
+import '../../../../../utils/constants/app_paddings.dart';
 import '../../../../../utils/constants/app_strings.dart';
+import '../../../../widgets/global_input.dart';
+import 'bottom_sheet_box.dart';
+import 'comment_tile.dart';
 
 class CommentBottomSheet extends StatelessWidget {
   const CommentBottomSheet({

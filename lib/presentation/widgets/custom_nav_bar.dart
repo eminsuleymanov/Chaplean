@@ -1,24 +1,23 @@
 import 'package:flutter/material.dart';
-import 'package:svg_flutter/svg.dart';
+import 'package:svg_flutter/svg_flutter.dart';
 
+import '../../features/app_router/app_router.dart';
+import '../../features/app_router/route_constants.dart';
 import '../../utils/constants/app_colors.dart';
 import '../../utils/constants/app_strings.dart';
 import '../../utils/constants/assets_paths.dart';
 
 class BottomNavBar extends StatefulWidget {
-  const BottomNavBar({
-    Key? key,
-    required this.selectedIndex,
-    required this.onIndexChanged, // New callback function
-  }) : super(key: key);
-  final int selectedIndex;
-  final Function(int) onIndexChanged; // Callback function type definition
+  const BottomNavBar({Key? key}) : super(key: key);
 
   @override
   State<BottomNavBar> createState() => _BottomNavBarState();
 }
 
 class _BottomNavBarState extends State<BottomNavBar> {
+  int selectedIndex = 0;
+
+
 
   @override
   Widget build(BuildContext context) {
@@ -45,11 +44,38 @@ class _BottomNavBarState extends State<BottomNavBar> {
           label: AppStrings.chat,
         ),
       ],
-      currentIndex: widget.selectedIndex,elevation: 0,
+      currentIndex: selectedIndex,
+      elevation: 0,
       selectedItemColor: AppColors.etherealWhite,
       onTap: (index) {
-        widget.onIndexChanged(index); 
+        setState(() {
+          selectedIndex = index;
+        });
+        changeTab(index);
       },
     );
+  }
+
+  void changeTab(int index) {
+    switch (index) {
+      case 0:
+        router.pushNamed(RouteConstants.home);
+        break;
+      case 1:
+        router.pushNamed(RouteConstants.notification);
+        break;
+      case 2:
+        router.pushNamed(RouteConstants.profile);
+
+        break;
+      case 3:
+        router.pushNamed(RouteConstants.library);
+        
+        break;
+      default:
+              router.pushNamed(RouteConstants.chat);
+
+        break;
+    }
   }
 }

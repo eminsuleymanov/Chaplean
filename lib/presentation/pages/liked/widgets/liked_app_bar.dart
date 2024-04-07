@@ -1,14 +1,14 @@
+import 'package:chaplean/features/app_router/route_constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
 
-import '../../../../core/routes/generator.dart';
 import '../../../../utils/constants/app_colors.dart';
 import '../../../../utils/constants/app_paddings.dart';
 import '../../../../utils/constants/app_strings.dart';
 import '../../../widgets/custom_back_button.dart';
 import '../../../widgets/custom_tab.dart';
 import '../../../widgets/global_divider.dart';
-import '../../profile/profile_page.dart';
 
 class LikedAppBar extends StatelessWidget implements PreferredSizeWidget {
   const LikedAppBar({super.key, this.controller});
@@ -29,7 +29,7 @@ class LikedAppBar extends StatelessWidget implements PreferredSizeWidget {
               children: [
                 CustomBackButton(
                   onPressed: () =>
-                      Navigate.replace(context, const ProfilePage()),
+                     context.pushNamed(RouteConstants.profile),
                   icon: Icons.arrow_back,
                 ),
                 128.horizontalSpace,

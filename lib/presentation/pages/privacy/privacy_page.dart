@@ -1,13 +1,13 @@
-import '../../../core/routes/generator.dart';
-import '../setting/setting_page.dart';
 import 'package:flutter/material.dart';
 
+import '../../../core/routes/generator.dart';
 import '../../../utils/constants/app_colors.dart';
 import '../../../utils/constants/app_paddings.dart';
 import '../../../utils/constants/app_strings.dart';
 import '../../../utils/constants/app_text_styles.dart';
 import '../../widgets/custom_nav_bar.dart';
 import '../../widgets/global_basic_app_bar.dart';
+import '../setting/setting_page.dart';
 
 class PrivacyPage extends StatefulWidget {
   const PrivacyPage({super.key});
@@ -43,16 +43,9 @@ class _PrivacyPageState extends State<PrivacyPage> {
           ],
         ),
       ),
-      bottomNavigationBar: 
+     bottomNavigationBar: const BottomNavBar(),
       
-      BottomNavBar(
-        selectedIndex: _selectedIndex,
-        onIndexChanged: (index) {
-          setState(() {
-            _selectedIndex = index; // Update the selected index
-          });
-        },
-      ),
+      
     );
   }
 }

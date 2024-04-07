@@ -1,3 +1,5 @@
+import '../../widgets/custom_nav_bar.dart';
+
 import '../../../core/routes/generator.dart';
 import 'alert_dialog.dart';
 import '../setting/setting_page.dart';
@@ -52,7 +54,7 @@ class DeletePage extends StatelessWidget {
             24.verticalSpace,
           ],
         ),
-      ),
+      ),bottomNavigationBar:const BottomNavBar(),
     );
   }
 }

@@ -1,13 +1,12 @@
+import 'package:flutter/material.dart';
+
 import '../chat/chat_page.dart';
-import 'home_page.dart';
 import '../library/create_playlist_page.dart';
 import '../notification/notification_page.dart';
 import '../privacy/privacy_page.dart';
 import '../profile/profile_page.dart';
 import '../search/search_page.dart';
-import 'package:flutter/material.dart';
-
-import '../../widgets/custom_nav_bar.dart';
+import 'home_page.dart';
 
 class NavigationScreens extends StatefulWidget {
   const NavigationScreens({super.key});
@@ -33,14 +32,7 @@ class _NavigationScreensState extends State<NavigationScreens> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: screens[_selectedIndex],
-      bottomNavigationBar: BottomNavBar(
-        selectedIndex: _selectedIndex,
-        onIndexChanged: (index) {
-          setState(() {
-            _selectedIndex = index; 
-          });
-        },
-      ),
+     
     );
   }
 }

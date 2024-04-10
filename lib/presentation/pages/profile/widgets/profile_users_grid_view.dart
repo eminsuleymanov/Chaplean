@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../../data/models/profile_frame_model.dart';
-import '../../../utils/constants/app_paddings.dart';
-import '../../widgets/profile_frame.dart';
+import '../../../../data/models/profile_frame_model.dart';
+import '../../../../utils/constants/app_paddings.dart';
+import '../../../widgets/profile_frame.dart';
 
 class ProfileUsersGridView extends StatelessWidget {
   const ProfileUsersGridView({super.key});

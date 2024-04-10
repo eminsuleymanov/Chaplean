@@ -140,4 +140,7 @@ class AppStrings {
 
   // security page texts
   static const changePassword = 'Change Password?';
+
+  //public profile page
+  static const creators = 'Creators';
 }

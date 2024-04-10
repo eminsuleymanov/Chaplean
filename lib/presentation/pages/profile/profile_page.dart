@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 
 import '../../../utils/constants/app_colors.dart';
 import '../../widgets/custom_nav_bar.dart';
-import 'profile_app_bar.dart';
-import 'profile_header.dart';
-import 'profile_pinned_tab_bar.dart';
-import 'profile_playlist_list_view.dart';
-import 'profile_users_grid_view.dart';
+import 'widgets/profile_app_bar.dart';
+import 'widgets/profile_header.dart';
+import 'widgets/profile_pinned_tab_bar.dart';
+import 'widgets/profile_playlist_list_view.dart';
+import 'widgets/profile_users_grid_view.dart';
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({Key? key}) : super(key: key);

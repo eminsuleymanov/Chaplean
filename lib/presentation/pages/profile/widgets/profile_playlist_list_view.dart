@@ -1,12 +1,12 @@
-import '../playlist_content/widgets/playlist_content_details_bottom_sheet.dart';
+import '../../playlist_content/widgets/playlist_content_details_bottom_sheet.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:svg_flutter/svg.dart';
 
-import '../../../data/models/profile_playlist_model.dart';
-import '../../../utils/constants/app_paddings.dart';
-import '../../../utils/constants/assets_paths.dart';
-import '../../widgets/custom_list_tile.dart';
+import '../../../../data/models/profile_playlist_model.dart';
+import '../../../../utils/constants/app_paddings.dart';
+import '../../../../utils/constants/assets_paths.dart';
+import '../../../widgets/custom_list_tile.dart';
 import 'profile_bottom_sheet.dart';
 
 class ProfilePlaylistListView extends StatelessWidget {

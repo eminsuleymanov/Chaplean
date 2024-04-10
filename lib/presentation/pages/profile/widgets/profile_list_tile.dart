@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../../features/app_router/route_constants.dart';
-import '../../../utils/constants/app_colors.dart';
-import '../../../utils/constants/app_strings.dart';
-import '../../../utils/constants/app_text_styles.dart';
-import '../../../utils/constants/assets_paths.dart';
+import '../../../../features/app_router/route_constants.dart';
+import '../../../../utils/constants/app_colors.dart';
+import '../../../../utils/constants/app_strings.dart';
+import '../../../../utils/constants/app_text_styles.dart';
+import '../../../../utils/constants/assets_paths.dart';
 
 class ProfileListTile extends StatelessWidget {
   const ProfileListTile({super.key});

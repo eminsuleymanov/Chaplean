@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:provider/provider.dart';
 
 import '../../../core/routes/generator.dart';
+import '../../../cubits/register/register_cubit.dart';
 import '../../../utils/constants/app_strings.dart';
 import '../../../utils/constants/app_text_styles.dart';
 import '../../widgets/custom_back_button.dart';
@@ -18,9 +20,11 @@ class OtpPage extends StatelessWidget {
   const OtpPage({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) {    final cubit = context.read<RegisterCubit>();
+
     return Scaffold(
-        body: AuthView(children: [
+        body: AuthView(formKey: cubit.formkey,
+          children: [
       CustomBackButton(
         onPressed: () => Navigate.replace(context, const ForgotPasswordPage()),
         icon: Icons.arrow_back,

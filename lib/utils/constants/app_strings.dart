@@ -22,7 +22,8 @@ class AppStrings {
   static const String confirmPassword = 'Confirm Password';
   static const String haveAccount = 'Already have an account?';
   static const String loginHere = 'Log in';
-
+  static const String errorEmpty = 'Fill all blanks';
+static const String errorLength = 'Password should be greater then 5 digit';
   // Forgot Password Page
   static const String enterUrEmail = 'Enter your email';
   static const String sendCode = 'Send code';

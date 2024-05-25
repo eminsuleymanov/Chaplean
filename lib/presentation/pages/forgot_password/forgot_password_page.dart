@@ -1,3 +1,6 @@
+import 'package:provider/provider.dart';
+
+import '../../../cubits/register/register_cubit.dart';
 import 'widgets/texts/forgot_title_description.dart';
 import 'widgets/texts/forgot_title_text.dart';
 import '../../widgets/global_button.dart';
@@ -16,9 +19,12 @@ class ForgotPasswordPage extends StatelessWidget {
   const ForgotPasswordPage({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) {    final cubit = context.read<RegisterCubit>();
+
     return Scaffold(
-        body: AuthView(children: [
+      
+        body: AuthView(formKey:cubit.formkey ,
+          children: [
       CustomBackButton(
         onPressed: () => Navigate.replace(context, const OnboardSecondPage()),
         icon: Icons.arrow_back,

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../../utils/constants/app_colors.dart';
-import '../../widgets/global_divider.dart';
+import '../../../../utils/constants/app_colors.dart';
+import '../../../widgets/global_divider.dart';
 import 'profile_list_tile.dart';
 
 class ProfileHeader extends StatelessWidget {

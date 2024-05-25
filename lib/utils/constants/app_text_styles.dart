@@ -57,6 +57,37 @@ class AppTextStyles {
     );
   }
 
+  static TextStyle get greyScale_1S13W400 {
+    return TextStyle(
+      color: AppColors.greyScaleGrey_1,
+      fontSize: 13.sp,
+      fontWeight: FontWeight.w400,
+    );
+  }
+
+  static TextStyle get styleS12W500 {
+    return TextStyle(
+      fontSize: 12.sp,
+      fontWeight: FontWeight.w500,
+    );
+  }
+
+  static TextStyle get etheralWhiteS20W600 {
+    return TextStyle(
+      color: AppColors.etherealWhite,
+      fontSize: 20.sp,
+      fontWeight: FontWeight.w600,
+    );
+  }
+
+  static TextStyle get greyScaleBlackS13W400 {
+    return TextStyle(
+      fontSize: 13.sp,
+      fontWeight: FontWeight.w400,
+      color: AppColors.greyScaleBlack,
+    );
+  }
+
   static TextStyle get whiteBlueS16W600 {
     return TextStyle(
       color: AppColors.etherealWhite,

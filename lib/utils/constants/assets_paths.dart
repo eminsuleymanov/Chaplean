@@ -44,6 +44,7 @@ class AssetsPaths {
   static const String infoIcon = 'assets/images/svg/info_icon.svg';
   static const String shareIcon_3 = 'assets/images/svg/share_icon_3.svg';
   static const String editPencil = 'assets/images/svg/edit_pencil.svg';
+  static const String userIcon = 'assets/images/svg/user_icon.svg';
 
   //app png paths
   static const String musicImage_1 = 'assets/images/png/music_image_1.png';
@@ -78,4 +79,8 @@ class AssetsPaths {
 
   //library
   static const String blueApple = 'assets/images/png/blue_apple.png';
+
+  //public profile
+  static const String publicProfileDefaultPicture =
+      'assets/images/png/public_profile_default_picture.png';
 }

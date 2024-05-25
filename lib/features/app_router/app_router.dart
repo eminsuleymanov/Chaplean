@@ -2,6 +2,7 @@ import 'package:chaplean/cubits/login/login_cubit.dart';
 import 'package:chaplean/cubits/register/register_cubit.dart';
 import 'package:chaplean/presentation/pages/auth/register/register_page.dart';
 import 'package:chaplean/presentation/pages/liked/liked_music_page.dart';
+import 'package:chaplean/presentation/pages/public_profile/public_profile_page.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../presentation/pages/edit_profile/edit_profile_page.dart';
@@ -125,6 +126,14 @@ final router = GoRouter(
           pageBuilder: (context, state) {
             return const MaterialPage(
               child: LikedMusicPage(),
+            );
+          }),
+          GoRoute(
+          path: '/public',
+          name: RouteConstants.publicProfilePage,
+          pageBuilder: (context, state) {
+            return const MaterialPage(
+              child: PublicProfilePage(),
             );
           }),
     ],

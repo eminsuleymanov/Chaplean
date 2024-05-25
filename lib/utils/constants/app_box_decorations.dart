@@ -12,4 +12,13 @@ class AppBoxDecorations {
       color: AppColors.secondaryBlue,
     );
   }
+
+  static BoxDecoration get karimunBlueCircular8 {
+    return const BoxDecoration(
+      color: AppColors.karimunBlue,
+      borderRadius: BorderRadius.all(
+        Radius.circular(8),
+      ),
+    );
+  }
 }

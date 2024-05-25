@@ -141,4 +141,7 @@ static const String errorLength = 'Password should be greater then 5 digit';
 
   // security page texts
   static const changePassword = 'Change Password?';
+
+  //public profile page
+  static const creators = 'Creators';
 }

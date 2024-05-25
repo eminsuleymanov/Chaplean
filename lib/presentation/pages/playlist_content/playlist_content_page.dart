@@ -2,7 +2,7 @@ import '../../widgets/custom_nav_bar.dart';
 import 'package:flutter/material.dart';
 
 import '../../widgets/search_appbar.dart';
-import '../profile/profile_playlist_list_view.dart';
+import '../profile/widgets/profile_playlist_list_view.dart';
 import 'widgets/playlist_functions.dart';
 
 class PlaylistContentPage extends StatelessWidget {

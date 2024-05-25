@@ -1,3 +1,6 @@
+import 'package:provider/provider.dart';
+
+import '../../../cubits/register/register_cubit.dart';
 import '../auth/login/login_page.dart';
 import '../auth/login/widgets/inputs/auth_view.dart';
 import 'widgets/texts/succes_title_text.dart';
@@ -17,8 +20,11 @@ class SuccessPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+        final cubit = context.read<RegisterCubit>();
+
     return Scaffold(
-      body: AuthView(children: [
+      body: AuthView(formKey: cubit.formkey,
+        children: [
         CustomBackButton(
           onPressed: () => Navigate.replace(context, const LoginPage()),
           icon: Icons.arrow_back,

@@ -1,4 +1,8 @@
+import 'package:chaplean/cubits/login/login_cubit.dart';
+import 'package:chaplean/cubits/register/register_cubit.dart';
+import 'package:chaplean/presentation/pages/auth/register/register_page.dart';
 import 'package:chaplean/presentation/pages/liked/liked_music_page.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../presentation/pages/edit_profile/edit_profile_page.dart';
 import '../../presentation/pages/privacy/privacy_page.dart';
@@ -33,8 +37,11 @@ final router = GoRouter(
           path: '/login',
           name: RouteConstants.login,
           pageBuilder: (context, state) {
-            return const MaterialPage(
-              child: LoginPage(),
+            return MaterialPage(
+              child: BlocProvider(
+                create: (context) => LoginCubit(),
+                child: const LoginPage(),
+              ),
             );
           }),
       GoRoute(
@@ -43,6 +50,17 @@ final router = GoRouter(
           pageBuilder: (context, state) {
             return const MaterialPage(
               child: OnboardFirstPage(),
+            );
+          }),
+      GoRoute(
+          path: '/register',
+          name: RouteConstants.register,
+          pageBuilder: (context, state) {
+            return  MaterialPage(
+              child: BlocProvider(
+                create: (context) => RegisterCubit(),
+                child:const RegisterPage(),
+              ),
             );
           }),
       GoRoute(
@@ -101,7 +119,7 @@ final router = GoRouter(
               child: PrivacyPage(),
             );
           }),
-          GoRoute(
+      GoRoute(
           path: '/liked',
           name: RouteConstants.likedPage,
           pageBuilder: (context, state) {

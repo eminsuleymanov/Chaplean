@@ -1,10 +1,12 @@
+import 'package:chaplean/cubits/login/login_cubit.dart';
+import 'package:chaplean/presentation/pages/auth/login/widgets/buttons/login_button.dart';
+import 'package:provider/provider.dart';
+
 import '../../../../features/app_router/route_constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
-import '../../../../utils/constants/app_strings.dart';
 import '../../../widgets/custom_back_button.dart';
-import '../../../widgets/global_button.dart';
 import 'widgets/buttons/create_account_text_button.dart';
 import 'widgets/buttons/fogot_password_text_button.dart';
 import 'widgets/buttons/login_title_text.dart';
@@ -17,8 +19,11 @@ class LoginPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final cubit = context.read<LoginCubit>();
+
     return Scaffold(
       body: AuthView(
+        formKey: cubit.formkey,
         children: [
           CustomBackButton(
             onPressed: () => context.pushNamed(RouteConstants.onboarding2),
@@ -33,11 +38,7 @@ class LoginPage extends StatelessWidget {
           16.verticalSpace,
           const FogotPasswordTextButton(),
           131.verticalSpace,
-          GlobalButton(
-              onTap: () {
-                context.pushNamed(RouteConstants.home);
-              },
-              title: AppStrings.login),
+          const LoginButtonn(),
           8.verticalSpace,
           const CreateAccountTextButton()
         ],

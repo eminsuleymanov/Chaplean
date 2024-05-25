@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:provider/provider.dart';
 
 import '../../../../core/routes/generator.dart';
+import '../../../../cubits/register/register_cubit.dart';
 import '../../../widgets/custom_back_button.dart';
 import '../../onboard/onboard_second_page.dart';
 import '../login/widgets/inputs/auth_view.dart';
@@ -24,8 +26,10 @@ class RegisterPage extends StatefulWidget {
 class _RegisterPageState extends State<RegisterPage> {
   @override
   Widget build(BuildContext context) {
+    final cubit = context.read<RegisterCubit>();
     return Scaffold(
-        body: AuthView(children: [
+        body: AuthView(formKey: cubit.formkey,
+          children: [
       CustomBackButton(
         onPressed: () => Navigate.replace(context, const OnboardSecondPage()),
         icon: Icons.arrow_back,

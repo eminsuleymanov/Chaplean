@@ -33,7 +33,7 @@ class CreatePlaylistBottomSheet extends StatelessWidget {
       ),
       16.verticalSpace,
       GlobalButton(
-        onTap: () {
+        onTap: ()async {
           showModalBottomSheet(
             context: context,
             builder: (BuildContext context) {

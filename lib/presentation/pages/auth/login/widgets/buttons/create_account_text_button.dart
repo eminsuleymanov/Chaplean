@@ -1,11 +1,10 @@
+import 'package:chaplean/features/app_router/route_constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
-import '../../../../../../core/routes/generator.dart';
+import 'package:go_router/go_router.dart';
 import '../../../../../../utils/constants/app_colors.dart';
 import '../../../../../../utils/constants/app_strings.dart';
 import '../../../../../../utils/constants/app_text_styles.dart';
-import '../../../register/register_page.dart';
 
 class CreateAccountTextButton extends StatelessWidget {
   const CreateAccountTextButton({super.key});
@@ -19,7 +18,7 @@ class CreateAccountTextButton extends StatelessWidget {
         SizedBox(width: 4.sp),
         GestureDetector(
           onTap: () {
-           Navigate.to(context,const RegisterPage() );
+            context.pushNamed(RouteConstants.register);
           },
           child: Text(
             AppStrings.register,

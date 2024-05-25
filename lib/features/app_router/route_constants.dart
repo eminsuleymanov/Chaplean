@@ -11,6 +11,6 @@ class RouteConstants {
         static String privacyPage = 'privacy';
         static String likedPage = 'liked';
         static String register = 'register';
-static String publicProfilePage = 'public';
+
 
 }

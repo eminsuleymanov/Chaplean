@@ -10,7 +10,7 @@ class LoginService {
       {required String email, required String password}) async {
     final Uri loginUri = Uri.parse(EndPoints.loginUrl);
     final body = {
-      "email": email,
+      "username": email,
       "password": password,
     };
     final http.Response response = await http.post(loginUri, body: body);

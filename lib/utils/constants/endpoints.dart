@@ -1,9 +1,8 @@
 class EndPoints {
   EndPoints._();
-  static const baseUrl = 'https://chaplean.net/';
+  static const baseUrl = 'https://chaplean.net';
 
   //register
-  static const registerUrl = 'https://chaplean.net/api/register/';
-    static const loginUrl = '$baseUrl/api/login/';
-
+  static const registerUrl = '$baseUrl/api/register/';
+  static const loginUrl = '$baseUrl/api/login/';
 }
